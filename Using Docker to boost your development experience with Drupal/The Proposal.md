@@ -22,7 +22,7 @@ projects on it and how little you really need to know to get started with it.
 ## Audience
 The presentation is mostly aimed to every Drupal developer that feel that more 
 than it should of their valuable potential is going towards configuring their 
-environments and are ready take some easy steps to fix it.
+development environments and are ready take some easy steps to fix it.
 
 ## Expected experience level for the participants
 Beginner
