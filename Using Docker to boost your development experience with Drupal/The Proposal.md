@@ -9,7 +9,7 @@ setup on their development environment and would like to improve their overall d
 so they can concentrate more on the code and less on configuring their development environments.
 
 The talk will also include a brief introduction to Docker itself and how would you introduce it to your team
-based our personal experience.
+based our personal experience, so everyone in your team could levredge
 
 ## Expected experience level for the participants
 Beginner
