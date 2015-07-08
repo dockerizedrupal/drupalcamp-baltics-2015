@@ -31,7 +31,9 @@ What is Docker?
 ## Backlog
 
 Why have we decided to use Docker in our work environment?
+
 A developer 90% of the time doesn’t event relize that he/she is working woth Docker while developing in Drupal.
+
 The famous matrix of hell.
 
 ## Questions and answers
