@@ -36,7 +36,8 @@ Jürgen Viljaste
 Mait Roosvalt
 
 ## Speaker information
-
+Jürgen Viljaste - https://www.drupal.org/u/viljaste
+Mait Roosvalt - https://www.drupal.org/u/maitzzz
 
 ## Previous speaking experience
 I really don't have any real speaking experience from the past, this would be 
