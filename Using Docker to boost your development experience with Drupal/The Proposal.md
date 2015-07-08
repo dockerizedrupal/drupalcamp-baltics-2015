@@ -20,7 +20,7 @@ audience how easy it is to use Docker as a platform to develop Drupal based
 projects on it and how little you really need to know to get started with it.
 
 ## Audience
-The presentation is mostly aimed to every Drupal developer that feel that more 
+The presentation is mostly aimed towards Drupal developers who feel that more 
 than it should of their valuable potential is going towards configuring their 
 development environments and are ready to take some easy steps to fix it.
 
