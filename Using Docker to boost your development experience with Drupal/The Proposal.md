@@ -6,7 +6,10 @@ Using Docker to boost your development experience with Drupal
 ## Session description
 The goal of this presentation is to introduce Docker to ordinary Drupal developer who is currently using standard LAMP 
 setup on their development environment and would like to improve their overall development experience with Drupal, 
-so they can concentrate more on the code and less on configuring their development environment.
+so they can concentrate more on the code and less on configuring their development environments.
+
+The talk will also include a brief introduction to Docker itself and how would you introduce it to your team
+based our personal experience.
 
 ## Expected experience level for the participants
 Beginner
@@ -15,9 +18,11 @@ Beginner
 Development
 
 ## Speaker name
-Jürgen Viljaste, Mait Roosvalt
+Jürgen Viljaste
+Mait Roosvalt
 
 ## Speaker information
+
 
 ## Previous speaking experience
 I really don't have any real speaking experience from the past, this would be my first presentation to such a large audience.
