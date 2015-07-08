@@ -11,8 +11,8 @@ Drupal, so they can concentrate more on the code and less on configuring their
 development environments.
 
 The talk will also include a brief introduction to Docker itself and how would
-you introduce it to your team based our personal experience, so everyone in your
-team could leverage the potential that Docker provides for solving 
+you introduce it to your team based on our personal experience, so everyone in
+your team could leverage the potential that Docker could provide to solve your 
 particular problems.
 
 ## Expected experience level for the participants
