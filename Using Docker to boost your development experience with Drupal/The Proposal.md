@@ -4,7 +4,9 @@
 Using Docker to boost your development experience with Drupal
 
 ## Session description
-The goal of this presentation is to introduce Docker to ordinary Drupal developer who is currently using standard LAMP setup on their development environment and would like to improve their overall development experience with Drupal, so they can concentrate more on the code and less on configuring their development environment.
+The goal of this presentation is to introduce Docker to ordinary Drupal developer who is currently using standard LAMP 
+setup on their development environment and would like to improve their overall development experience with Drupal, 
+so they can concentrate more on the code and less on configuring their development environment.
 
 ## Expected experience level for the participants
 Beginner
