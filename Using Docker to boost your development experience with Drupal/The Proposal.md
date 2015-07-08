@@ -37,6 +37,7 @@ Mait Roosvalt
 
 ## Speaker information
 Jürgen Viljaste - https://www.drupal.org/u/viljaste
+
 Mait Roosvalt - https://www.drupal.org/u/maitzzz
 
 ## Previous speaking experience
