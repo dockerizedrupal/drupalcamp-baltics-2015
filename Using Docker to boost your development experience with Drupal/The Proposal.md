@@ -10,10 +10,14 @@ environment and would like to improve their overall development experience with
 Drupal, so they can concentrate more on the code and less on configuring their 
 development environments.
 
-The talk will also include a brief introduction to Docker itself and how would
-you introduce it to your team based on our personal experience, so everyone in
+The talk will also include a brief introduction to Docker itself and how would 
+you introduce it to your team based on our personal experience, so everyone in 
 your team could leverage the potential that Docker could provide to solve your 
 particular problems.
+
+At the end of the presentation we have planned a small demo that would show the 
+audience how easy it is to use Docker as a platform to develop Drupal based 
+projects on it.
 
 ## Expected experience level for the participants
 Beginner
@@ -30,4 +34,5 @@ Mait Roosvalt
 
 
 ## Previous speaking experience
-I really don't have any real speaking experience from the past, this would be my first presentation to such a large audience.
+I really don't have any real speaking experience from the past, this would be 
+my first presentation to such a large audience.
