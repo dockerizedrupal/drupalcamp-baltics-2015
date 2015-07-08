@@ -12,7 +12,7 @@ development environments.
 
 The talk will also include a brief introduction to Docker itself and how would
 you introduce it to your team based our personal experience, so everyone in your
-team could leverage the potential that Docker could provide for solving 
+team could leverage the potential that Docker provides for solving 
 particular problems.
 
 ## Expected experience level for the participants
