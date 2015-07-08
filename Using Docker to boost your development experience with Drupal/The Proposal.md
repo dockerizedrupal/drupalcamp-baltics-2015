@@ -41,5 +41,7 @@ Jürgen Viljaste - https://www.drupal.org/u/viljaste
 Mait Roosvalt - https://www.drupal.org/u/maitzzz
 
 ## Previous speaking experience
-I really don't have any real speaking experience from the past, this would be 
+Jürgen Viljaste - I really don't have any real speaking experience from the past, this would be 
 my first presentation to such a large audience.
+
+Mait Roosvalt - I have little speaking experience for smaller auditions but not topics about drupal developing. 
