@@ -8,7 +8,7 @@ My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I
 have about 4 years of experience with Drupal professionally.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
-with Drupal for about 1 year professionally.
+with Drupal a bit more than a year professionally.
 
 So that now everyone knows briefly who we are, lets talk about Drupal and 
 Docker. How can these two technologies work together and why you should care.
