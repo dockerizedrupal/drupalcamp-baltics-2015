@@ -4,7 +4,15 @@ Hi guys!
 
 Before we start with the actual presentation let us introduce ourselves.
 
-My name is Jürgen and I’m a Drupal developer. I work for Fenomen web agency.
+My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I 
+have about 4 years of experience with Drupal professionally.
+
+My Name is Mait and I work for Fenomen web agency as well. I have been working 
+with Drupal for about 1 year professionally.
+
+Before 
+
+---
 
 so now that everyone are prepared for what comes next, let's start the presentation
 
