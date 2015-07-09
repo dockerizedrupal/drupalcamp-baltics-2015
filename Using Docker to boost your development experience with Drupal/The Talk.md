@@ -32,6 +32,10 @@ What is Docker?
 
 Why have we decided to use Docker in our work environment?
 
+Support for different platform
+
+What problems Docker solves and what problems Docker introduces
+
 A developer 90% of the time doesn’t event relize that he/she is working woth Docker while developing in Drupal.
 
 The famous matrix of hell.
