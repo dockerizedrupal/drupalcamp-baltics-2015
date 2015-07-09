@@ -46,7 +46,7 @@ environment with its own
 
 What problems does it solve?
 
-The timing was perfect, because one of our junior developers ruined his whole development environment by changing all the files and directories permissions to apache
+The timing was perfect, because one of our developers ruined his whole development environment by changing all the files and directories permissions to apache
 
     sudo chown -R www-data.www-data /
 
