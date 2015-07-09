@@ -12,7 +12,7 @@ development environments.
 
 The talk will also include a brief introduction to Docker itself and how would 
 you introduce it to your team based on our own personal experience, so everyone 
-in your team could leverage the potential that Docker has to solve your 
+in your team could leverage the potential that Docker provides to solve your 
 particular problem.
 
 At the end of the presentation we have planned a small demo that would show the 
