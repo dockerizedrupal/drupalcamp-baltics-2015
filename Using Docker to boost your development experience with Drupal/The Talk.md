@@ -2,7 +2,7 @@
 
 Hi guys!
 
-Before we start with the actual presentation let us introduce ourselves first.
+Before we start with the actual presentation let us first introduce ourselves.
 
 My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I 
 have about 4 years of experience with Drupal professionally.
@@ -15,13 +15,14 @@ Docker. How can these two technologies work together and why you should care.
 
 Rise your hand if you have used Docker already in your development environment.
 
-Still keep your hands up.
+Do not lower your hands just yet!
 
 Lower your hand if you have not yet used Docker in production.
 
 Those whose hands are still up, you probably won't learn anything new from this 
-talk, so you may leave. I'm just kidding! Nobody knows everything, so you 
-actually might learn something from this presentation after all.
+talk, so you may stand up and leave. I'm just kidding guys! Nobody knows 
+everything, so you actually might learn something from this presentation after 
+all. We at least hope that you do.
 
 So what is Docker?
 
