@@ -26,6 +26,10 @@ all. We at least hope that you do.
 
 So what is Docker?
 
+Docker is a piece of technology that allows you, the developer, to wrap your 
+application and all its dependencies that it needs in order to run into a single 
+package. This package is called a container.
+
 ---
 
 so now that everyone are prepared for what comes next, let's start the presentation
