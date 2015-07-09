@@ -2,7 +2,7 @@
 
 Hi guys!
 
-Before we start with the actual presentation let us introduce ourselves.
+Before we start with the actual presentation let us introduce ourselves first.
 
 My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I 
 have about 4 years of experience with Drupal professionally.
@@ -10,7 +10,20 @@ have about 4 years of experience with Drupal professionally.
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal for about 1 year professionally.
 
-Before 
+So that now everyone briefly knows about who we are, lets talk about Drupal and 
+Docker. How can these two technologies work together and why you should care.
+
+Rise your hand if you have used Docker already in your development environment.
+
+Still keep your hands up.
+
+Lower your hand if you have not yet used Docker in production.
+
+Those whose hands are still up, you probably won't learn anything new from this 
+talk, so you may leave. I'm just kidding! Nobody knows everything, so you 
+actually might learn something from this presentation after all.
+
+So what is Docker?
 
 ---
 
@@ -28,16 +41,6 @@ The fact that I now have almost 4000 commits in GitHub shows that I have discove
 Docker skyrocketed my productivity immensely. It molded my thinking in a way that
 
 From that day on I never
-
----
-
-Rise your hand if you have used Docker already in your development environment!
-
-Lower your hand you have not yet used Docker in production!
-
-Those whose hands are still up, you probably won't learn anything new from this talk, so you may leave. I'm just kidding! Nobody knows everything, so you actually might learn something from this presentation after all.
-
-So what is Docker?
 
 
 
