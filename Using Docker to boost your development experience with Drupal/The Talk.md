@@ -1,10 +1,8 @@
 # The Talk
 
-Using Docker to boost your development experience with Drupal
-
-Speech
-
 Hi guys!
+
+Before we start with the actual presentation let us introduce ourselves.
 
 My name is Jürgen and I’m a Drupal developer. I work for Fenomen web agency.
 
@@ -23,9 +21,16 @@ Docker skyrocketed my productivity immensely. It molded my thinking in a way tha
 
 From that day on I never
 
-History
+---
 
-What is Docker?
+Rise your hand if you have used Docker already in your development environment!
+
+Lower your hand you have not yet used Docker in production!
+
+Those whose hands are still up, you probably won't learn anything new from this talk, so you may leave. I'm just kidding! Nobody knows everything, so you actually might learn something from this presentation after all.
+
+So what is Docker?
+
 
 
 ## Backlog
