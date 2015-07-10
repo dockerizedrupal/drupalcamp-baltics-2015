@@ -4,7 +4,11 @@ Hi guys!
 
 Before we start with the actual presentation let us first introduce ourselves.
 
+---
+
 SWITCH SLIDE
+
+---
 
 My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I 
 have about 4 years of experience with Drupal professionally.
@@ -26,7 +30,11 @@ talk, so you may stand up and walk out. I'm just kidding guys! Nobody knows
 everything, so you actually might learn something from this presentation after 
 all. We at least hope that you do.
 
+---
+
 SWITCH SLIDE
+
+---
 
 So what is Docker?
 
@@ -34,7 +42,11 @@ Docker is a piece of technology that allows you, the developer, to wrap your
 application and all its dependencies that it needs in order to run into a single 
 package, which is more widely known as a container.
 
+---
+
 SWITCH SLIDE
+
+---
 
 But what exactly is this container that he is talking about? Is it edible?
 
