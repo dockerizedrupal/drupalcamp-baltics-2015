@@ -41,8 +41,14 @@ SWITCH SLIDE
 So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
-application and all its dependencies that it needs in order to run into a single 
-package, which is more widely known as a container.
+application and all its dependencies that it needs in order to run into an 
+isolated package with ease. Depending on your application and its dependencies 
+the packaged can be either very small, around few megabytes, or very
+large, from couple of gigabytes to infinity in theory.
+
+It also gives you tools so you can share your application with other with ease.
+
+The correct term for isolated package is container.
 
 ---
 
@@ -50,13 +56,11 @@ SWITCH SLIDE
 
 ---
 
-But what exactly is this container that he is talking about? Is it edible?
-
-Unfortunately no, otherwise, we would have already solved the world's hunger 
-problem, because there are millions of container out there in the wild.
+What is a container?
 
 From a developer point of view, a container provides an isolated virtual 
-environment with its own 
+environment for your application. It means that with Docker your application 
+can have an isolated network, you can limit memory/CPU allocation
 
 What problems does it solve?
 
