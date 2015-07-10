@@ -28,7 +28,9 @@ Lower your hand if you have not yet used Docker in production.
 Those whose hands are still up, you probably won't learn anything new from this 
 talk, so you may stand up and walk out. I'm just kidding guys! Nobody knows 
 everything, so you actually might learn something from this presentation after 
-all. We at least hope that you do.
+all.
+
+We at least hope that you do.
 
 ---
 
