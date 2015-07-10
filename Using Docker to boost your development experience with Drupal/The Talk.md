@@ -42,11 +42,17 @@ So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
 application and all its dependencies that it needs in order to run into an 
-isolated package with ease. Depending on your application and its dependencies 
-the packaged can be either very small, around few megabytes, or very
-large, from couple of gigabytes to infinity in theory.
+image, which you can run as a container in any host.
 
-It also gives you tools so you can share your application with other with ease.
+The only requirement to get your application running in 99% of the time is that 
+there also has to have Docker installed on that host.
+
+Depending on your application and its dependencies the Docker image can be 
+either very small, something around few megabytes, or very large, from couple 
+of gigabytes to infinity in theory.
+
+Docker also gives you tools so you can share your application with others with 
+ease.
 
 The correct term for isolated package is container.
 
