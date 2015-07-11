@@ -42,19 +42,16 @@ So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
 application and all its dependencies that it needs in order to run into an 
-image, which you can run as a container in any host.
+image, which you can run in any host.
 
 The only requirement to get your application running in 99% of the time is that 
-there also has to have Docker installed on that host.
+you also need to have Docker installed on that host.
 
 Depending on your application and its dependencies the Docker image can be 
 either very small, something around few megabytes, or very large, from couple 
 of gigabytes to infinity in theory.
 
-Docker also gives you tools so you can share your application with others with 
-ease.
-
-The correct term for isolated package is container.
+Docker also gives you tools so you can share your application with others with ease.
 
 ---
 
@@ -65,10 +62,30 @@ SWITCH SLIDE
 What is a container?
 
 From a developer point of view, a container provides an isolated virtual 
-environment for your application. It means that with Docker your application 
-can have an isolated network, you can limit memory/CPU allocation
+environment for your application.
+
+This means that your application process is completely isolated from other 
+process on the same host, it can have a separate network interface or share a 
+network interface with host or with other containers, you can also control how 
+much resources your applications can consume on the host 
+(memory, CPU, disk I/O and many more).
+
+The underlying techonolgy (namespace isolation and control groups) that Docker 
+itself makes use of are actually provided by Linux kernel itself.
+
+---
+
+SWITCH SLIDE
+
+---
 
 What problems does it solve?
+
+---
+
+SWITCH SLIDE
+
+---
 
 The timing was perfect, because one of our developers ruined his whole development environment by changing all the files and directories permissions to apache
 
@@ -104,15 +121,6 @@ What problems Docker solves and what problems Docker introduces
 A developer 90% of the time doesn’t event relize that he/she is working woth Docker while developing in Drupal.
 
 The famous matrix of hell.
------
-I'll left out topics which i'm sure you are already tought about.
-
-
-I think you should talk about vhost too in some point. Before vhost it was possible to use only one project at the time.
-
-How we use it in our development process.
-
-How easy is it to set up(use different php versions, use different sql clients).
 
 ## Questions and answers
 
