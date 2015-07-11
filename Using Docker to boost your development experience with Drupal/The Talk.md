@@ -104,6 +104,15 @@ What problems Docker solves and what problems Docker introduces
 A developer 90% of the time doesn’t event relize that he/she is working woth Docker while developing in Drupal.
 
 The famous matrix of hell.
+-----
+I'll left out topics which i'm sure you are already tought about.
+
+
+I think you should talk about vhost too in some point. Before vhost it was possible to use only one project at the time.
+
+How we use it in our development process.
+
+How easy is it to set up(use different php versions, use different sql clients).
 
 ## Questions and answers
 
