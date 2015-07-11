@@ -51,7 +51,8 @@ Depending on your application and its dependencies the Docker image can be
 either very small, something around few megabytes, or very large, from couple 
 of gigabytes to infinity in theory.
 
-Docker also gives you tools so you can share your application with others with ease.
+Docker also gives you tools so you can share your application with others with 
+ease.
 
 ---
 
@@ -60,6 +61,8 @@ SWITCH SLIDE
 ---
 
 What is a container?
+
+Some of you
 
 From a developer point of view, a container provides an isolated virtual 
 environment for your application.
