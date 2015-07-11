@@ -13,7 +13,7 @@ development environments.
 The talk will also include a brief introduction to Docker itself and how would 
 you introduce it to your team based on our own personal experience, so everyone 
 in your team could leverage the potential that Docker provides to solve your 
-particular problem.
+particular problems.
 
 At the end of the presentation we have planned a small demo that would show the 
 audience how easy it is to use Docker as a platform to develop Drupal based 
