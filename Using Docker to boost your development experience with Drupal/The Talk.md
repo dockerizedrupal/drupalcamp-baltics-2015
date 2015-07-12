@@ -79,6 +79,8 @@ containers on a single host, thats how lightweight they are.
 At the last DockerCon that took place in couple of months ago in USA, San Francisco
 they demod how they managed to run run 250 containers on a Raspberry Pi 2.
 
+https://www.youtube.com/watch?v=MHJmNZSRve0
+
 The underlying techonolgy (namespace isolation and control groups) that Docker 
 itself makes use of are actually provided by Linux kernel itself.
 
