@@ -73,6 +73,8 @@ network interface with host or with other containers, you can also control how
 much resources your applications can consume on the host 
 (memory, CPU, disk I/O and many more).
 
+Containers are very lightweight.
+
 The underlying techonolgy (namespace isolation and control groups) that Docker 
 itself makes use of are actually provided by Linux kernel itself.
 
