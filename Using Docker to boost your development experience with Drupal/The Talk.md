@@ -117,7 +117,7 @@ and all its dependencies and you create containers that are derived from that
 Docker image, which then are created or destroyed on demand just like objects. 
 
 You can share your Docker image with other developers just like you can share
-your class that you have written into a text file, but you can't share Docker 
+your class that you have written as a text file, but you can't share Docker 
 containers because they are the running instances of that image just like 
 objects.
 
