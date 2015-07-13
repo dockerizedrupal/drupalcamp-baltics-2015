@@ -121,6 +121,12 @@ your class that you have written into a text file, but you can't share Docker
 containers because they are the running instances of that image just like 
 objects.
 
+But just so you know, in the future you actually could send a running container 
+from one host to other by creating a full snapshot (memory dump, mutable data 
+etc.) from the container, but this feature is still in an experimental phase. 
+There is a video on YouTube in the official Docker channel where the guys are 
+demonstrating this functionality.
+
 ---
 
 SWITCH SLIDE
