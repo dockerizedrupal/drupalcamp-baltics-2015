@@ -48,11 +48,19 @@ The only requirement to get your application running in 99% of the time is that
 you also need to have Docker installed on that host.
 
 Depending on your application and its dependencies the Docker image can be 
-either very small, something around few megabytes, or very large, from couple 
+either very small, something around few megabytes, or very large, from a couple 
 of gigabytes to infinity in theory.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
+
+---
+
+SWITCH SLIDE
+
+---
+
+What is aa image?
 
 ---
 
