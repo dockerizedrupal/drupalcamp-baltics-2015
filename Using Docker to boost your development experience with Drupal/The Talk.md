@@ -125,8 +125,8 @@ But just so you know, in the future you actually could send a running container
 from one host to another by creating a full snapshot (memory dump, mutable data 
 etc.) from the container, but this feature is still in an experimental phase.
 
-There is a video on YouTube in the official Docker channel where the guys are 
-demonstrating this functionality.
+There is a video from the last DockerCon on YouTube in the official Docker 
+channel where the guys are demonstrating this functionality.
 
 ---
 
