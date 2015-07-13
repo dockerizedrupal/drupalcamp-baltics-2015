@@ -103,7 +103,7 @@ SWITCH SLIDE
 A good example in my opinion how it would be easier for a developer to better 
 grasp the relationship between a Docker image and a Docker container is, if you 
 think about the basic concept of object-oriented programming paradigm, which I'm
-sure you know well, since most of you here are programmers I suppose and if you 
+sure you know well, since most of you here are developers I suppose and if you 
 don't know it yet, then Drupal 8 will definitely force you to learn it.
 
 In OOP you have classes that specifies the structure of data and the behaviour 
