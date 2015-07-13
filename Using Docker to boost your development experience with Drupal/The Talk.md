@@ -60,7 +60,7 @@ SWITCH SLIDE
 
 ---
 
-What is aa image?
+What is an image?
 
 ---
 
