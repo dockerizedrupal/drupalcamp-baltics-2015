@@ -51,7 +51,7 @@ Depending on your application and its dependencies the Docker image can be
 either very small, something around few megabytes, or very large, from a couple 
 of gigabytes to infinity in theory.
 
-Docker also gives you tools so you can share your application with others with 
+Docker also gives you tools so you can share your image with others with 
 ease.
 
 ---
@@ -61,6 +61,8 @@ SWITCH SLIDE
 ---
 
 What is an image?
+
+A Docker image is a read-only template for your containers. 
 
 ---
 
@@ -91,6 +93,25 @@ https://www.youtube.com/watch?v=MHJmNZSRve0
 
 The underlying techonolgy (namespace isolation and control groups) that Docker 
 itself makes use of are actually provided by Linux kernel itself.
+
+---
+
+SWITCH SLIDE
+
+---
+
+A good example in my opinion how it would be easier for a developer to grasp 
+the relationship between a Docker image and a Docker container is, if you think 
+about the Object Oriented programming concepts.
+
+In OOP you have classes that specifies the data structure and the behaviour of 
+your objects. It's a template/blueprint for your objects.
+
+The same concept can be applied to Docker images and Docker containers.
+
+Docker image in this case is like a class that contains your application code 
+and all its dependencies and you create containers that are derived from a 
+Docker images, which are 
 
 ---
 
