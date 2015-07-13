@@ -100,9 +100,9 @@ SWITCH SLIDE
 
 ---
 
-A good example in my opinion how it would be easier for a developer to grasp 
-the relationship between a Docker image and a Docker container is, if you think 
-about the Object Oriented programming concepts.
+A good example in my opinion how it would be easier for a developer to better 
+grasp the relationship between a Docker image and a Docker container is, if you 
+think about the Object Oriented programming concepts.
 
 In OOP you have classes that specifies the data structure and the behaviour of 
 your objects. It's a template/blueprint for your objects.
