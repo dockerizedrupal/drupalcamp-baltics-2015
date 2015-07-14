@@ -143,6 +143,8 @@ SWITCH SLIDE
 
 ---
 
+So how did we end up using Docker in our development environments?
+
 The timing was perfect, because one of our developers ruined his whole development environment by changing all the files and directories permissions to apache
 
     sudo chown -R www-data.www-data /
