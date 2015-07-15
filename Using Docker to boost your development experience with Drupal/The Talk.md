@@ -75,20 +75,22 @@ What is a container?
 From a developer point of view, a container provides an isolated virtual 
 environment for your application.
 
-This means that your application process is completely isolated from other 
+This means that your application process is securely isolated from other 
 processes on the same host.
 
-It can have a separate network interface or share a network interface with host 
-or with other containers, you can also control how much resources your 
-applications can have on the host. You may want to limit the memory consumption 
-to specific value if for example you run multiple containers on the host for 
-the same application.
+It can have a separate network interface or share a network interface with 
+host's interface or with other containers, you can also control how much 
+resources your applications can have on the host. You may want to limit the 
+memory consumption to specific value if for example you run multiple containers 
+on the same host for the same application.
 
+, CPU, disk space and many more).
 
-, CPU, disk I/O and many more).
+You can even limit the disk space that your application could have access to.
 
-Because you have such a fine control of resources that can apply for your 
-application you can also get all the necessary metrics for you application.
+Because you have such a fine control of resource allocation, Docker also gives 
+you tools to get the necessary metrics for your application, which you can use
+monitor you application.
 
 Containers are very lightweight. You could run hundreds, even thousands of 
 containers on a single host, thats how lightweight they are.
