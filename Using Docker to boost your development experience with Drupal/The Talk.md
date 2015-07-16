@@ -160,6 +160,7 @@ The timing was perfect, because one of our developers ruined his whole developme
 
 ---
 
+
 so now that everyone are prepared for what comes next, let's start the presentation
 
 Exactly a year ago I found this tool called Docker.
