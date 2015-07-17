@@ -177,7 +177,6 @@ Docker skyrocketed my productivity immensely. It molded my thinking in a way tha
 From that day on I never
 
 
-
 ## Backlog
 
 Why have we decided to use Docker in our work environment?
