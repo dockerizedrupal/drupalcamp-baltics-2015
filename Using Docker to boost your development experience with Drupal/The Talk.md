@@ -11,7 +11,7 @@ SWITCH SLIDE
 ---
 
 My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I 
-have about 4 years of experience with Drupal professionally.
+have about 3 and a half years of experience with Drupal professionally.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally.
@@ -41,7 +41,7 @@ SWITCH SLIDE
 So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
-application and all its dependencies that it needs in order to run into an 
+application and all of its dependencies that it needs in order to run into an 
 image, which you can run in any host.
 
 The only requirement to get your application running in 99% of the time is that 
@@ -62,7 +62,20 @@ SWITCH SLIDE
 
 What is an image?
 
-A Docker image is a read-only template for your containers. 
+A Docker image is a read-only template for your application. Basically an image 
+is a collection of files that your application needs in order to run.
+
+It is very similar conceptually to Tar, which is a collection of files and 
+directories which you can move around as a single unit. Docker image is exactly 
+like that.
+
+Everytime you want to run your application, first you have to deploy your 
+Docker image to your server and create a container from it which is the running 
+instance of your application.
+
+So the idea that you can pack your application and all of its dependencies into 
+a single unit removes so much of the complexity when deploying your application 
+or sharing it with your coworkers.
 
 ---
 
@@ -123,7 +136,7 @@ The same concept can be applied for the relationship between Docker images and
 Docker containers.
 
 Docker image in this case is like a class that contains your application code 
-and all its dependencies and you create containers that are derived from that 
+and all of its dependencies and you create containers that are derived from that 
 Docker image, which then are created or destroyed on demand just like objects. 
 
 You can share your Docker image with other developers just like you can share
