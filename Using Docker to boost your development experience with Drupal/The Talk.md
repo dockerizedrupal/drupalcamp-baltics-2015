@@ -69,6 +69,26 @@ It is very similar conceptually to a tarball, which is a collection of files
 and directories which you can move around as a single unit. Docker image is 
 exactly like that.
 
+There are many ways how you can build a Docker image. You can build an image
+either by hand or in an automated way.
+
+The problem building an image by hand is that for example if you have already
+built your image, it has all the dependencies that your application needs in 
+order to run and you are required to make a change (updating a library) to that 
+image later on, lets say a month goes by and the change will not be done by 
+you, but by another developer that didn't build this image himself and he got 
+it from you. He probably don't have any clue how the image was made and what 
+exactly is in this image. So basically you gave him a black box, which is very 
+hard to work with.
+
+Fortunately 
+
+ lets say you forgot to install a dependency that your application definitely needs in order to run, the only way you can do it is by repeating all the steps 
+
+it then it's almost 
+impossible hard to tell how it was built in the and what exactly is in this image. 
+So the preferred way to build Docker images is to do it from a Dockerfile.
+
 Every time you want to run your application, first you have to deploy your 
 Docker image to your server and create a container from it which is the running 
 instance of your application.
@@ -76,6 +96,8 @@ instance of your application.
 So the idea that you can pack your application and all of its dependencies into 
 a single unit removes so much of the complexity when deploying your application 
 or sharing it with other developers.
+
+
 
 ---
 
