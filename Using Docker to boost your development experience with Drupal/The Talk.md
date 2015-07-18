@@ -65,17 +65,17 @@ What is an image?
 A Docker image is a read-only template for your application. Basically an image 
 is a collection of files that your application needs in order to run.
 
-It is very similar conceptually to Tar, which is a collection of files and 
-directories which you can move around as a single unit. Docker image is exactly 
-like that.
+It is very similar conceptually to a tarball, which is a collection of files 
+and directories which you can move around as a single unit. Docker image is 
+exactly like that.
 
-Everytime you want to run your application, first you have to deploy your 
+Every time you want to run your application, first you have to deploy your 
 Docker image to your server and create a container from it which is the running 
 instance of your application.
 
 So the idea that you can pack your application and all of its dependencies into 
 a single unit removes so much of the complexity when deploying your application 
-or sharing it with your coworkers.
+or sharing it with other developers.
 
 ---
 
