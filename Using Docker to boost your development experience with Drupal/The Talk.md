@@ -224,6 +224,8 @@ A developer 90% of the time doesn’t event relize that he/she is working woth D
 
 The famous matrix of hell.
 
+You should alwasy include third party libraries etc to your Docker project
+
 ## Questions and answers
 
 Make sure to write down any unanswered questions and get back to the questioner as soon as you have the answer. Don't forget to ask them contact details!
