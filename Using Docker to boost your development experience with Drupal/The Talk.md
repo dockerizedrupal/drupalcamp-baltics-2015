@@ -16,7 +16,7 @@ have about 3 and a half years of experience with Drupal professionally.
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally.
 
-So that now everyone knows briefly who we are, lets talk about Drupal and 
+So now that everyone knows briefly who we are, lets talk about Drupal and 
 Docker. How can these two technologies work together and why you should care.
 
 Rise your hand if you have used Docker already in your development environment.
@@ -47,12 +47,14 @@ image, which you can run in any host.
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
 
-Depending on your application and its dependencies the Docker image can be 
-either very small, something around few megabytes, or very large, from a couple 
-of gigabytes to infinity in theory.
-
 Docker also gives you tools so you can share your image with others with 
 ease.
+
+That is I think the most high level explanation I could think of how to 
+describe Docker to you.
+
+Yes, there is obviously more to Docker that this, but we in this presentaion 
+will focus on that part mostly.
 
 ---
 
@@ -69,25 +71,40 @@ It is very similar conceptually to a tarball, which is a collection of files
 and directories which you can move around as a single unit. Docker image is 
 exactly like that.
 
+Depending on your application and its dependencies the Docker image can be 
+either very small, something around few megabytes, or very large, from a couple 
+of gigabytes to infinity in theory.
+
 There are many ways how you can build a Docker image. You can build an image
 either by hand or in an automated way.
 
 The problem building an image by hand is that for example if you have already
-built your image, it has all the dependencies that your application needs in 
-order to run and you are required to make a change (updating a library) to that 
-image later on, lets say a month goes by and the change will not be done by 
-you, but by another developer that didn't build this image himself and he got 
-it from you. He probably don't have any clue how the image was made and what 
-exactly is in this image. So basically you gave him a black box, which is very 
-hard to work with.
+built your image, you have added all the dependencies that your application 
+needs in order to run, but you are required to make a change to that image 
+later on.
 
-Fortunately 
+For example you may need to update a library that your applications is using or 
+patch a vulnerabilty.
+
+And lets say a month goes by and the change will not be done by 
+you, but by another developer that didn't build this image himself. 
+
+He probably don't have any clue how the image was made and what 
+exactly is packed into this image.
+
+You basically gave him a black box, which is very hard to work with. I guarantee that even you at this point can't remember exactly how you built the image.
+
+I guess you can see the issue here?
+
+Fortunately there is a better way to do it.
+
+You can build Docker images by writing down the instructions into a file.
+
 
  lets say you forgot to install a dependency that your application definitely needs in order to run, the only way you can do it is by repeating all the steps 
 
 it then it's almost 
 impossible hard to tell how it was built in the and what exactly is in this image. 
-So the preferred way to build Docker images is to do it from a Dockerfile.
 
 Every time you want to run your application, first you have to deploy your 
 Docker image to your server and create a container from it which is the running 
