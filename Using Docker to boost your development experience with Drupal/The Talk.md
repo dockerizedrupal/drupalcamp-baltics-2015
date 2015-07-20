@@ -53,8 +53,14 @@ ease.
 That is I think the most high level explanation I could think of how to 
 describe Docker to you.
 
-Yes, there is obviously more to Docker that this, but we in this presentaion 
-will focus on that part mostly.
+There is much more to Docker than I have managed to describe in this high level 
+description, but we will focus mostly on that part in this presentation.
+
+So the goal of this presentation is to introduce Docker to ordinary Drupal 
+developer who is currently using standard LAMP setup on their development 
+environment and would like to improve their overall development experience 
+with Drupal, so they can concentrate more on the code and less on configuring 
+their development environments.
 
 ---
 
