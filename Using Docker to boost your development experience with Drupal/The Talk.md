@@ -16,6 +16,12 @@ have about 3 and a half years of experience with Drupal professionally.
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally.
 
+---
+
+SWITCH SLIDE
+
+---
+
 So now that everyone knows briefly who we are, lets talk about Drupal and 
 Docker. How can these two technologies work together and why you should care.
 
@@ -53,14 +59,8 @@ ease.
 That is I think the most high level explanation I could think of how to 
 describe Docker to you.
 
-There is much more to Docker than I have managed to describe in this high level 
-description, but we will focus mostly on that part in this presentation.
-
-So the goal of this presentation is to introduce Docker to ordinary Drupal 
-developer who is currently using standard LAMP setup on their development 
-environment and would like to improve their overall development experience 
-with Drupal, so they can concentrate more on the code and less on configuring 
-their development environments.
+There is much more to Docker than I have managed to describe in this short 
+description, but we will focus mostly on these parts in this presentation.
 
 ---
 
@@ -248,6 +248,8 @@ A developer 90% of the time doesn’t event relize that he/she is working woth D
 The famous matrix of hell.
 
 You should alwasy include third party libraries etc to your Docker project
+
+Presentation link at the start of the presentation
 
 ## Questions and answers
 
