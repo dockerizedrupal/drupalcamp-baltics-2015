@@ -251,6 +251,8 @@ You should alwasy include third party libraries etc to your Docker project
 
 Presentation link at the start of the presentation
 
+Just Do It reference :)
+
 ## Questions and answers
 
 Make sure to write down any unanswered questions and get back to the questioner as soon as you have the answer. Don't forget to ask them contact details!
