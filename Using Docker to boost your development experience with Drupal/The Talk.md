@@ -59,6 +59,8 @@ ease.
 That is I think the most high level explanation I could think of how to 
 describe Docker to you.
 
+important aspects for this prs
+
 There is much more to Docker than I have managed to describe in this short 
 description, but we will focus mostly on these parts in this presentation.
 
@@ -86,8 +88,7 @@ either by hand or in an automated way.
 
 The problem building an image by hand is that for example if you have already
 built your image, you have added all the dependencies that your application 
-needs in order to run, but you are required to make a change to that image 
-later on.
+needs, but you are required to make a change to that image later on.
 
 For example you may need to update a library that your applications is using or 
 patch a vulnerabilty.
@@ -98,13 +99,14 @@ you, but by another developer that didn't build this image himself.
 He probably don't have any clue how the image was made and what 
 exactly is packed into this image.
 
-You basically gave him a black box, which is very hard to work with. I guarantee that even you at this point can't remember exactly how you built the image.
+So you basically gave him a black box, which is very hard to work with. 
+I actually can guarantee that even you at this point can't remember exactly how you built the image.
 
-I guess you can see the issue here?
+I guess you guys can see the issue here?
 
 Fortunately there is a better way to do it.
 
-You can build Docker images by writing down the instructions into a file.
+You can build a Docker images by writing down the instructions into a file. 
 
 
  lets say you forgot to install a dependency that your application definitely needs in order to run, the only way you can do it is by repeating all the steps 
@@ -251,7 +253,7 @@ You should alwasy include third party libraries etc to your Docker project
 
 Presentation link at the start of the presentation
 
-Just Do It reference :)
+Just Do It reference :), don't choke random slides
 
 ## Questions and answers
 
