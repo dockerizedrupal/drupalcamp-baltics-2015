@@ -31,12 +31,13 @@ Do not lower your hands just yet!
 
 Lower your hand if you have not yet used Docker in production.
 
-Those whose hands are still up, you probably won't learn anything new from this 
-talk, so you may stand up and walk out. I'm just kidding guys! Nobody knows 
-everything, so you actually might learn something from this presentation after 
-all.
+Those whose hands are still up, you probably are too advanced already for this 
+talk but we hope that you still can learn something from this presentation, 
+since nobody know everthing, I'm I right?
 
-We at least hope that you do.
+Ok!
+
+So lets start!
 
 ---
 
@@ -48,7 +49,7 @@ So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
 application and all of its dependencies that it needs in order to run into an 
-image, which you can run in any host.
+image, which you can run in any Linux environment.
 
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
@@ -59,10 +60,10 @@ ease.
 That is I think the most high level explanation I could think of how to 
 describe Docker to you.
 
-important aspects for this prs
-
-There is much more to Docker than I have managed to describe in this short 
-description, but we will focus mostly on these parts in this presentation.
+There is obviously much more to Docker than I have managed to describe in this 
+short description, but we will focus mostly on these aspects of Docker in this 
+presentation, since these are most useful features that you should be familiar 
+if you want to boost your development experience with Drupal using Docker.
 
 ---
 
@@ -87,10 +88,10 @@ There are many ways how you can build a Docker image. You can build an image
 either by hand or in an automated way.
 
 The problem building an image by hand is that for example if you have already
-built your image, you have added all the dependencies that your application 
+built an image, you have added all the dependencies that your application 
 needs, but you are required to make a change to that image later on.
 
-For example you may need to update a library that your applications is using or 
+For example you may need to update a library that your application is using or 
 patch a vulnerabilty.
 
 And lets say a month goes by and the change will not be done by 
@@ -243,7 +244,7 @@ Why have we decided to use Docker in our work environment?
 
 Support for different platform
 
-What problems Docker solves and what problems Docker introduces
+What problems Docker solves and what problems Docker introduces (multiple developers)
 
 A developer 90% of the time doesn’t event relize that he/she is working woth Docker while developing in Drupal.
 
