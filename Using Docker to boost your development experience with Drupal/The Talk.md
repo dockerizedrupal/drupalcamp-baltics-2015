@@ -27,13 +27,17 @@ Docker. How can these two technologies work together and why you should care.
 
 Rise your hand if you have used Docker already in your development environment.
 
-Do not lower your hands just yet!
+Keep your hands up for a moment!
 
 Lower your hand if you have not yet used Docker in production.
 
-Those whose hands are still up, you probably are too advanced already for this 
-talk but we hope that you still can learn something from this presentation, 
-since nobody know everthing, I'm I right?
+Those whose hands are still up, you most likely already know everything this 
+presentation is trying to show to the audience, but there
+
+Those whose hands are still up, you may already know everything this 
+presentation is trying to tell to the audience, but there is a high chance that 
+you don't know everything, so you may still learn something new from this 
+presentation. Even if it's a simple concept or an example.
 
 Ok!
 
