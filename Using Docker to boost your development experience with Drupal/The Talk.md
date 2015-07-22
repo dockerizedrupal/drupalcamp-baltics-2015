@@ -63,7 +63,7 @@ describe Docker to you.
 There is obviously much more to Docker than I have managed to describe in this 
 short description, but we will focus mostly on these aspects of Docker in this 
 presentation, since these are the most useful features that you should be familiar 
-if you want to boost your development experience with Drupal using Docker.
+with if you want to boost your development experience with Drupal using Docker.
 
 ---
 
