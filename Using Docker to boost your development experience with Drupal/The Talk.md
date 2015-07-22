@@ -22,7 +22,7 @@ SWITCH SLIDE
 
 ---
 
-So now that everyone knows briefly who we are, lets talk about Drupal and 
+So now that everyone briefly knows who we are, lets talk about Drupal and 
 Docker. How can these two technologies work together and why you should care.
 
 Rise your hand if you have used Docker already in your development environment.
@@ -49,22 +49,35 @@ So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
 application and all of its dependencies that it needs in order to run into an 
-image, which you can run in any Linux environment.
+image, which you can run in any host.
 
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
 
+Docker itself can only run on Linux.
+
 Docker also gives you tools so you can share your image with others with 
 ease.
 
-That is I think the most simple explanation I could think of how to 
-describe Docker to you.
+That is I think the most simple explanation I could think of how to describe 
+Docker to you.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
-presentation, since these are the most useful features that you should be 
+presentation, since these are the most important features that you should be 
 familiar with if you want to boost your development experience with Drupal 
 using Docker.
+
+---
+
+SWITCH SLIDE
+
+---
+
+But wait a minute, you said that Docker can only run on Linux? But what if I'm 
+using Windows or Mac, will I not be able to use Docker then?
+
+
 
 ---
 
