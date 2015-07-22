@@ -57,13 +57,14 @@ you also need to have Docker installed on that host.
 Docker also gives you tools so you can share your image with others with 
 ease.
 
-That is I think the most high level explanation I could think of how to 
+That is I think the most simple explanation I could think of how to 
 describe Docker to you.
 
-There is obviously much more to Docker than I have managed to describe in this 
+There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
-presentation, since these are the most useful features that you should be familiar 
-with if you want to boost your development experience with Drupal using Docker.
+presentation, since these are the most useful features that you should be 
+familiar with if you want to boost your development experience with Drupal 
+using Docker.
 
 ---
 
@@ -89,39 +90,43 @@ either by hand or in an automated way.
 
 The problem building an image by hand is that for example if you have already
 built an image, you have added all the dependencies that your application 
-needs, but you are required to make a change to that image later on.
+needs, but you are required to make a change to that image in the future.
 
 For example you may need to update a library that your application is using or 
 patch a vulnerabilty.
 
-And lets say a month goes by and the change will not be done by 
-you, but by another developer that didn't build this image himself. 
+And lets say a month goes by and the change will not be done by you, but by 
+another developer that didn't build this image himself. 
 
-He probably don't have any clue how the image was made and what 
-exactly is packed into this image.
+He probably don't have any clue how the image was made and what exactly is 
+packed into that image.
 
-So you basically gave him a black box, which is very hard to work with. 
-I actually can guarantee that even you at this point can't remember exactly how you built the image.
+So you literally gave him a black box in a sense, which is very hard to work 
+with. I'm sure even you, the author of the image probably will not remember how 
+exactly you built it yourself.
 
 I guess you guys can see the issue here?
 
-Fortunately there is a better way to do it.
-
-You can build a Docker images by writing down the instructions into a file. 
-
-
- lets say you forgot to install a dependency that your application definitely needs in order to run, the only way you can do it is by repeating all the steps 
-
-it then it's almost 
-impossible hard to tell how it was built in the and what exactly is in this image. 
+Fortunately there is a better way to do it. Docker is able to build an image by 
+reading instructions from a text file. We will be referring to it as Dockerfile 
+in this presentaion as that is the offical name for it.
 
 Every time you want to run your application, first you have to deploy your 
 Docker image to your server and create a container from it which is the running 
 instance of your application.
 
-So the idea that you can pack your application and all of its dependencies into 
-a single unit removes so much of the complexity when deploying your application 
+So the idea that you can put your application and all of its dependencies into 
+a single package, and build the package automatically in a repeatable way 
+removes so much of the complexity when deploying your application to a server 
 or sharing it with other developers.
+
+---
+
+SWITCH SLIDE
+
+---
+
+What is a Dockerfile?
 
 
 
