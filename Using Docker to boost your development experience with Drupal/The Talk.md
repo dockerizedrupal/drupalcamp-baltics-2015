@@ -31,9 +31,6 @@ Keep your hands up for a moment!
 
 Lower your hand if you have not yet used Docker in production.
 
-Those whose hands are still up, you most likely already know everything this 
-presentation is trying to show to the audience, but there
-
 Those whose hands are still up, you may already know everything this 
 presentation is trying to tell to the audience, but there is a high chance that 
 you don't know everything, so you may still learn something new from this 
@@ -52,19 +49,20 @@ SWITCH SLIDE
 So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
-application and all of its dependencies that it needs in order to run into an 
-image, which you can run in any host.
+application and all of its dependencies that it needs in order to run into a 
+package, which you can run in any host.
 
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
 
-Docker itself can only run on Linux.
+Because Docker relies on Linux specific features, you can only run Docker 
+natively on Linux.
 
-Docker also gives you tools so you can share your image with others with 
+Docker also gives you tools so you can share your application with others with 
 ease.
 
-That is I think the most simple explanation I could think of how to describe 
-Docker to you.
+That is I think the most simplified explanation I could think of how to 
+describe Docker to you.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
@@ -81,7 +79,18 @@ SWITCH SLIDE
 But wait a minute, you said that Docker can only run on Linux? But what if I'm 
 using Windows or Mac, will I not be able to use Docker then?
 
+There are many ways how you can run Docker on non Linux environment.
 
+You could always fallback to a traditional virtualization and install for
+example a VirtualBox to your machine and run your prefered Linux distribution 
+on it, then you have full virtualized Linux capabilities on your non Linux 
+machine.
+
+If this 
+
+https://www.reddit.com/r/docker/comments/38l5as/osx_tip_using_dockermachine_vs_boot2docker/
+https://www.reddit.com/r/docker/comments/2osgl7/vagrant_vs_boot2docker/
+http://geoffrey.io/what-is-docker.html
 
 ---
 
