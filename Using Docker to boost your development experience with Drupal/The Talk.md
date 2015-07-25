@@ -4,7 +4,6 @@ Hi guys!
 
 Before we start with the actual presentation let us first introduce ourselves.
 
-
 ---
 
 SWITCH SLIDE
