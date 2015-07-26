@@ -1,12 +1,18 @@
 # The Talk
 
+---
+
+SWITCH SLIDE #1
+
+---
+
 Hi guys!
 
 Before we start with the actual presentation let us first introduce ourselves.
 
 ---
 
-SWITCH SLIDE
+SWITCH SLIDE #2
 
 ---
 
@@ -15,12 +21,6 @@ have about 3 and a half years of experience with Drupal professionally.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally.
-
----
-
-SWITCH SLIDE
-
----
 
 So now that everyone briefly knows who we are, lets talk about Drupal and 
 Docker. How can these two technologies work together and why you should care.
@@ -42,7 +42,7 @@ So lets start!
 
 ---
 
-SWITCH SLIDE
+SWITCH SLIDE #3
 
 ---
 
@@ -61,8 +61,8 @@ natively on Linux, but there are ways how you run it on non Linux host as well.
 Docker also gives you tools so you can share your application with others with 
 ease.
 
-That is I think the most simplified explanation I could think of how to
-describe Docker to someone easily.
+That is I think the most simplified high level explanation I could think of how 
+I would describe Docker to someone very briefly.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
@@ -76,8 +76,7 @@ SWITCH SLIDE
 
 ---
 
-But wait a minute, you said that Docker can only run on Linux? But what if I'm 
-using Windows or Mac, will I not be able to use Docker then?
+Running Docker on non Linux environment is fortunately possible.
 
 There are many ways how you can run Docker on non Linux environment.
 
