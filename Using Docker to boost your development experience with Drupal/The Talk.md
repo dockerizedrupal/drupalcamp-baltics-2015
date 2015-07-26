@@ -32,9 +32,9 @@ Keep your hands up for a moment!
 Lower your hand if you have not yet used Docker in production.
 
 Those whose hands are still up, you may already know everything this 
-presentation is trying to tell to the audience, but there is a high chance that 
-you don't know everything, so you may still learn something new from this 
-presentation. Even if it's a simple concept or an example.
+presentation is going to present to the audience, but there is a high chance 
+that you don't know everything, so you may still learn something new from this 
+talk.
 
 Ok!
 
@@ -56,13 +56,13 @@ The only requirement to get your application running in 99% of the time is that
 you also need to have Docker installed on that host.
 
 Because Docker relies on Linux specific features, you can only run Docker 
-natively on Linux.
+natively on Linux, but there are ways how you run it on non Linux host as well.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
 
-That is I think the most simplified explanation I could think of how to 
-describe Docker to you.
+That is I think the most simplified explanation I could think of how to
+describe Docker to someone easily.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
