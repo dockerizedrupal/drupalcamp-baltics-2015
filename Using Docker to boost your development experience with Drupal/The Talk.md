@@ -50,19 +50,20 @@ So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
 application and all of its dependencies that it needs in order to run into a 
-package, which you can run in any host.
+standardized package, which you can run in any host.
 
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
 
-Because Docker relies on Linux specific features, you can only run Docker 
-natively on Linux, but there are ways how you run it on non Linux host as well.
+Because Docker relies heavily on Linux specific features, you can currently run 
+Docker natively only on Linux, but there are multiple ways how you can run it 
+on non Linux host as well.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
 
 That is I think the most simplified high level explanation I could think of how 
-I would describe Docker to someone very briefly.
+I would describe Docker to a Drupal developer very briefly.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
@@ -72,9 +73,27 @@ using Docker.
 
 ---
 
-SWITCH SLIDE
+SWITCH SLIDE #4
 
 ---
+
+At the beginning Docker used Linux Containers more widely known as LXC as the default execution 
+environment for the backend, which is heavily dependent on Linux as the name implies.
+
+To solve that particular problem Docker now supports different execution 
+drivers so your application could run potentially on any operating system that 
+supports operating-system-level virtualization.
+
+Docker developers have also developed their own execution driver called 
+libcontainer to replace LXC on Linux systems.
+
+
+
+But 
+
+At the beginning Docker 
+
+The reason why Docker currently only runs on Linux is because it relies on very specific features that Linux kernel already has built in. Namely 
 
 Running Docker on non Linux environment is fortunately possible.
 
@@ -285,6 +304,9 @@ You should alwasy include third party libraries etc to your Docker project
 Presentation link at the start of the presentation
 
 Just Do It reference :), don't choke random slides
+
+As of this summer Docker announced that they will be donating parts of its plumbing to The Open Container Project which is supported by the industry leaders around the world 
+to make - ath the end of the talk as confidence
 
 ## Questions and answers
 
