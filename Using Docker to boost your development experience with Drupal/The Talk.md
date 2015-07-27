@@ -8,7 +8,7 @@ SWITCH SLIDE #1
 
 Hi guys!
 
-TITLE
+refer to TITLE
 
 but, before we start with the actual presentation let us first introduce ourselves.
 
@@ -59,7 +59,7 @@ you also need to have Docker installed on that host.
 
 Because Docker relies heavily on Linux specific features, you can currently run 
 Docker natively only on Linux, but there are multiple ways how you can run it 
-on non Linux host as well.
+on non Linux hosts as well.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
@@ -87,29 +87,23 @@ The issue with LXC is that it's heavily dependent on Linux as the name implies.
 To solve that particular problem Docker now supports different execution 
 drivers so your application could run potentially on any operating system that 
 supports operating-system-level virtualization and has a execution driver 
-implemnted for Docker such as FreeBSD.
+implemented for Docker such as FreeBSD which currenly has an experimental 
+driver for Docker.
 
 Docker developers have also developed their own execution driver called 
 libcontainer to replace LXC on Linux systems so they could have more control 
-over runtime 
+over the runtime.
 
-that it's a separate project on its own and it doesn't provide everything that Docker developers are aming for with this project.
-
-
-But 
-
-At the beginning Docker 
-
-The reason why Docker currently only runs on Linux is because it relies on very specific features that Linux kernel already has built in. Namely 
-
-Running Docker on non Linux environment is fortunately possible.
-
-There are many ways how you can run Docker on non Linux environment.
-
-You could always fallback to a traditional virtualization and install for
+On operating systems that doesn't support operating-system-level virtualization 
+you could always fallback to a traditional fully virtualized environments and install for
 example a VirtualBox to your machine and run your prefered Linux distribution 
-on it, then you have full virtualized Linux capabilities on your non Linux 
+on it, then you have fully virtualized Linux capabilities on your non Linux 
 machine.
+
+
+The problem with plain VirtualBox is that you have to manually set up your 
+network and volumes so you could work on your Drupal projects from your host 
+comfortably
 
 If this 
 
