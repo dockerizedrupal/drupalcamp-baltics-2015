@@ -8,7 +8,9 @@ SWITCH SLIDE #1
 
 Hi guys!
 
-Before we start with the actual presentation let us first introduce ourselves.
+TITLE
+
+but, before we start with the actual presentation let us first introduce ourselves.
 
 ---
 
