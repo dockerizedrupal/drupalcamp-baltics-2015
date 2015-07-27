@@ -79,16 +79,21 @@ SWITCH SLIDE #4
 
 ---
 
-At the beginning Docker used Linux Containers more widely known as LXC as the default execution 
-environment for the backend, which is heavily dependent on Linux as the name implies.
+At the beginning Docker used Linux Containers more widely known as LXC as the 
+default execution environment for the backend.
+
+The issue with LXC is that it's heavily dependent on Linux as the name implies.
 
 To solve that particular problem Docker now supports different execution 
 drivers so your application could run potentially on any operating system that 
-supports operating-system-level virtualization.
+supports operating-system-level virtualization and has a execution driver 
+implemnted for Docker such as FreeBSD.
 
 Docker developers have also developed their own execution driver called 
-libcontainer to replace LXC on Linux systems.
+libcontainer to replace LXC on Linux systems so they could have more control 
+over runtime 
 
+that it's a separate project on its own and it doesn't provide everything that Docker developers are aming for with this project.
 
 
 But 
@@ -307,8 +312,7 @@ Presentation link at the start of the presentation
 
 Just Do It reference :), don't choke random slides
 
-As of this summer Docker announced that they will be donating parts of its plumbing to The Open Container Project which is supported by the industry leaders around the world 
-to make - ath the end of the talk as confidence
+As of this summer Docker announced that they will be donating parts of its plumbing to The Open Container Project which is hosted by The Linux Foundation and is supported by the industry leaders around the world. The mission of The Open Container Project is to create open industry standards around container formats and runtime. The war is now officially over, which means you can invest in Docker.
 
 ## Questions and answers
 
