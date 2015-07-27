@@ -87,8 +87,8 @@ The issue with LXC is that it's heavily dependent on Linux as the name implies.
 To solve that particular problem Docker now supports different execution 
 drivers so your application could run potentially on any operating system that 
 supports operating-system-level virtualization and has a execution driver 
-implemented for Docker such as FreeBSD which currenly has an experimental 
-driver for Docker.
+implemented for Docker such as FreeBSD which has an experimental driver for 
+Docker as we speak.
 
 Docker developers have also developed their own execution driver called 
 libcontainer to replace LXC on Linux systems so they could have more control 
