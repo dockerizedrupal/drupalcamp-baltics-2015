@@ -273,7 +273,15 @@ SWITCH SLIDE
 
 ---
 
-So how did we end up using Docker in our development environments?
+So now that we have given you a somewhat short explanation about the most 
+useful Docker features that you should know, I'm now going to talk about why we 
+at Fenomen decided to use Docker for our development environment for developing 
+Drupal.
+
+If I'm very honest with you, then the reason how we ended up using Docker in 
+our development environment was by accident. So let me tell you a little story.
+
+One day one of our junior developer
 
 The timing was perfect, because one of our developers ruined his whole development environment by changing all the files and directories permissions to apache
 
