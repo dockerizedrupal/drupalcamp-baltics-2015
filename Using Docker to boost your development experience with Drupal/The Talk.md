@@ -155,8 +155,8 @@ exactly you built it yourself.
 I guess you guys can see the issue here?
 
 Fortunately there is a better way to do it. Docker is able to build an image by 
-reading instructions from a text file. We will be referring to it as Dockerfile 
-in this presentaion as that is the offical name for it.
+reading instructions from a text file. Docker officially calls it as 
+Docekrfile.
 
 Every time you want to run your application, first you have to deploy your 
 Docker image to your server and create a container from it which is the running 
@@ -174,6 +174,12 @@ SWITCH SLIDE
 ---
 
 What is a Dockerfile?
+
+---
+
+SWITCH SLIDE
+
+---
 
 
 
@@ -222,8 +228,8 @@ SWITCH SLIDE
 
 ---
 
-A good example in my opinion how it would be easier for a developer to better 
-grasp the idea between a Docker image and a Docker container is, if you 
+A good example in my opinion how it might be easier for you to understand the 
+relationship between a Docker image and a Docker container is, if you 
 think about the basic concept of object-oriented programming paradigm, which I'm
 sure you know well, since most of you here are developers I suppose. If you 
 don't know it yet, then Drupal 8 definitely forces you to learn it, which is
@@ -232,11 +238,11 @@ a good thing.
 In OOP you have classes that specifies the structure of data and the behaviour 
 of your objects. It's basically a template or blueprint for your objects.
 
-The same concept can be applied for the relationship between Docker images and 
+The same concept can be applied to the relationship between Docker images and 
 Docker containers.
 
 Docker image in this case is like a class that contains your application code 
-and all of its dependencies and you create containers that are derived from that 
+and all of its dependencies and you can create containers that are derived from that 
 Docker image, which then are created or destroyed on demand just like objects. 
 
 You can share your Docker image with other developers just like you can share
