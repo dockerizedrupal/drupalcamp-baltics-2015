@@ -85,10 +85,10 @@ default execution environment for the backend.
 The issue with LXC is that it's heavily dependent on Linux as the name implies.
 
 To solve that particular problem Docker now supports different execution 
-drivers so your application could run potentially on any operating system that 
+drivers so your application in theory could run potentially on any operating system that 
 supports operating-system-level virtualization and has a execution driver 
-implemented for Docker such as FreeBSD which has an experimental driver for 
-Docker as we speak.
+implemented for Docker such as FreeBSD which at this time has an experimental driver 
+for Docker.
 
 Docker developers have also developed their own execution driver called 
 libcontainer to replace LXC on Linux systems so they could have more control 
@@ -103,7 +103,9 @@ machine.
 
 The problem with plain VirtualBox is that you have to manually set up your 
 network and volumes so you could work on your Drupal projects from your host 
-comfortably
+comfortably.
+
+Another option is to use 
 
 If this 
 
