@@ -275,7 +275,7 @@ SWITCH SLIDE
 
 So now that we have given you a somewhat short explanation about the most 
 useful Docker features that you should know, I'm now going to talk about why we 
-at Fenomen decided to use Docker for our development environment for developing 
+at Fenomen switched from standard LAMP setup to Docker for our development environment for developing 
 Drupal.
 
 If I'm very honest with you, then the reason how we ended up using Docker in 
