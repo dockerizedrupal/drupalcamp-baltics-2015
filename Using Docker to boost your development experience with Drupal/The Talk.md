@@ -273,19 +273,56 @@ SWITCH SLIDE
 
 ---
 
-So now that we have given you a somewhat short explanation about the most 
-useful Docker features that you should know, I'm now going to talk about why we 
-switched from standard LAMP setup to Docker for our development environment for 
-developing Drupal at Fenomen.
+So now that you know what Docker is, how it works and what should you look for 
+if you want to install it on your machine.
 
-If I'm very honest with you, then the reason how we ended up using Docker in 
-our development environment was by accident. So let me tell you a little story.
+We will now going to talk about why we switched our development environments 
+from standard LAMP setup to Docker for developing Drupal projects at Fenomen.
 
-One day one of our junior developer
+And maybe you are experiencing the same issues as we did and our experience 
+using Docker could help you resolve them.
 
-The timing was perfect, because one of our developers ruined his whole development environment by changing all the files and directories permissions to apache
+If I'm very honest with you, then the real reason why we ended up using Docker 
+in our development environment was by accident. So you may think now what 
+exactly then we tryed to fix in our work processes. So to get the better idea, 
+let me start with by telling you a little story.
+
+Last year in October one of our junior developer's was working on a project. 
+Nothing unusual there, but because he was working on a Linux, at that time he 
+was not very experienced with it, but he had an issue with the project file 
+permissions and he thought that he could safely resolve it by himself, but what 
+happened was the opposite.
+
+So the command that he accidentally entered into the terminal was following:
 
     sudo chown -R www-data.www-data /
+
+Yes, you can laugh if you want!
+
+For those who don't know what this command does, it changes every file 
+and directory ownership to www-data. The command in this case were executed as 
+superuser, which makes it extra dangerous. So the outcome after executing it, 
+is that your machine is basically broken, because services running on your 
+machine can't properly access files and directories anymore.
+
+So the first thing what he did after he realized that his system was unusable, 
+he notified me. At first I tryed to recover as much as possible by hand so he 
+could at least continue his work for the day, because reinstalling an operating 
+system and configuring services would have taken us more time than we had been 
+given.
+
+But unfortunately the effort I put into trying to recover the system was not 
+enough.
+
+Because the incident happened in the middle of the week, we had only one choice 
+to resolve it considering the knowledge that we had at that time. In short, we 
+backed up all the necessary files, reinstalled the OS and installed all the 
+standard services and tools that a Drupal developer may need in his work.
+
+Properly configured machine took more than half a day to set up, because we are 
+using phpfarm on our systems to be able to use multiple PHP versions in 
+parallel on a single host and the documentation that we had was not up-to-date 
+and didn't work out of the box for Ubuntu, so we had to 
 
 ---
 
@@ -325,6 +362,12 @@ Presentation link at the start of the presentation
 Just Do It reference :), don't choke random slides
 
 As of this summer Docker announced that they will be donating parts of its plumbing to The Open Container Project which is hosted by The Linux Foundation and is supported by the industry leaders around the world. The mission of The Open Container Project is to create open industry standards around container formats and runtime. The war is now officially over, which means you can invest in Docker.
+
+Conclusion - don't take this mission by your own, it will be very hard, try to 
+involve your organization into as well so they can support you from the high level, 
+but in the end it's worht it because if everyone is doing they work properly 
+then your work is also easter due that. Tools like Docker allow everyone to do 
+they work better.
 
 ## Questions and answers
 
