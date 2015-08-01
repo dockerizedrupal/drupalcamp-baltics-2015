@@ -277,13 +277,10 @@ SWITCH SLIDE
 
 ---
 
-So now that you know what Docker is, how it works and what should you look for 
-if you want to install it on your machine.
+So now that you guys have seen a little demonstration that should give you a better idea 
+how Docker works and should know should you look for if you want to install it on your machine.
 
-You have also seen a little demonstration that should give you a better idea 
-how Docker works.
-
-We will now going to talk about why we switched our development environments 
+We will now going to talk about why and how we switched our development environments 
 from standard LAMP setup to Docker for developing Drupal projects at Fenomen.
 
 And maybe you are experiencing the same issues as we did and our experience 
@@ -294,7 +291,7 @@ in our development environment was by accident. So you may think now what
 exactly then we tryed to fix in our work processes. So to get the better idea, 
 let me start with by telling you a little story.
 
-Last year in October one of our junior developer's was working on a project. 
+Last year in October one of our junior developers was working on a project. 
 Nothing unusual there, but because he was working on a Linux, at that time he 
 was not very experienced with it, but he had an issue with the project file 
 permissions and he thought that he could safely resolve it by himself, but what 
@@ -332,10 +329,10 @@ parallel on a single host and the documentation that we had was not up-to-date
 and didn't work out of the box for Ubuntu, so we had to deal with that as well. 
 
 For the rest of the week we still had to install or configure some of the 
-services because we obviously had forgotten to install or configure them at he 
+services because we obviously had forgotten to install or configure them all at he 
 beginning.
 
-So when the weekend arrived I started to think about the issue more and how 
+So when the weekend arrived I started to think about the issue more closely and how 
 could we resolve it or make it a little bit more efficient, because the current 
 manual process for that was too costly. Nobody pays for that kind of work or mistakes.
 
@@ -345,12 +342,24 @@ that it's the right tool to make this process more efficient.
 
 The initial plan I had, was to simulate exactly the same workflow that we had 
 using the standard LAMP setup. So I create basic Docker images for Apache, 
-MySQL and PHP and because at that time there was no official tool that could 
+MySQL and PHP and because at that time there was no tool known to me that could 
 manage those services running in a separate containers as a single service, I 
-create a simple shell script for that as well, which basically allowed user to start, stop and retsart the services.
+create a simple shell script for that as well, which basically allowed user to 
+start, stop and retsart the services on his own without knowing Docker at all.
 
-Fast forward to a couple weeks I had a setup that I was happy with. I 
-replaced my development environment completely to Docker.
+Fast forward to a couple of weeks I had a setup that I was personally happy with. Either Drupal 6 and 7 projects
+were working fine on that environment.
+
+So I replaced my development environment completely with Docker.
+
+But because the plan was to ultimately replace standard LAMP setups for other 
+developers as well, I still had some work to do, beacuse the current setup 
+required you to know Docker too much.
+
+So yeah, I started working on resolving these issues.
+
+The first and the most critical issue was Drush. How to use Drush in a 
+relatively comfortable way with containers. 
 
 because I didn't what to introduce lots of 
 changes to other developers.
