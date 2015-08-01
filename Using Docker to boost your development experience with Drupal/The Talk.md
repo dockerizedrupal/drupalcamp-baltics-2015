@@ -1,6 +1,5 @@
 # The Talk
 
-
 ---
 
 SWITCH SLIDE #1
@@ -20,7 +19,7 @@ SWITCH SLIDE #2
 ---
 
 My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I 
-have about 3 and a half years of experience with Drupal professionally.
+have about three and a half years of experience with Drupal professionally.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally. Also, this is my 
@@ -41,9 +40,7 @@ presentation is going to present to the audience, but there is a high chance
 that you don't know everything, so you may still learn something new from this 
 talk.
 
-Ok!
-
-So lets start!
+Ok, so lets start!
 
 ---
 
@@ -61,7 +58,7 @@ The only requirement to get your application running in 99% of the time is that
 you also need to have Docker installed on that host.
 
 Because Docker relies heavily on Linux specific features, you can currently run 
-Docker natively only on Linux, but there are multiple ways how you can run it 
+Docker natively only on Linux, but there are lots of ways how you can run it 
 on non Linux hosts as well.
 
 Docker also gives you tools so you can share your application with others with 
@@ -89,8 +86,8 @@ The issue with LXC is that it's heavily dependent on Linux as the name implies.
 
 To solve that particular problem Docker now supports different execution 
 drivers so your application in theory could run potentially on any operating system that 
-supports operating-system-level virtualization and has a execution driver 
-implemented for Docker such as FreeBSD which at this time has an experimental driver 
+supports operating-system-level virtualization and has an execution driver 
+implemented for Docker such as FreeBSD which at this time already has an experimental driver 
 for Docker.
 
 Docker developers have also developed their own execution driver called 
@@ -115,6 +112,11 @@ If this
 https://www.reddit.com/r/docker/comments/38l5as/osx_tip_using_dockermachine_vs_boot2docker/
 https://www.reddit.com/r/docker/comments/2osgl7/vagrant_vs_boot2docker/
 http://geoffrey.io/what-is-docker.html
+
+Bear in mind that the specifics that we are going to talk about in this 
+presentation applies to running Docker natively on Linux and the implementation 
+could differ a little bit if you are running Docker for example on Mac with 
+boot2docker. But the high level concept shoudl remain the same.
 
 ---
 
@@ -145,8 +147,8 @@ needs, but you are required to make a change to that image in the future.
 For example you may need to update a library that your application is using or 
 patch a vulnerabilty.
 
-And lets say a month goes by and the change will not be done by you, but by 
-another developer that didn't build this image himself. 
+And lets say several months goes by and the change will not be done by you, but 
+by another developer that didn't build this image himself. 
 
 He probably don't have any clue how the image was made and what exactly is 
 packed into that image.
@@ -234,9 +236,10 @@ SWITCH SLIDE
 A good example in my opinion how it might be easier for you to understand the 
 relationship between a Docker image and a Docker container is, if you 
 think about the basic concept of object-oriented programming paradigm, which I'm
-sure you know well, since most of you here are developers I suppose. If you 
-don't know it yet, then Drupal 8 definitely forces you to learn it, which is
-a good thing.
+sure you know well, since most of you here are developers I suppose.
+
+If you don't know it yet, then Drupal 8 definitely forces you to learn it, 
+which is a good thing.
 
 In OOP you have classes that specifies the structure of data and the behaviour 
 of your objects. It's basically a template or blueprint for your objects.
@@ -276,6 +279,9 @@ SWITCH SLIDE
 
 So now that you know what Docker is, how it works and what should you look for 
 if you want to install it on your machine.
+
+You have also seen a little demonstration that should give you a better idea 
+how Docker works.
 
 We will now going to talk about why we switched our development environments 
 from standard LAMP setup to Docker for developing Drupal projects at Fenomen.
@@ -323,7 +329,31 @@ standard services and tools that a Drupal developer may need in his work.
 Properly configured machine took more than half a day to set up, because we are 
 using phpfarm on our systems to be able to use multiple PHP versions in 
 parallel on a single host and the documentation that we had was not up-to-date 
-and didn't work out of the box for Ubuntu, so we had to 
+and didn't work out of the box for Ubuntu, so we had to deal with that as well. 
+
+For the rest of the week we still had to install or configure some of the 
+services because we obviously had forgotten to install or configure them at he 
+beginning.
+
+So when the weekend arrived I started to think about the issue more and how 
+could we resolve it or make it a little bit more efficient, because the current 
+manual process for that was too costly. Nobody pays for that kind of work or mistakes.
+
+So fortunately I had already used Docker myself but not for solving that kind
+of a problem and the more I thought about it the more Docker made sense to me 
+that it's the right tool to make this process more efficient.
+
+The initial plan I had, was to simulate exactly the same workflow that we had 
+using the standard LAMP setup. So I create basic Docker images for Apache, 
+MySQL and PHP and because at that time there was no official tool that could 
+manage those services running in a separate containers as a single service, I 
+create a simple shell script for that as well, which basically allowed user to start, stop and retsart the services.
+
+Fast forward to a couple weeks I had a setup that I was happy with. I 
+replaced my development environment completely to Docker.
+
+because I didn't what to introduce lots of 
+changes to other developers.
 
 ---
 
