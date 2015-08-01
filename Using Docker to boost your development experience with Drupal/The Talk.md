@@ -434,6 +434,8 @@ but in the end it's worht it because if everyone is doing they work properly
 then your work is also easter due that. Tools like Docker allow everyone to do 
 they work better.
 
+Docker hub - lots of official images, encourage to make your own
+
 ## Questions and answers
 
 Make sure to write down any unanswered questions and get back to the questioner as soon as you have the answer. Don't forget to ask them contact details!
