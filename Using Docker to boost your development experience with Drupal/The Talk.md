@@ -340,17 +340,17 @@ So fortunately I had already used Docker myself but not for solving that kind
 of a problem and the more I thought about it the more Docker made sense to me 
 that it's the right tool to make this process more efficient.
 
-The initial plan I had, was to simulate exactly the same workflow that we had 
-using the standard LAMP setup. So I create basic Docker images for Apache, 
-MySQL and PHP and because at that time there was no tool known to me that could 
+The initial plan I had, was to simulate exactly the same workflow that we have been 
+using already with the standard LAMP setup. So I create basic Docker images for Apache, 
+MySQL, PHP, Memcache, Phpmymadmin etc and because at that time there was no tool known to me that could 
 manage those services running in a separate containers as a single service, I 
-create a simple shell script for that as well, which basically allowed user to 
+created a simple shell script for that as well, which basically allowed user to 
 start, stop and retsart the services on his own without knowing Docker at all.
 
-Fast forward to a couple of weeks I had a setup that I was personally happy with. Either Drupal 6 and 7 projects
+Fast forward to a couple of weeks I had a setup that I was personally happy with. Either Drupal version 6 and 7 projects
 were working fine on that environment.
 
-So I replaced my development environment completely with Docker.
+So I migrated my development environment completely to Docker.
 
 But because the plan was to ultimately replace standard LAMP setups for other 
 developers as well, I still had some work to do, beacuse the current setup 
@@ -359,10 +359,35 @@ required you to know Docker too much.
 So yeah, I started working on resolving these issues.
 
 The first and the most critical issue was Drush. How to use Drush in a 
-relatively comfortable way with containers. 
+relatively comfortable way with containers. Let me give you an example.
 
-because I didn't what to introduce lots of 
-changes to other developers.
+Without doing anything the workflow would look following, when a dveloper wants to 
+use Drush he/she has to enter the PHP container, find the right directory where 
+Drupal is mounted and execute Drush commands there. But this workflow isn't 
+that intuitive, because using Drush should be easy as possible.
+
+To solve that I have created a shell script, which is a proxy for Drush and you install it 
+directly onto your host. This proxy script basically proxies all your Drush commands
+to inside the container and also detetcts if the containers are not running and 
+if they aren't, it will ask you if you want to start them.
+
+The script has been proven to be working pretty well. Most of the time a developer 
+don't even know that he is using Docker as his developement environment and Drush 
+is actually executed inside the container.
+
+The second issue that had to be solved was networking, because every service 
+that we used was living in a separate container and they don't share the network 
+interface with each other. So if a developer wanted to connect for example to 
+MySQL database from his PHP script in this case Drupal, he had to know how Docker 
+networking works, but my goal in the first stage was not to introduce Docker to our team but to 
+solve the problem with provisioning development environment efficiently. So I 
+used this tool called socat in the PHP image, which allows you to relay network 
+traffic between two independent channels. So basically what I did was that the 
+external services that PHP had to had access to I relayd from PHP container local 
+network to other containers, so the developer could use externals services seamlessly 
+as if they were living on the same machine (127.0.0.1, localhost etc).
+
+Once the networking was solved
 
 ---
 
