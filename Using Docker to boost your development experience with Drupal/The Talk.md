@@ -168,7 +168,7 @@ Docker image to your server and create a container from it which is the running
 instance of your application.
 
 So the idea that you can put your application and all of its dependencies into 
-a single package, and build the package automatically in a repeatable way 
+a single standardized package, and build the package automatically in a repeatable way 
 removes so much of the complexity when deploying your application to a server 
 or sharing it with other developers.
 
