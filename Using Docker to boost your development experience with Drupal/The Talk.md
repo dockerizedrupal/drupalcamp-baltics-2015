@@ -422,7 +422,7 @@ let us solve another issue very easily.
 So the main problem with the current setup, where you have a single Apache, 
 MySQL and PHP containers shared by all your Drupal projects is for 
 example if your Drupal project requires some service or extension that is very 
-specific to the project, then you need to 
+specific to that project, then you need to 
 have some kind of a system in place where you can use project specific Docker 
 images. This is because not everything should go into general images.
 
