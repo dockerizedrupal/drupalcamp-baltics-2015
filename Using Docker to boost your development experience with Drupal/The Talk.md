@@ -283,7 +283,7 @@ how Docker works and what should you look for if you want to install it on your 
 We will now going to talk about why and how we switched our development environments 
 from standard LAMP setup to Docker for developing Drupal projects at Fenomen.
 
-And maybe you are experiencing the same issues as we did and our experience 
+And maybe you are experiencing the same issues as we did and our experience and workflow 
 using Docker could help you resolve them.
 
 If I'm very honest with you, then the real reason why we ended up using Docker 
