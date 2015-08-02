@@ -205,7 +205,7 @@ processes on the same host.
 It can have a separate network interface or share a network interface with 
 host's interface or with other containers, you can also control how much 
 resources your applications can have on the host. You may want to limit the 
-memory consumption to specific value if for example you run multiple containers 
+memory consumption to a specific value if for example you run multiple containers 
 on the same host for the same application.
 
 , CPU, disk space and many more).
