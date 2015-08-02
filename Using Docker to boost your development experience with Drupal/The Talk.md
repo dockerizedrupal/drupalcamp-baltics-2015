@@ -214,7 +214,7 @@ You can even limit the disk space that your application could have access to.
 
 Because you have such a fine control of resource allocation, Docker also gives 
 you tools to get the necessary metrics for your application, which you can use
-to monitor you application.
+to monitor your application.
 
 Containers are very lightweight. You could run hundreds, even thousands of 
 containers on a single host, thats how lightweight they are.
