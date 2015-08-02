@@ -416,16 +416,37 @@ debugging problems with Drupal or your environment much easier. Because if you
 fix an issue on developers machine you can deploy it easly to others as well.
 
 So we were using this setup a couple of months more during which we had achieved a very stable environment to work on.
-And after some time we discovered this tool called Fig which is now know as Docker Compose and this 
+And after some time we discovered this tool called Fig which is now known as Docker Compose and this 
 let us solve another issue very easily.
 
-So the issue with the current setup, where you have a single Apache container, MySQL container, PHP container etc shared 
-by all your Drupals projects, if for example your Drupal project requires some 
-service or PHP extension that is very specific to the project, then you need to 
-have some kind of a system in place where you have project specific Docker images.
+So the main problem with the current setup, where you have a single Apache, 
+MySQL and PHP containers shared by all your Drupal projects is for 
+example if your Drupal project requires some service or extension that is very 
+specific to the project, then you need to 
+have some kind of a system in place where you can use project specific Docker 
+images. This is because not everything should go into general images.
 
-And Docker Compose allowed us to solve exactly that problem. So the next step 
-was to give every porject its own containers. 
+And Docker Compose allowed us to solve exactly that problem.
+
+So the next logical step was to create a general purpose docker-compose.yml 
+file for Drupal 6, 7 and 8 which covers 90% of Drupal project requirements.
+
+Every dockerized Drupal project should have this file, it's the initial developer 
+responsibility to make sure that this file exists on every project. 
+
+To make this requirement easier to manage, I've created a simple shell script 
+that generates this general purpose docekr-compose.yml file automatically and 
+the name for this script is Drupal Compose.
+
+And if the standard docker-compose.yml file is not sufficient enough then it's 
+every developer responsibility to make a change to it if he has done some changes 
+to environment (creating new Docker images, or setting other parameters for the 
+general images etc).
+
+So now that we have a system and a process in place which allows us to define 
+project specific environment configurations for our projects, then again no 
+matter what is your skill level, you can start working on every Drupal project 
+immediately, and you don't have to know the details how some services work for this project.
 
 ***So we started solving one issue that could have been sovled without Docker as well, 
 but by using Docker to solve that we made some great imrpovements in other fields as well.
