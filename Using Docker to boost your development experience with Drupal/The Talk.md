@@ -168,7 +168,7 @@ Docker image to your server and create a container from it which is the running
 instance of your application.
 
 So the idea that you can put your application and all of its dependencies into 
-a single standardized package, and build the package automatically in a repeatable way 
+a single package, and build the package automatically in a repeatable way 
 removes so much of the complexity when deploying your application to a server 
 or sharing it with other developers.
 
@@ -205,7 +205,7 @@ processes on the same host.
 It can have a separate network interface or share a network interface with 
 host's interface or with other containers, you can also control how much 
 resources your applications can have on the host. You may want to limit the 
-memory consumption to a specific value if for example you run multiple containers 
+memory consumption to specific value if for example you run multiple containers 
 on the same host for the same application.
 
 , CPU, disk space and many more).
@@ -214,7 +214,7 @@ You can even limit the disk space that your application could have access to.
 
 Because you have such a fine control of resource allocation, Docker also gives 
 you tools to get the necessary metrics for your application, which you can use
-to monitor your application.
+to monitor you application.
 
 Containers are very lightweight. You could run hundreds, even thousands of 
 containers on a single host, thats how lightweight they are.
@@ -283,7 +283,7 @@ how Docker works and what should you look for if you want to install it on your 
 We will now going to talk about why and how we switched our development environments 
 from standard LAMP setup to Docker for developing Drupal projects at Fenomen.
 
-And maybe you are experiencing the same issues as we did and our experience and workflow 
+And maybe you are experiencing the same issues as we did and our experience 
 using Docker could help you resolve them.
 
 If I'm very honest with you, then the real reason why we ended up using Docker 
@@ -422,7 +422,7 @@ let us solve another issue very easily.
 So the main problem with the current setup, where you have a single Apache, 
 MySQL and PHP containers shared by all your Drupal projects is for 
 example if your Drupal project requires some service or extension that is very 
-specific to that project, then you need to 
+specific to the project, then you need to 
 have some kind of a system in place where you can use project specific Docker 
 images. This is because not everything should go into general images.
 
@@ -447,6 +447,8 @@ So now that we have a system and a process in place which allows us to define
 project specific environment configurations for our projects, then again no 
 matter what is your skill level, you can start working on every Drupal project 
 immediately, and you don't have to know the details how some services work for this project.
+
+***cordova sass/less reference
 
 ***So we started solving one issue that could have been sovled without Docker as well, 
 but by using Docker to solve that we made some great imrpovements in other fields as well.
