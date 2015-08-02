@@ -278,7 +278,7 @@ SWITCH SLIDE
 ---
 
 So now that you guys have seen a little demonstration that should give you a better idea 
-how Docker works and should know should you look for if you want to install it on your machine.
+how Docker works and what should you look for if you want to install it on your machine.
 
 We will now going to talk about why and how we switched our development environments 
 from standard LAMP setup to Docker for developing Drupal projects at Fenomen.
@@ -341,19 +341,21 @@ of a problem and the more I thought about it the more Docker made sense to me
 that it's the right tool to make this process more efficient.
 
 The initial plan I had, was to simulate exactly the same workflow that we have been 
-using already with the standard LAMP setup. So I create basic Docker images for Apache, 
-MySQL, PHP, Memcache, Phpmymadmin etc and because at that time there was no tool known to me that could 
+using already with the standard LAMP setup. So I created basic Docker images for Apache, 
+MySQL and PHP etc and because at that time there was no tool known to me that could 
 manage those services running in a separate containers as a single service, I 
 created a simple shell script for that as well, which basically allowed user to 
 start, stop and retsart the services on his own without knowing Docker at all.
 
+// SILDE images graph
+
 Fast forward to a couple of weeks I had a setup that I was personally happy with. Either Drupal version 6 and 7 projects
-were working fine on that environment.
+were working without any major issues on that environment.
 
 So I migrated my development environment completely to Docker.
 
-But because the plan was to ultimately replace standard LAMP setups for other 
-developers as well, I still had some work to do, beacuse the current setup 
+But because the plan was to ultimately replace standard LAMP setups for other
+developers as well, I still had some work to do, because the current setup
 required you to know Docker too much.
 
 So yeah, I started working on resolving these issues.
@@ -362,32 +364,72 @@ The first and the most critical issue was Drush. How to use Drush in a
 relatively comfortable way with containers. Let me give you an example.
 
 Without doing anything the workflow would look following, when a dveloper wants to 
-use Drush he/she has to enter the PHP container, find the right directory where 
+use Drush he/she has to enter the PHP container, move to the right directory where 
 Drupal is mounted and execute Drush commands there. But this workflow isn't 
-that intuitive, because using Drush should be easy as possible.
+that intuitive, because using Drush should be easy and problem-free.
 
 To solve that I have created a shell script, which is a proxy for Drush and you install it 
 directly onto your host. This proxy script basically proxies all your Drush commands
-to inside the container and also detetcts if the containers are not running and 
+to inside the container and also detects if the containers are running and 
 if they aren't, it will ask you if you want to start them.
 
 The script has been proven to be working pretty well. Most of the time a developer 
-don't even know that he is using Docker as his developement environment and Drush 
-is actually executed inside the container.
+that is using it don't even know that he is using Docker and Drush 
+is actually executed inside the PHP container.
 
 The second issue that had to be solved was networking, because every service 
 that we used was living in a separate container and they don't share the network 
 interface with each other. So if a developer wanted to connect for example to 
 MySQL database from his PHP script in this case Drupal, he had to know how Docker 
 networking works, but my goal in the first stage was not to introduce Docker to our team but to 
-solve the problem with provisioning development environment efficiently. So I 
+solve the problem with provisioning development environments efficiently. So I 
 used this tool called socat in the PHP image, which allows you to relay network 
 traffic between two independent channels. So basically what I did was that the 
 external services that PHP had to had access to I relayd from PHP container local 
 network to other containers, so the developer could use externals services seamlessly 
 as if they were living on the same machine (127.0.0.1, localhost etc).
 
-Once the networking was solved
+Once these two major issues were resolved I started to migrate Docker based development 
+environments to other two developers that were willing to try it after I had 
+given them a brief explanation how this can benefit them in the short term and 
+in the long term. Fortunately they were agreed to try it.
+
+So now that we had a usable development setup that replaced the standard LAMP 
+setup, we had lowered the provisioning from more than half a day to about 45 minutes. 
+this includes installing the OS as well.
+
+After a couple of months went by saw other improvements in terms of developing Drupal 
+projects besides getting your development environment up and running as fast as possible.
+
+For example, if one of the developers had to use for example a
+Memcache in his project, we created a simple Docker image for that and deployed it
+to every other developer that were using Docker (at that time there were three os us). This basically gave a developer
+that never ever had used or configured Memcached before the possibility to use
+it without knowing how to configure it. Which is a very powerful thing to have, 
+beacuse no matter what skill level you are, you are able to put your effort more 
+into the development part than configuring your environment to make this project work.
+
+In time we had created Redis, PHPmyadmin, Adminer etc images and everyone that 
+were using Docker could use them, they
+all worked consistently the same way on every developers machine, which made 
+debugging problems with Drupal or your environment much easier. Because if you 
+fix an issue on developers machine you can deploy it easly to others as well.
+
+So we were using this setup a couple of months more during which we had achieved a very stable environment to work on.
+And after some time we discovered this tool called Fig which is now know as Docker Compose and this 
+let us solve another issue very easily.
+
+So the issue with the current setup, where you have a single Apache container, MySQL container, PHP container etc shared 
+by all your Drupals projects, if for example your Drupal project requires some 
+service or PHP extension that is very specific to the project, then you need to 
+have some kind of a system in place where you have project specific Docker images.
+
+And Docker Compose allowed us to solve exactly that problem. So the next step 
+was to give every porject its own containers. 
+
+***So we started solving one issue that could have been sovled without Docker as well, 
+but by using Docker to solve that we made some great imrpovements in other fields as well.
+
 
 ---
 
