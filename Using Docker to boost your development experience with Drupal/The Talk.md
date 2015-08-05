@@ -504,6 +504,8 @@ Docker hub - lots of official images, encourage to make your own
 
 tsintra example native vs docker setup time
 
+simple lamp (simple days) vs complicated stack (multiple services)
+
 ## Questions and answers
 
 Make sure to write down any unanswered questions and get back to the questioner as soon as you have the answer. Don't forget to ask them contact details!
