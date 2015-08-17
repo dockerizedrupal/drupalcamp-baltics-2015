@@ -70,14 +70,14 @@ So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
 application and all of its dependencies that it needs in order to run into a 
-standardized package, which you can run in any host.
+standardized package, which you can run in virtually any host.
 
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
 
 Because Docker relies heavily on Linux specific features, you can currently run 
-Docker natively only on Linux, but there are lots of ways official and 
-non-official how you can run it on non Linux hosts as well.
+Docker natively only on Linux, but there are official and unofficial ways how 
+you can run it on non Linux hosts as well.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
