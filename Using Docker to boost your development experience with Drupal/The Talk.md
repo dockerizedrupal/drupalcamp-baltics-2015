@@ -21,10 +21,10 @@ receive.
 So I feel that it's my responsibility to make my first real contribution to 
 Drupal community by giving this small talk with my colleague Mait.
 
-My Name is Mait and I work for Fenomen web agency as well. I have been working 
-with Drupal a little bit more than a year professionally. Also, this is my 
-first DrupalCamp, so i'm very delighted that I have given the opportunity to be 
-here in front of you, fellow Drupal enthusiasts to have fun.
+Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
+working with Drupal a little bit more than a year professionally. Also, this is 
+my first DrupalCamp, so i'm very delighted that I have given the opportunity to 
+be here in front of you, fellow Drupal enthusiasts.
 
 So now that everyone briefly knows who we are, lets talk about Drupal and 
 Docker. How can these two technologies work together and why you should care.
