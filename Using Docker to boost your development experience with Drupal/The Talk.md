@@ -15,9 +15,11 @@ knowledge and opinions publicly with others.
 
 However I like to believe that the fear to fail in front of an audience 
 shouldn't be the dictating factor not to do it, because if our goal is to 
-improve ours and others work, it's more sustainable to give receive. 
+improve ours and other people work, then it's more sustainable to give than 
+receive.
 
-So this would be my first real contribution to Drupal community.
+So I feel that it's my responsibility to make my first real contribution to 
+Drupal community.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally. Also, this is my 
