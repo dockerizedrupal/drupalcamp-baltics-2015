@@ -38,35 +38,25 @@ SWITCH SLIDE #2
 Like most of the presentations out there, we have given a title to this one as 
 well, which is "Using Docker to boost your development experience with Drupal".
 
-We have divided this talk into three major sections.
+We have divided this talk into two major parts.
 
-The first section introduces Docker, what exactly is it and how it works.
+The first part introduces Docker, what exactly is it and how it works. On 
+second part we will be discussing how we at Fenomen ended up using Docker and 
+what problems it helped us to solve when developing Drupal based projects.
 
-The key points that we expect that you should take from this talk are following:
+Raise your hand if you have already used Docker in your development 
+environment.
 
-The key thing here is to remember that most of the views in this talk are 
-described through eyes of the Drupal developer, so it would be somewhat easier 
-to grasp the information.
+Lower your hand if you have used Docker in your development environment but 
+not yet in production.
 
-What we expect
+So for some of you this presentation may be a bit boring because you probably 
+already know most of the stuff we are going to address in this talk, since 
+using Docker in production in my opinion requires most of the knowledge as 
+using it on a development environment anyways.
 
-So, we are here to give you a small talk about Drupal and Docker. The title of this 
-presentation is "Using Docker to boost your development experience with Drupal,
-but before we start with the actual presentation let us first introduce 
-ourselves.
-
-Rise your hand if you have used Docker already in your development environment.
-
-Keep your hands up for a moment!
-
-Lower your hand if you have not yet used Docker in production.
-
-Those whose hands are still up, you may already know everything this 
-presentation is going to present to the audience, but there is a high chance 
-that you don't know everything, so you may still learn something new from this 
-talk.
-
-Ok, so lets start!
+Despite that there is a high chance that you don't know everything, so you may 
+still learn something new from this talk.
 
 ---
 
