@@ -14,9 +14,9 @@ unfortunately at the same time I don't have any real experience sharing my
 knowledge and opinions publicly with others.
 
 However I like to believe that the fear to fail in front of an audience 
-shouldn't be the dictating factor not to do it, because if our goal is to 
-improve ours and other people's work, then it's more sustainable to give than 
-receive.
+shouldn't be the dictating factor not to do it, because if the goal is to 
+improve their own and other people's work, then it's more sustainable to give 
+than receive.
 
 So I feel that it's my responsibility to make my first real contribution to 
 Drupal community by giving this small talk with my colleague Mait.
@@ -37,6 +37,16 @@ SWITCH SLIDE #2
 
 The title of this presentation is "Using Docker to boost your development 
 experience with Drupal".
+
+We have divided this talk into three major sections.
+
+The first sections introduces Docker, what exactly it is and how it works.
+
+The key points that we expect that you should take from this talk are following:
+
+The key thing here is to remember that most of the views in this talk are 
+described through eyes of the Drupal developer, so it would be somewhat easier 
+to grasp the information.
 
 What we expect
 
