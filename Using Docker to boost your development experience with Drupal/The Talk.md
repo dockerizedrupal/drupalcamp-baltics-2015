@@ -19,7 +19,7 @@ improve ours and other people's work, then it's more sustainable to give than
 receive.
 
 So I feel that it's my responsibility to make my first real contribution to 
-Drupal community by giving this talk with my colleague Mait.
+Drupal community by giving this small talk with my colleague Mait.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally. Also, this is my 
