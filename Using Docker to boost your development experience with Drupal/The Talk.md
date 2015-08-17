@@ -8,10 +8,10 @@ SWITCH SLIDE #1
 
 Hello guys!
 
-My name is Jürgen, I am a full time Drupal developer at Fenomen web agency. I 
+My name is Jürgen, I'm a full time Drupal developer at Fenomen web agency. I 
 have about three and a half years of experience with Drupal professionally, but 
 unfortunately at the same time I don't have any real experience sharing my 
-knowledge and opinions publicly with others.
+knowledge and opinions publicly to others.
 
 However I like to believe that the fear to fail in front of an audience 
 shouldn't be the dictating factor not to do it, because if the goal is to 
@@ -23,7 +23,7 @@ Drupal community by giving this small talk with my good colleague Mait.
 
 Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
 working with Drupal a little bit more than a year professionally. Also, this is 
-my first DrupalCamp, so i'm very delighted that I have given the opportunity to 
+my first DrupalCamp, so I'm very delighted that I have given the opportunity to 
 be here in front of you, fellow Drupal enthusiasts.
 
 So now that everyone briefly knows who we are, lets talk about Drupal and 
@@ -40,7 +40,7 @@ well, which is "Using Docker to boost your development experience with Drupal".
 
 We have divided this talk into three major sections.
 
-The first sections introduces Docker, what exactly it is and how it works.
+The first section introduces Docker, what exactly is it and how it works.
 
 The key points that we expect that you should take from this talk are following:
 
@@ -84,8 +84,8 @@ The only requirement to get your application running in 99% of the time is that
 you also need to have Docker installed on that host.
 
 Because Docker relies heavily on Linux specific features, you can currently run 
-Docker natively only on Linux, but there are lots of ways how you can run it 
-on non Linux hosts as well.
+Docker natively only on Linux, but there are lots of ways official and 
+non-official how you can run it on non Linux hosts as well.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
@@ -122,8 +122,8 @@ over the runtime.
 
 On operating systems that doesn't support operating-system-level virtualization 
 you could always fallback to a traditional fully virtualized environments and install for
-example a VirtualBox to your machine and run your prefered Linux distribution 
-on it, then you have fully virtualized Linux capabilities on your non Linux 
+example a good old VirtualBox to your machine and run your prefered Linux distribution 
+on it, then you have a fully virtualized Linux capabilities on your non Linux 
 machine.
 
 
@@ -231,7 +231,7 @@ processes on the same host.
 It can have a separate network interface or share a network interface with 
 host's interface or with other containers, you can also control how much 
 resources your applications can have on the host. You may want to limit the 
-memory consumption to specific value if for example you run multiple containers 
+memory consumption to a specific value if for example you run multiple containers 
 on the same host for the same application.
 
 , CPU, disk space and many more).
@@ -243,7 +243,7 @@ you tools to get the necessary metrics for your application, which you can use
 to monitor you application.
 
 Containers are very lightweight. You could run hundreds, even thousands of 
-containers on a single host, thats how lightweight they are.
+containers on a single host, that's how lightweight they are.
 
 At the last DockerCon that took place in couple of months ago in USA, San Francisco
 they demod how they managed to run run 250 containers on a Raspberry Pi 2.
@@ -283,7 +283,7 @@ containers because they are the running instances of that image just like
 objects.
 
 But just so you know, in the future you actually could send a running container 
-from one host to another by creating a full snapshot (memory dump, mutable data 
+from one host to another by creating a full snapshot (which imcludes memory dump, mutable data 
 etc.) from the container, but this feature is still in an experimental phase.
 
 There is a video from the last DockerCon on YouTube in the official Docker 
@@ -313,8 +313,8 @@ And maybe you are experiencing the same issues as we did and our experience
 using Docker could help you resolve them.
 
 If I'm very honest with you, then the real reason why we ended up using Docker 
-in our development environment was by accident. So you may think now what 
-exactly then we tryed to fix in our work processes. So to get the better idea, 
+in our development environment was actually by accident. So you may think now what 
+exactly then we tried to fix in our work processes. So to get the better idea, 
 let me start with by telling you a little story.
 
 Last year in October one of our junior developers was working on a project. 
@@ -323,7 +323,7 @@ was not very experienced with it, but he had an issue with the project file
 permissions and he thought that he could safely resolve it by himself, but what 
 happened was the opposite.
 
-So the command that he accidentally entered into the terminal was following:
+So the command that he entered into the terminal was following:
 
     sudo chown -R www-data.www-data /
 
@@ -336,7 +336,7 @@ is that your machine is basically broken, because services running on your
 machine can't properly access files and directories anymore.
 
 So the first thing what he did after he realized that his system was unusable, 
-he notified me. At first I tryed to recover as much as possible by hand so he 
+he notified me. At first I tried to recover as much as possible by hand so he 
 could at least continue his work for the day, because reinstalling an operating 
 system and configuring services would have taken us more time than we had been 
 given.
@@ -351,7 +351,7 @@ standard services and tools that a Drupal developer may need in his work.
 
 Properly configured machine took more than half a day to set up, because we are 
 using phpfarm on our systems to be able to use multiple PHP versions in 
-parallel on a single host and the documentation that we had was not up-to-date 
+parallel on a single host and the documentation that we had at that time was not up-to-date 
 and didn't work out of the box for Ubuntu, so we had to deal with that as well. 
 
 For the rest of the week we still had to install or configure some of the 
@@ -534,6 +534,8 @@ simple lamp (simple days) vs complicated stack (multiple services)
 old habbits - nativae sass vs docker sass, how to overcome
 
 docker toolbox
+
+destruction promotes growth
 
 ## Questions and answers
 
