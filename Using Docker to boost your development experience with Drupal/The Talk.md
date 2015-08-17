@@ -54,8 +54,8 @@ You all may now lower your hands.
 
 So for some of you this presentation may be a bit boring because you probably 
 already know most of the stuff we are going to address in this talk, since 
-using Docker in production in my opinion requires the knowledge as you would 
-need to know when using it on a development environment anyways.
+using Docker in production in my opinion requires most of the same knowledge 
+as you would need to know when using it on a development environment anyways.
 
 Despite that there is a high chance that you don't know everything, so you may 
 still learn something new from this talk. At least we hope so.
