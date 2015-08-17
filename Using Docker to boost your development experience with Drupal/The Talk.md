@@ -35,6 +35,11 @@ SWITCH SLIDE #2
 
 ---
 
+The title of this presentation is "Using Docker to boost your development 
+experience with Drupal".
+
+What we expect
+
 So, we are here to give you a small talk about Drupal and Docker. The title of this 
 presentation is "Using Docker to boost your development experience with Drupal,
 but before we start with the actual presentation let us first introduce 
