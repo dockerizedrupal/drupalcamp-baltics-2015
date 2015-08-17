@@ -10,16 +10,14 @@ Hello guys!
 
 My name is Jürgen, I am a full time Drupal developer at Fenomen web agency. I 
 have about three and a half years of experience with Drupal professionally, but 
-unfortunately at the same time I don't have any previous experience sharing my 
+unfortunately at the same time I don't have any real experience sharing my 
 knowledge and opinions publicly with others.
 
 However I like to believe that the fear to fail in front of an audience 
-shouldn't be the dictating factor not to do it, because I think 
+shouldn't be the dictating factor not to do it, because if our goal is to 
+improve ours and others work, it's more sustainable to give receive. 
 
-is still worth the effort to 
-share my know-how with like minded people.
-
-
+So this would be my first real contribution to Drupal community.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally. Also, this is my 
