@@ -6,20 +6,21 @@ SWITCH SLIDE #1
 
 ---
 
-Hi guys!
+Hello guys!
 
-refer to TITLE
+My name is Jürgen, I am a full time Drupal developer at Fenomen web agency. I 
+have about three and a half years of experience with Drupal professionally, but 
+unfortunately at the same time I don't have any previous experience sharing my 
+knowledge and opinions in front of an audience.
 
-but, before we start with the actual presentation let us first introduce ourselves.
+However I still beileve that overcoming the struggle is still worth it to share my know how
+with like minded people.
+ 
+ which is a bummer, because I 
+beileve that I have accumulated some knowledge working with Drupal
 
----
-
-SWITCH SLIDE #2
-
----
-
-My name is Jürgen, I am a full time Drupal developer in Fenomen web agency. I 
-have about three and a half years of experience with Drupal professionally.
+really would like to share 
+my know how and opinions with like-minded people about Drupal.
 
 My Name is Mait and I work for Fenomen web agency as well. I have been working 
 with Drupal a little bit more than a year professionally. Also, this is my 
@@ -28,6 +29,17 @@ here in front of you, fellow Drupal enthusiasts to have fun.
 
 So now that everyone briefly knows who we are, lets talk about Drupal and 
 Docker. How can these two technologies work together and why you should care.
+
+---
+
+SWITCH SLIDE #2
+
+---
+
+So, we are here to give you a small talk about Drupal and Docker. The title of this 
+presentation is "Using Docker to boost your development experience with Drupal,
+but before we start with the actual presentation let us first introduce 
+ourselves.
 
 Rise your hand if you have used Docker already in your development environment.
 
