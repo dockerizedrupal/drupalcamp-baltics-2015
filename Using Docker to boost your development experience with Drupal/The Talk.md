@@ -110,7 +110,7 @@ favourite is VirtualBox. It can run on so many different hosts and supports
 large number of guest operating systems including Linux.
 
 The primary downside using plain VirtualBox or any other hypervisor like that
-is that you have to do most of the initial configuration yourself.
+is that you have to do most of the initial configuration yourself manually.
 
 Provisioning a guest operating system may also be a bit overwhelming for some 
 people.
@@ -119,7 +119,7 @@ Normally developers are not interested in wasting their time configuring their
 environment, but instead they just want to get their development environment up 
 and running as fast as possible so they could start working on the project.
 
-So this option may not work for everybody.
+So just using VirtualBox to run Docker may not work for everybody.
 
 The other option is to use VirtualBox in combination with Vagrant.
 
