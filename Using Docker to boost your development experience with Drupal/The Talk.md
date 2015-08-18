@@ -58,7 +58,8 @@ using Docker in production in my opinion requires most of the same knowledge
 as you would need to know when using it in a development environment anyways.
 
 Despite that there is a high chance that you don't know everything, so you may 
-still learn something new from this talk. At least we hope you do.
+still learn something new from this talk, because the landscape is still 
+changing quite rapidly.
 
 ---
 
@@ -96,6 +97,8 @@ using Docker.
 SWITCH SLIDE #4
 
 ---
+
+As we mentioned earlier
 
 At the beginning Docker used Linux Containers more widely known as LXC as the 
 default execution environment for the backend.
