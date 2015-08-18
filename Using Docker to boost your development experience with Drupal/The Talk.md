@@ -55,10 +55,10 @@ You all may now lower your hands.
 So for some of you this presentation may be a bit boring because you probably 
 already know most of the stuff we are going to address in this talk, since 
 using Docker in production in my opinion requires most of the same knowledge 
-as you would need to know when using it on a development environment anyways.
+as you would need to know when using it in a development environment anyways.
 
 Despite that there is a high chance that you don't know everything, so you may 
-still learn something new from this talk. At least we hope so.
+still learn something new from this talk. At least we hope you do.
 
 ---
 
@@ -70,7 +70,7 @@ So what is Docker?
 
 Docker is a piece of technology that allows you, the developer, to wrap your 
 application and all of its dependencies that it needs in order to run into a 
-standardized package, which you can run in virtually any host.
+standardized package, which you can run virtually in any host.
 
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
