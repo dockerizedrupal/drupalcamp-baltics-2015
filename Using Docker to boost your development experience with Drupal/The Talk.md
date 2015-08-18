@@ -98,8 +98,8 @@ SWITCH SLIDE #4
 
 ---
 
-Docker only runs natively on Linux, however not everyone is using Linux as 
-their primary development environment.
+Docker only runs natively on Linux, however not everyone is using Linux today 
+as their primary development environment.
 
 Fortunately, there are multiple options for running Docker on a non Linux 
 machines.
@@ -138,8 +138,11 @@ If you are already using Vagrant, then this option is probably best for you.
 
 The next option is to use native execution driver API that Docker natively 
 provides. However as of today there are only a couple of drivers implemented 
-for Docker, One is libcontainer that is meant to be run on Linux which utilized 
-the Linux kernel features to provide operating system level virtualization. 
+for Docker and they are mostly for Linux only.
+ 
+The default for Linux is libcontainer which utilizes the Linux kernel features 
+to provide operating system level virtualization. 
+
 This would be also the method you would you if you would run a Linux on a virtual 
 machine. The key point here to remember is that dependeing on the driver operating 
 system level virtualization only allowes you to run guest operatyng systems the same
