@@ -109,8 +109,8 @@ traditional virtual machines. My personal favourite is VirtualBox. It can run
 on so many different hosts and supports large number of guest operating systems 
 including Linux.
 
-The primary downside using plain VirtualBox or any other hypervisor is that you 
-have to do most of the initial configuration yourself.
+The primary downside using plain VirtualBox or any other hypervisor like that
+is that you have to do most of the initial configuration yourself.
 
 Provisioning a guest operating system may also be a bit overwhelming for some 
 people.
@@ -121,27 +121,58 @@ and running as fast as possible so they could start working on the project.
 
 So this option may not work for everybody.
 
-The other option is to use VirtualBox in combination with Vagrant, which can be
-run on Linux, Mac and Windows.
+The other option is to use VirtualBox in combination with Vagrant.
+
+Vagrant today can run on Linux, Mac and Windows.
 
 Some of you here may already be using Vagrant, but are probably provisioning 
 the guest operating system with the more widely used provisioners like shell, 
 Ansible, Puppet etc.
  
 This is a well known and working setup to get your development environment 
-up and running but since this presentation is mostly about Docker you can take 
-a step further and provision your guest operating system and manage Docker on 
+up and running but since this presentation is mostly about Docker we can take 
+a step further and provision the guest operating system and manage Docker on 
 it with Vagrant as well, since it has an official provisioner created to 
 support Docker.
 
 If you are already using Vagrant, then this option is probably best for you.
 
-The next option is to use native execution driver API that Docker natively 
-provides. However as of today there are only a couple of drivers implemented 
+The next option is to use execution drivers that Docker natively makes use 
+of on operating systems that are supporting operating-system-level 
+virtualization.
+
+I don't want to go into much further detail on explaining what is the
+difference between whole-system virtualization and operating-system-level
+virtualization at this time, but the basic idea is that in a whole-system
+virtualization you have the whole system virtualized, the operating system
+kernel and applications running on it. This allows you to run different
+operating systems on your host, for example you can run Windows on Linux and 
+vice versa. This functionality is provided by the hypervisor like VirtualBox.
+
+However in operating-system-level virtualization the host's kernel is shared 
+with your guest operating system, which means that the virtualization is done 
+by host's kernel itself. For that reason operating-system-level virtualization 
+is not as flexible as the whole-system virtualization, because you can't run 
+for example applications written for Windows on your Linux host.
+
+But the benefit that operating-system-level virtualization gives you is that
+your virtualized applications are running natively on your host machine. From 
+the performance point of view operating-system-level virtualization doesn't 
+need extra resources for virtualizing your application, which means that we can
+have a process isolation without any loss to the efficiency at that host.
+ 
+ that doesn't require any emulation.
+
+the guest operating system has to be the 
+same as the host operating system, because the process isolation and resource 
+management is done by the hosts kernel
+
+
+. However as of today there are only a couple of drivers implemented 
 for Docker and they are mostly for Linux only.
  
 The default for Linux is libcontainer which utilizes the Linux kernel features 
-to provide operating system level virtualization. 
+to provide operating-system-level virtualization. I don't want to go 
 
 This would be also the method you would you if you would run a Linux on a virtual 
 machine. The key point here to remember is that dependeing on the driver operating 
