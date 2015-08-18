@@ -134,8 +134,28 @@ a step further and provision your guest operating system and manage Docker on
 it with Vagrant as well, since it has an official provisioner created to 
 support Docker.
 
-If you are already using and familiar with Vagrant, then this option is 
-probably best for you.
+If you are already using Vagrant, then this option is probably best for you.
+
+The next option is to use native execution driver API that Docker natively 
+provides. However as of today there are only a couple of drivers implemented 
+for Docker, One is libcontainer that is meant to be run on Linux which utilized 
+the Linux kernel features to provide operating system level virtualization. 
+This would be also the method you would you if you would run a Linux on a virtual 
+machine. The key point here to remember is that dependeing on the driver operating 
+system level virtualization only allowes you to run guest operatyng systems the same
+as the host. So if you are using libcontainer, then the application you want to run 
+with Docker also has to support Linux.
+
+As far as I know there are also a drive available to FreeBSD which is still 
+considered experimental project.
+ 
+ and the other 
+is 
+ 
+ 
+ but this feature is currently only supported fully on Linux.
+
+So there are not much to talk about that.
 
 At the beginning Docker used Linux Containers more widely known as LXC as the 
 default execution environment for the backend.
