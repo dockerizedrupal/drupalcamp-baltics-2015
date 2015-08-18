@@ -98,9 +98,24 @@ SWITCH SLIDE #4
 
 ---
 
-Docker only runs natively on Linux, but not everyone is using Linux as their 
-development environment, so there exists multiple options for running Docker 
-on non Linux hosts.
+Docker only runs natively on Linux, however not everyone is using Linux as 
+their primary development environment.
+
+There exists multiple options for running Docker on a non Linux hosts.
+
+The most portable and flexible way to use Docker on non Linux hosts is to use 
+traditional virtual machine for example VirtualBox. It runs on so many 
+different hosts and supports large number of guest operating systems including 
+Linux.
+
+The primary downside using plain VirtualBox or any other hypervisor is that you 
+have to do most of the configuration for networking and volumes by hand, which 
+isn't a bad thing per say, but usually your goal is to get your development 
+environment up as fast as possible and wasting extra time for that is not very 
+pleasing for a developer normally.
+
+In combination with VirtualBox you can also use Vagrant, which makes it easier 
+
 
 At the beginning Docker used Linux Containers more widely known as LXC as the 
 default execution environment for the backend.
@@ -116,6 +131,8 @@ for Docker.
 Docker developers have also developed their own execution driver called 
 libcontainer to replace LXC on Linux systems so they could have more control 
 over the runtime.
+
+The main disatavage is that not every 
 
 On operating systems that doesn't support operating-system-level virtualization 
 you could always fallback to a traditional fully virtualized environments and install for
