@@ -161,12 +161,6 @@ the performance point of view operating-system-level virtualization doesn't
 need extra resources for virtualizing your application, which means that we can
 have a process isolation without any loss to the efficiency at that host.
  
- that doesn't require any emulation.
-
-the guest operating system has to be the 
-same as the host operating system, because the process isolation and resource 
-management is done by the hosts kernel
-
 
 . However as of today there are only a couple of drivers implemented 
 for Docker and they are mostly for Linux only.
