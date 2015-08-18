@@ -115,25 +115,27 @@ have to do most of the initial configuration yourself.
 Provisioning a guest operating system may also be a bit overwhelming for some 
 people.
 
-Normally developers are not interested in wasting their time configuring the 
+Normally developers are not interested in wasting their time configuring their 
 environment, but instead they just want to get their development environment up 
 and running as fast as possible so they could start working on the project.
 
-So this option may not work for all.
+So this option may not work for everybody.
 
-The other option is to use VirtualBox in combination with Vagrant.
+The other option is to use VirtualBox in combination with Vagrant, which can be
+run on Linux, Mac and Windows.
 
 Some of you here may already be using Vagrant, but are probably provisioning 
-the guest operating system
+the guest operating system with the more widely used provisioners like shell, 
+Ansible, Puppet etc.
  
- natively with services and tools that their Drupal project needs.
-
-This is a well known and working toolset to get your development environments 
+This is a well known and working setup to get your development environment 
 up and running but since this presentation is mostly about Docker you can take 
 a step further and provision your guest operating system and manage Docker on 
-it with Vagrant.
+it with Vagrant as well, since it has an official provisioner created to 
+support Docker.
 
-If you are already faimiliar with 
+If you are already using and familiar with Vagrant, then this option is 
+probably best for you.
 
 At the beginning Docker used Linux Containers more widely known as LXC as the 
 default execution environment for the backend.
