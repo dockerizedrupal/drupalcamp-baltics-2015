@@ -101,16 +101,22 @@ SWITCH SLIDE #4
 Docker only runs natively on Linux, however not everyone is using Linux as 
 their primary development environment.
 
-There are multiple options for running Docker on a non Linux hosts.
+Fortunately, there are multiple options for running Docker on a non Linux 
+hosts.
 
-The most portable and flexible way to use Docker on non Linux hosts is to use 
-traditional virtual machine for example VirtualBox. It runs on so many 
-different hosts and supports large number of guest operating systems including 
-Linux.
+The most portable and flexible way to use Docker on non Linux host is to use 
+traditional virtual machine. My personal favourite is VirtualBox. It runs on so 
+many different operating systems and supports large number of guest operating 
+systems including Linux.
 
 The primary downside using plain VirtualBox or any other hypervisor is that you 
-have to do most of the configuration for networking and volumes and 
-provisioning your guest operatyng system by hand, which isn't a bad thing per 
+have to do most of the configuration manually.
+
+Provisioning a guest operating system may also be a bit overwhelming for some 
+people.
+ 
+ 
+ which isn't a bad thing per 
 say, but usually your goal is to get your development environment up as fast as 
 possible and wasting extra time for that is not very pleasing for a developer 
 normally.
@@ -551,6 +557,9 @@ old habbits - nativae sass vs docker sass, how to overcome
 docker toolbox
 
 destruction promotes growth
+
+docekr fits perfectly into our current infrastructure, since 95% of our developers 
+are using Linux for development.
 
 ## Questions and answers
 
