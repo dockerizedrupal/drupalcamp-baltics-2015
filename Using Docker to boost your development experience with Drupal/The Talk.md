@@ -98,7 +98,9 @@ SWITCH SLIDE #4
 
 ---
 
-As we mentioned earlier
+Docker only runs natively on Linux, but not everyone is using Linux as their 
+development environment, so there exists multiple options for running Docker 
+on non Linux hosts.
 
 At the beginning Docker used Linux Containers more widely known as LXC as the 
 default execution environment for the backend.
