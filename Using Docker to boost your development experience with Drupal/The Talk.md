@@ -102,27 +102,33 @@ Docker only runs natively on Linux, however not everyone is using Linux as
 their primary development environment.
 
 Fortunately, there are multiple options for running Docker on a non Linux 
-hosts.
+machines.
 
 The most portable and flexible way to use Docker on non Linux host is to use 
-traditional virtual machine. My personal favourite is VirtualBox. It runs on so 
-many different operating systems and supports large number of guest operating 
-systems including Linux.
+traditional virtual machines. My personal favourite is VirtualBox. It can run 
+on so many different hosts and supports large number of guest operating systems 
+including Linux.
 
 The primary downside using plain VirtualBox or any other hypervisor is that you 
-have to do most of the configuration manually.
+have to do most of the initial configuration manually.
 
 Provisioning a guest operating system may also be a bit overwhelming for some 
 people.
- 
- 
- which isn't a bad thing per 
-say, but usually your goal is to get your development environment up as fast as 
-possible and wasting extra time for that is not very pleasing for a developer 
-normally.
 
-In combination with VirtualBox you can also use Vagrant, which makes it easier 
+Normally developers are not interested in wasting their time configuring their 
+environment, but instead they want to get their development environment up and 
+running as fast as possible so they could start working on the project.
 
+So this option may not work for all.
+
+The other option is to use VirtualBox in combination with Vagrant. Some of you 
+probably already are using it but are probably provisioning the guest operating 
+system natively with tools that their Drupal project may need.
+
+This is a well known and working toolset to get your development environments 
+up and running but since this presentation is mostly about Docker you can take 
+a step further and provision your guest operating system managing Docker by 
+Vagrant.
 
 At the beginning Docker used Linux Containers more widely known as LXC as the 
 default execution environment for the backend.
