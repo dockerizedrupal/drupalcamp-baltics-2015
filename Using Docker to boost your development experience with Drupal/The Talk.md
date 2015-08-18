@@ -104,7 +104,7 @@ their primary development environment.
 Fortunately, there are multiple options for running Docker on a non Linux 
 machines.
 
-The most portable and flexible way to use Docker on non Linux host is to use 
+The most portable and flexible way to use Docker on non Linux hosts is to use 
 traditional virtual machines. My personal favourite is VirtualBox. It can run 
 on so many different hosts and supports large number of guest operating systems 
 including Linux.
