@@ -126,6 +126,12 @@ effortlessly.
 
 So just using VirtualBox to run Docker may not work for everybody.
 
+---
+
+SWITCH SLIDE #5
+
+---
+
 The other option is to use VirtualBox in combination with Vagrant.
 
 Vagrant has a good support on any mainstream operating systems like Windows, 
@@ -133,7 +139,8 @@ Mac and Linux.
 
 I'm sure some of you here already are using Vagrant today, but are probably 
 provisioning the guest operating system with the more widely used provisioners 
-like shell, Ansible, Puppet etc.
+like classical shell or more advanced configuration management tools like 
+Ansible, Puppet etc.
 
 This is a widely used and working setup to get your development environment 
 up and running but since this presentation is mostly about Docker we can take 
@@ -149,7 +156,14 @@ announced tool called Docker Toolbox.
 If any of you are familiar with Boot2Docker, then you should know that Docker 
 Toolbox is here to replace it and you should migrate as soon as possible.
 
+Docker Toolbox basically is a collection of tools. The end goal of these tools 
+is to provide you a similar experience and the same functionality as you would 
+have when using Docker directly on Linux.
 
+Unfortunately not every tool today in Docker ecosystem fully supports Windows 
+or Mac. The most notable is Docker Compose that is a must have tool in my 
+opinion to have a great experience when using Docker in your development 
+environment.
 
 The next option is to use execution drivers that Docker natively makes use 
 of on operating systems that are supporting operating-system-level 
