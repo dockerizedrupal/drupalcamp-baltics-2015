@@ -160,15 +160,24 @@ The official and recommended way to get started with Docker is to use very
 recently announced tool called Docker Toolbox.
 
 If any of you are familiar with Boot2Docker, then you should know that Docker 
-Toolbox is here to replace it is suggested that you migrate as soon as 
+Toolbox is here to replace it and it is suggested that you migrate as soon as 
 possible.
 
 Docker Toolbox basically is a collection of tools to help you get started with 
-Docker on non Linux hosts. The end goal of these tools is to provide you a 
-similar experience and the same functionality as you would have when using 
-Docker directly on Linux.
+Docker quickly on non Linux hosts. The end goal of these tools is to provide 
+you a similar experience and the same functionality as you would have when 
+using Docker directly on Linux.
 
-Unfortunately not every tool today in Docker ecosystem fully supports Windows 
+Unfortunately an essential tool for having a great development experience with 
+Docker called Docker Compose doesn't work on Windows, so I don't 
+recommend using Docker Toolbox on Windows just yet, but I'm absolutely sure 
+that it will supported on Windows in the future.
+
+not every tool today in Docker ecosystem works properly on 
+Windows
+
+
+fully supports Windows 
 or Mac. The most notable is Docker Compose that is a must have tool in my 
 opinion to have a great experience when using Docker in your development 
 environment.
