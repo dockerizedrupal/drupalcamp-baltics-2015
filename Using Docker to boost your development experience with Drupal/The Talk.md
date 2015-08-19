@@ -128,11 +128,12 @@ So just using VirtualBox to run Docker may not work for everybody.
 
 The other option is to use VirtualBox in combination with Vagrant.
 
-Vagrant today can run on Linux, Mac and Windows.
+Vagrant has a good support on any mainstream operating systems like Windows, 
+Mac and Linux.
 
-Some of you here may already be using Vagrant, but are probably provisioning 
-the guest operating system with the more widely used provisioners like shell, 
-Ansible, Puppet etc.
+I'm sure some of you here already are using Vagrant today, but are probably 
+provisioning the guest operating system with the more widely used provisioners 
+like shell, Ansible, Puppet etc.
  
 This is a well known and working setup to get your development environment 
 up and running but since this presentation is mostly about Docker we can take 
