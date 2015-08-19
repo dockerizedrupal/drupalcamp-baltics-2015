@@ -102,12 +102,16 @@ Docker only runs natively on Linux, however not everyone is using Linux today
 as their primary development environment.
 
 Fortunately, there are multiple options for running Docker on a non Linux 
-machines.
+hosts.
 
 The most portable and flexible way to use Docker on non Linux hosts is to use 
-whole-system virtualization commonly know as virtual machine. My personal 
-favourite is VirtualBox. It can run on so many different hosts and supports 
-large number of guest operating systems including Linux.
+whole-system virtualization technology. 
+
+My personal favourite is VirtualBox that allows you to create and manage
+virtual machines in my opinion very beginner friendly way.
+
+It can run on many different operating systems and supports large number of 
+guest operating systems including Linux.
 
 The primary downside using plain VirtualBox or any other hypervisor like that
 is that you have to do most of the initial configuration yourself manually.
@@ -117,7 +121,8 @@ people.
 
 Normally developers are not interested in wasting their time configuring their 
 environment, but instead they just want to get their development environment up 
-and running as fast as possible so they could start working on the project.
+and running as fast as possible so they could start working on the project 
+effortlessly.
 
 So just using VirtualBox to run Docker may not work for everybody.
 
@@ -166,6 +171,9 @@ Docker and they are mostly for Linux only.
  
 The default execution driver for Linux is called libcontainer which utilizes 
 the Linux kernel features to provide virtualization for your application.
+
+Since we at Fenomen are using Linux 95% on our machines we are using this option 
+
 
 This would be also the method you would you if you would run a Linux on a virtual 
 machine. The key point here to remember is that dependeing on the driver operating 
