@@ -149,6 +149,8 @@ announced tool called Docker Toolbox.
 If any of you are familiar with Boot2Docker, then you should know that Docker 
 Toolbox is here to replace it and you should migrate as soon as possible.
 
+
+
 The next option is to use execution drivers that Docker natively makes use 
 of on operating systems that are supporting operating-system-level 
 virtualization.
