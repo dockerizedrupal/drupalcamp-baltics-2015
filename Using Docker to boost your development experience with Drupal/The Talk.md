@@ -150,15 +150,23 @@ support Docker.
 
 If you are already using Vagrant, then this option is probably best for you.
 
-The official recommended way to get started with Docker is to use very recently 
-announced tool called Docker Toolbox.
+---
+
+SWITCH SLIDE #6
+
+---
+
+The official and recommended way to get started with Docker is to use very 
+recently announced tool called Docker Toolbox.
 
 If any of you are familiar with Boot2Docker, then you should know that Docker 
-Toolbox is here to replace it and you should migrate as soon as possible.
+Toolbox is here to replace it is suggested that you migrate as soon as 
+possible.
 
-Docker Toolbox basically is a collection of tools. The end goal of these tools 
-is to provide you a similar experience and the same functionality as you would 
-have when using Docker directly on Linux.
+Docker Toolbox basically is a collection of tools to help you get started with 
+Docker on non Linux hosts. The end goal of these tools is to provide you a 
+similar experience and the same functionality as you would have when using 
+Docker directly on Linux.
 
 Unfortunately not every tool today in Docker ecosystem fully supports Windows 
 or Mac. The most notable is Docker Compose that is a must have tool in my 
