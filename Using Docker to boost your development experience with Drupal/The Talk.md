@@ -135,7 +135,7 @@ I'm sure some of you here already are using Vagrant today, but are probably
 provisioning the guest operating system with the more widely used provisioners 
 like shell, Ansible, Puppet etc.
 
-This is a well known and working setup to get your development environment 
+This is a widely used and working setup to get your development environment 
 up and running but since this presentation is mostly about Docker we can take 
 a step further and provision the guest operating system and manage Docker on 
 it with Vagrant as well, since it has an official provisioner created to 
