@@ -222,8 +222,8 @@ SWITCH SLIDE #8
 
 ---
 
-So what makes Linux so special that Docker Engine can run only on that 
-operating system natively at this time?
+So what makes Linux so special that Docker Engine can run natively only on that 
+operating system at this time?
 
 Well, there are a couple of reasons for that.
 
