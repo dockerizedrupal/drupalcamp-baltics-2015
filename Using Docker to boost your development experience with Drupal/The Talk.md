@@ -203,7 +203,7 @@ interact with Docker Engine.
 Because Docker Engine and Docker Client can speak TCP to communicate with each 
 other, these two programs don't have to be running on the same machine, which 
 gives you a flexibility to run and manage your Dockerized applications very 
-conveniently on remote machines.
+conveniently on remote machines over a network.
 
 This same flexibility allows you to use Docker for example on Mac or Windows 
 very seamlessly.
