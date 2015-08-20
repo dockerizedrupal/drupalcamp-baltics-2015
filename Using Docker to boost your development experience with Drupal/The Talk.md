@@ -76,9 +76,9 @@ standardized package, which you can run virtually in any host.
 The only requirement to get your application running in 99% of the time is that 
 you also need to have Docker installed on that host.
 
-Because Docker relies heavily on Linux specific features, you can currently run 
-Docker natively only on Linux, but there are official and unofficial ways how 
-you can run it also reasonably well on non Linux hosts.
+Because Docker relies heavily on Linux kernel specific features, you can 
+currently run Docker natively only on Linux, but there are official and 
+unofficial ways how you can run it also reasonably well on non Linux hosts.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
@@ -135,7 +135,7 @@ SWITCH SLIDE #5
 
 The other option is to use VirtualBox in combination with Vagrant.
 
-Vagrant has a good support on any mainstream operating systems like Windows, 
+Vagrant has a good support on many mainstream operating systems like Windows, 
 Mac and Linux.
 
 I'm sure some of you here already are using Vagrant today, but are probably 
@@ -187,6 +187,36 @@ Docker ecosystem on that platform is great.
 SWITCH SLIDE #7
 
 ---
+
+The architecture of Docker in a nutshell, in context of this presentation,
+consists of two primary parts, Docker Engine and Docker Client.
+
+Docker Engine is basically a daemon that runs continuously on your machine as a 
+service. Docker Client is a command line tool that a developer can use to 
+interact with Docker Engine.
+
+Because Docker Engine and Docker Client can speak TCP to communicate with each 
+other, these two programs don't have to be running on the same machine, which 
+gives you a flexibility to run and manage your Dockerized applications very 
+conveniently on remote machines.
+
+This same flexibility allows you to use Docker for example on Mac or Windows 
+very seamlessly.
+
+Despite that, that Docker Engine can run only on Linux, you can still run it in 
+Linux based virtual machine and since Docker Client doesn't depend on Linux 
+kernel specific features like Docker Engine does, there is a binary for Docker 
+Client that you can run directly on Mac or Windows.
+
+So when a developer interacts with Docker Engine on Mac, he still has te sense 
+of feel that his Mac can run Dockerized applications natively.
+
+
+
+
+
+
+
 
 The next option is to use execution drivers that Docker natively makes use 
 of on operating systems that are supporting operating-system-level 
