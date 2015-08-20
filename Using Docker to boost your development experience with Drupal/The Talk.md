@@ -214,7 +214,8 @@ of feel that his Mac can run Dockerized applications natively.
 
 
 
-
+So what makes Linux so special that Docker EEngine can only run on that 
+operating system at this time.
 
 
 
