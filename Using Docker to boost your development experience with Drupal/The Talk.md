@@ -103,7 +103,7 @@ Docker only runs natively on Linux, however not everyone is using Linux today
 as their primary development environment.
 
 Fortunately, there are multiple options for running Docker on a non Linux 
-hosts.
+host.
 
 The most portable and flexible way to use Docker on non Linux hosts is to use 
 whole-system virtualization technology. 
@@ -178,7 +178,7 @@ recommend using Docker Toolbox on Windows just yet, but I'm absolutely sure
 that it will be supported on Windows in the future. Until then I would use 
 Vagrant in combination with VirtualBox on Windows.
 
-But if you are using Mac, then Docker Toolbox should definitely be your first 
+But if you are a Mac user, then Docker Toolbox should definitely be your first 
 choice working with Docker, because the support for Docker and other tools in 
 Docker ecosystem on that platform is great.
 
@@ -211,8 +211,11 @@ Client that you can run directly on Mac or Windows.
 So when a developer interacts with Docker Engine on Mac, he still has te sense 
 of feel that his Mac can run Dockerized applications natively.
 
+---
 
+SWITCH SLIDE #8
 
+---
 
 So what makes Linux so special that Docker EEngine can only run on that 
 operating system at this time.
