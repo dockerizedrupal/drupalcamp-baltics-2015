@@ -217,9 +217,16 @@ SWITCH SLIDE #8
 
 ---
 
-So what makes Linux so special that Docker EEngine can only run on that 
-operating system at this time.
+So what makes Linux so special that Docker Engine can only run on that 
+operating system natively at this time?
 
+Well, there are couple of reasons for that.
+
+Some of you may know that Docker is a containerization technology. In other 
+words it means that your Dockerized applications also known as containers are 
+running in isolation from other processes on the same machine.
+ 
+The difference between a container and virtual machine is that 
 
 
 The next option is to use execution drivers that Docker natively makes use 
@@ -289,29 +296,6 @@ over the runtime.
 
 The main disatavage is that not every 
 
-On operating systems that doesn't support operating-system-level virtualization 
-you could always fallback to a traditional fully virtualized environments and install for
-example a good old VirtualBox to your machine and run your prefered Linux distribution 
-on it, then you have a fully virtualized Linux capabilities on your non Linux 
-machine.
-
-
-The problem with plain VirtualBox is that you have to manually set up your 
-network and volumes so you could work on your Drupal projects from your host 
-comfortably.
-
-Another option is to use 
-
-If this 
-
-https://www.reddit.com/r/docker/comments/38l5as/osx_tip_using_dockermachine_vs_boot2docker/
-https://www.reddit.com/r/docker/comments/2osgl7/vagrant_vs_boot2docker/
-http://geoffrey.io/what-is-docker.html
-
-Bear in mind that the specifics that we are going to talk about in this 
-presentation applies to running Docker natively on Linux and the implementation 
-could differ a little bit if you are running Docker for example on Mac with 
-boot2docker. But the high level concept shoudl remain the same.
 
 ---
 
