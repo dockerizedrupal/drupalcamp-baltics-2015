@@ -21,6 +21,11 @@ than receive.
 So I feel that it's my responsibility to make my first real contribution to 
 Drupal community today by giving this small talk with my good colleague Mait.
 
+And since the amount of time that have been given to us to make this 
+presentation is finite and a good developer shouldn't ever go overtime, we 
+have left no room for any improvisation, so please don't expect to hear any 
+jokes during this presentation.
+
 Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
 working with Drupal a little bit more than a year professionally. Also, this is 
 my first DrupalCamp, so I'm very delighted that I have given the opportunity to 
@@ -180,7 +185,7 @@ Vagrant in combination with VirtualBox on Windows.
 
 But if you are a Mac user, then Docker Toolbox should definitely be your first 
 choice working with Docker, because the support for Docker and other tools in 
-Docker ecosystem on that platform is great.
+Docker ecosystem on that platform is superb.
 
 ---
 
@@ -218,7 +223,7 @@ SWITCH SLIDE #8
 
 ---
 
-So what makes Linux so special that Docker Engine can only run on that 
+So what makes Linux so special that Docker Engine can run only on that 
 operating system natively at this time?
 
 Well, there are a couple of reasons for that.
@@ -242,12 +247,12 @@ Then you might ask, what about operating systems like FreeBSD and Solaris that
 are also supporting this operating-system-level virtualization concept?
 
 I'm pretty sure that in the future they will be supported by Docker natively, 
-because since Docker version 0.9 they decoupled the execution environment logic 
-into supporting different execution drivers.
+because since Docker version 0.9 Docker developers decoupled the execution 
+environment logic into supporting different execution drivers.
 
 Basically you can write a backend execution driver for Docker Engine for your 
 operating system if it has some kind of containerization primitives in place 
-that allows any process to run in a sandboxed environment.
+that would allow a process to run in a sandboxed environment.
 
 As far as I know there already is an execution driver available to FreeBSD, 
 although it's still considered experimental project.
@@ -257,6 +262,11 @@ which currently are only available in the just released Windows Server 2016
 Tech Preview 3. So expect to be able to use Docker on Windows Server in the 
 future as well.
 
+---
+
+SWITCH SLIDE #9
+
+---
 
 The difference between a container and virtual machine is that 
 
