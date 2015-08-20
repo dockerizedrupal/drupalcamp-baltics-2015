@@ -214,8 +214,7 @@ kernel specific features like Docker Engine does, there are binaries for Docker
 Client that you can run directly on Mac or Windows.
 
 So when a developer interacts with Docker Engine on Mac or Windows, he still 
-has a sense of feel that his Mac or Windows can run Dockerized applications 
-natively.
+has a sense of feel that his host can run Dockerized applications natively.
 
 ---
 
