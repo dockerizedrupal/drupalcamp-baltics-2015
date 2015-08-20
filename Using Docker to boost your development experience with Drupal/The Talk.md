@@ -78,13 +78,14 @@ you also need to have Docker installed on that host.
 
 Because Docker relies heavily on Linux specific features, you can currently run 
 Docker natively only on Linux, but there are official and unofficial ways how 
-you can run it on non Linux hosts as well.
+you can run it also reasonably well on non Linux hosts.
 
 Docker also gives you tools so you can share your application with others with 
 ease.
 
 That is I think the most simplified high level explanation I could think of how 
-I would describe Docker to a Drupal developer very briefly.
+I would describe Docker to a Drupal developer very briefly that has never used 
+Docker before.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
@@ -159,28 +160,33 @@ SWITCH SLIDE #6
 The official and recommended way to get started with Docker is to use very 
 recently announced tool called Docker Toolbox.
 
+It is so new that I personally have not yet had time to battle test it in 
+everyday work. It was announced about three weeks ago.
+
 If any of you are familiar with Boot2Docker, then you should know that Docker 
 Toolbox is here to replace it and it is suggested that you migrate as soon as 
 possible.
 
 Docker Toolbox basically is a collection of tools to help you get started with 
 Docker quickly on non Linux hosts. The end goal of these tools is to provide 
-you a similar experience and the same functionality as you would have when 
+you a similar experience and the same functionality as you would expect when 
 using Docker directly on Linux.
 
 Unfortunately an essential tool for having a great development experience with 
 Docker called Docker Compose doesn't work on Windows, so I don't 
 recommend using Docker Toolbox on Windows just yet, but I'm absolutely sure 
-that it will supported on Windows in the future.
+that it will be supported on Windows in the future. Until then I would use 
+Vagrant in combination with VirtualBox on Windows.
 
-not every tool today in Docker ecosystem works properly on 
-Windows
+But if you are using Mac, then Docker Toolbox should definitely be your first 
+choice working with Docker, because the support for Docker and other tools in 
+Docker ecosystem on that platform is great.
 
+---
 
-fully supports Windows 
-or Mac. The most notable is Docker Compose that is a must have tool in my 
-opinion to have a great experience when using Docker in your development 
-environment.
+SWITCH SLIDE #7
+
+---
 
 The next option is to use execution drivers that Docker natively makes use 
 of on operating systems that are supporting operating-system-level 
