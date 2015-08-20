@@ -205,11 +205,12 @@ very seamlessly.
 
 Despite that, that Docker Engine can run only on Linux, you can still run it in 
 Linux based virtual machine and since Docker Client doesn't depend on Linux 
-kernel specific features like Docker Engine does, there is a binary for Docker 
+kernel specific features like Docker Engine does, there are binaries for Docker 
 Client that you can run directly on Mac or Windows.
 
-So when a developer interacts with Docker Engine on Mac, he still has te sense 
-of feel that his Mac can run Dockerized applications natively.
+So when a developer interacts with Docker Engine on Mac or Windows, he still 
+has a sense of feel that his Mac or Windows can run Dockerized applications 
+natively.
 
 ---
 
@@ -220,12 +221,43 @@ SWITCH SLIDE #8
 So what makes Linux so special that Docker Engine can only run on that 
 operating system natively at this time?
 
-Well, there are couple of reasons for that.
+Well, there are a couple of reasons for that.
 
 Some of you may know that Docker is a containerization technology. In other 
 words it means that your Dockerized applications also known as containers are 
-running in isolation from other processes on the same machine.
- 
+running in isolation from other processes on the same machine. The isolation is 
+provided by the host's operating system kernel itself.
+
+However not all mainstream operating systems today are supporting 
+operating-system-level virtualization.
+
+We look at you Mac and Windows.
+
+So my theory is that since Linux is considered a mainstream operating system in 
+the technology world and the Linux kernel does support operating-system-level 
+virtualization the only logical conclusion is that there were no other feasible 
+options available.
+
+Then you might ask, what about operating systems like FreeBSD and Solaris that 
+are also supporting this operating-system-level virtualization concept?
+
+I'm pretty sure that in the future they will be supported by Docker natively, 
+because since Docker version 0.9 they decoupled the execution environment logic 
+into supporting different execution drivers.
+
+Basically you can write a backend execution driver for Docker Engine for your 
+operating system if it has some kind of containerization primitives in place 
+that allows any process to run in a sandboxed environment.
+
+As far as I know there already is an execution driver available to FreeBSD, 
+although it's still considered experimental project.
+
+And also Microsoft is adding containerization primitives to the Windows kernel, 
+which currently are only available in the just released Windows Server 2016 
+Tech Preview 3. So expect to be able to use Docker on Windows Server in the 
+future as well.
+
+
 The difference between a container and virtual machine is that 
 
 
