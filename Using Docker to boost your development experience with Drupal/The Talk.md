@@ -742,8 +742,6 @@ simple lamp (simple days) vs complicated stack (multiple services)
 
 old habbits - nativae sass vs docker sass, how to overcome
 
-docker toolbox
-
 destruction promotes growth
 
 docekr fits perfectly into our current infrastructure, since 95% of our developers 
