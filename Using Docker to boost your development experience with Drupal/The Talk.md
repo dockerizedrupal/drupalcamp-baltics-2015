@@ -317,13 +317,15 @@ instead of virtual machines?
 The primary disadvantage of operating-system-level virtualization in my opinion 
 in practise is that you can not run applications in containers that are 
 compiled for a different operating system as your host. For example you can not 
-run Windows based executables directly in a container if you host operating 
+run Windows based executables directly in a container if your host operating 
 system is Linux. There is no such limitations for virtual machines.
 
 So like every piece of technology in this world is trying to solve a particular 
 problem, operating-system-level virtualization also has its place and purpose 
 to exist. Unfortunately it's very uncommon to have a technology that solves 
-multiple problems without making any compromises to other parts of the system.
+many different problems at once without making any compromises to other parts 
+of the system. The same rule applies for the containerization technology as 
+well.
 
 ---
 
