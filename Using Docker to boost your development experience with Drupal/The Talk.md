@@ -262,10 +262,11 @@ As far as I know there already is an execution driver available for FreeBSD
 that utilizes the jail mechanism on that operating system to isolate processes, 
 although it's still considered experimental project.
 
-And also Microsoft is adding containerization primitives to the Windows kernel, 
-which currently are only available in the just released Windows Server 2016 
-Tech Preview 3. So expect to be able to use Docker on Windows Server in the 
-future as well.
+And also Microsoft has started to understand the importance of containerization 
+technology by adding containerization primitives to the Windows kernel, which 
+currently are only available in the just released Windows Server 2016 Tech 
+Preview 3. So expect to be able to use Docker on Windows Server in the future 
+as well.
 
 ---
 
