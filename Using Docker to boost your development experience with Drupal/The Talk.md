@@ -304,7 +304,8 @@ use virtual machines to develop their projects, because the benefit they can
 get from isolation outweighs the performance impact that using virtual machines 
 have on their system.
 
-These are the issues that using containers are good
+These are the exact issues that you can solve by using containers instead of 
+virtual machines for development.
 
 ---
 
