@@ -21,10 +21,16 @@ than receive.
 So I feel that it's my responsibility to make my first real contribution to 
 Drupal community today by giving this small talk with my good colleague Mait.
 
-And since the amount of time that have been given to us to make this 
+Because the amount of time that have been given to us to perform this 
 presentation is finite and a good developer is supposed to never go overtime, 
 we have left no room for any improvisation, so please don't expect to hear any 
 jokes during this presentation.
+
+Also bear in mind that most of the statements made in this presentation are 
+made from a developer point of view. So if we talk about pros and cons of some 
+topic then we mostly address only those properties that matter most to a 
+Drupal developer like myself. Mainly because we simply don't have time to 
+analyze everything from the outside perspective.
 
 Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
 working with Drupal a little bit more than a year professionally. Also, this is 
@@ -285,8 +291,8 @@ overhead you have when running your application in a virtual machine is much
 larger than running it on your machine natively.
 
 For a developer these figures are not that appealing and because of that they 
-usually fall back to bare metal solutions because it's faster, no question 
-about that.
+usually fall back to bare metal solutions because it's faster, no doubt about 
+that.
 
 However by doing so, they lose some of the flexibility over their development 
 environment. The whole point of isolation that virtual machines or containers 
@@ -297,7 +303,7 @@ use virtual machines to develop their projects, because the benefit they can
 get from isolation outweighs the performance impact that they have on their 
 system.
 
-
+These are the issues that using containers are good
 
 ---
 
