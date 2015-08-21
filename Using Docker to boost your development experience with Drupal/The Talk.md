@@ -290,11 +290,12 @@ about that.
 
 However by doing so, they lose some of the flexibility over their development 
 environment. The whole point of isolation that virtual machines or containers 
-provide you, is that you can have the same set of tools with different 
-configuration and versions seamlessly on the same machine without they ever 
-conflicting with each other. And is why some some people are still willing to 
-use virtual machines, because the benefit they can get from isolation outweighs 
-the performance impact that they have on their system.
+can provide you, is that you can have the same set of tools with different 
+configuration and versions seamlessly on the same machine without ever 
+conflicting with each other. And this is why some people are still willing to 
+use virtual machines to develop their projects, because the benefit they can 
+get from isolation outweighs the performance impact that they have on their 
+system.
 
 
 
