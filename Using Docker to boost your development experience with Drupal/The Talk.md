@@ -289,11 +289,14 @@ speed, how quickly you can start and build your application.
 A typical virtual machine is usually a couple of gigabytes in size, it takes  
 minutes to start and many more minutes to rebuild it from scratch. The 
 overhead you have when running your application in a virtual machine is much 
-larger than running it on your machine natively.
+larger than running it on your machine natively. The amount of virtual machines 
+you can run on an average laptop is relatively low. I would say if you try to 
+run more that ten virtual machines on your laptop then you may already start 
+experiencing performance degradation.
 
 For a developer these figures are not that appealing and because of that they 
-usually run their development tools directly on host because it's faster, 
-no doubt about that.
+usually run their development tools directly on their host because it's faster, 
+there is no doubt about that.
 
 However by doing so, they lose some of the flexibility over their development 
 environment. The whole point of isolation that virtual machines or containers 
