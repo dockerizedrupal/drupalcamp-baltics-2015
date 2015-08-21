@@ -252,7 +252,7 @@ are also supporting this container-based virtualization concept?
 
 I'm pretty sure that in the future these operating systems will be supported by 
 Docker natively, because Docker has been built in a way that it supports 
-switching between different execution drivers.
+switching between different execution environments.
 
 Basically you can write an execution driver for Docker Engine for your 
 operating system if it has some kind of containerization primitives in place 
