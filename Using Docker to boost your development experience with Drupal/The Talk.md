@@ -289,10 +289,11 @@ speed, how quickly you can start and build your application.
 A typical virtual machine is usually a couple of gigabytes in size, it takes  
 minutes to start and many more minutes to rebuild it from scratch. The 
 overhead you have when running your application in a virtual machine is much 
-larger than running it on your machine natively. The amount of virtual machines 
-you can run on an average laptop is relatively low. I would say if you try to 
-run more that ten virtual machines on your laptop then you may already start 
-experiencing performance degradation.
+larger than running it on your host natively.
+
+The amount of virtual machines you can run on an average laptop is relatively 
+low. I would say if you try to run more that ten virtual machines on your 
+average laptop then you may already start experiencing performance degradation.
 
 For a developer these figures are not that appealing and because of that they 
 usually run their development tools directly on their host because it's faster, 
@@ -309,6 +310,20 @@ have on their system.
 
 These are the exact issues that you can solve by using containers instead of 
 virtual machines for development.
+
+So where is the catch you may ask now? Why isn't everybody using containers 
+instead of virtual machines?
+
+The primary disadvantage of operating-system-level virtualization in my opinion 
+in practise is that you can not run applications in containers that are 
+compiled for a different operating system as your host. For example you can not 
+run Windows based executables directly in a container if you host operating 
+system is Linux. There is no such limitations for virtual machines.
+
+So like every piece of technology in this world is trying to solve a particular 
+problem, operating-system-level virtualization also has its place and purpose 
+to exist. Unfortunately it's very uncommon to have a technology that solves 
+multiple problems without making any compromises to other parts of the system.
 
 ---
 
