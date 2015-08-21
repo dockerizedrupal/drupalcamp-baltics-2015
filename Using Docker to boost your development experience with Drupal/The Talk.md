@@ -250,16 +250,16 @@ feasible options available to choose from.
 Then you might ask, what about operating systems like FreeBSD and Solaris that 
 are also supporting this container-based virtualization concept?
 
-I'm pretty sure that in the future they will be supported by Docker natively, 
-because since Docker version 0.9 Docker developers decoupled the execution 
-environment logic into supporting different execution drivers.
+I'm pretty sure that in the future these operating systems will be supported by 
+Docker natively, because Docker has been built in a way that it supports 
+switching between different execution drivers.
 
-Basically you can write a backend execution driver for Docker Engine for your 
+Basically you can write an execution driver for Docker Engine for your 
 operating system if it has some kind of containerization primitives in place 
 that would allow a process to run in a sandboxed environment.
 
 As far as I know there already is an execution driver available for FreeBSD 
-that utilizes the jail mechanism on that operating system to isolate processes, 
+that utilizes the jail mechanism on that platform to isolate processes, 
 although it's still considered as an experimental project.
 
 And also Microsoft has started to understand the importance of containerization 
@@ -274,7 +274,29 @@ SWITCH SLIDE #9
 
 ---
 
-The two main 
+From a developer point of view, the two primary advantages of container-based 
+virtualization over whole-system virtualization is the efficiency, how much 
+resources your application needs from your hardware to be able to run and the 
+speed, how quickly you can start and build your application.
+
+A typical virtual machine is usually a couple of gigabytes in size, it takes  
+minutes to start and many more minutes to rebuild it from scratch. The 
+overhead you have when running your application in a virtual machine is much 
+larger than running it on your machine natively.
+
+For a developer these figures are not that appealing and because of that they 
+usually fall back to bare metal solutions because it's faster, no question 
+about that.
+
+However by doing so, they lose some of the flexibility over their development 
+environment. The whole point of isolation that virtual machines or containers 
+provide you, is that you can have the same set of tools with different 
+configuration and versions seamlessly on the same machine without they ever 
+conflicting with each other. And is why some some people are still willing to 
+use virtual machines, because the benefit they can get from isolation outweighs 
+the performance impact that they have on their system.
+
+
 
 ---
 
