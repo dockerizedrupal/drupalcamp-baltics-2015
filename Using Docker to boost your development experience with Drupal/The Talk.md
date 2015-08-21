@@ -240,7 +240,8 @@ running in isolation from other processes on the same machine.
 
 The isolation is done by the host's operating system kernel itself and not by 
 some other piece of software like in case for virtual machines where the 
-hypervisor is in the role that isolates your guest operating system.
+hypervisor is in the role that isolates your guest operating system from the 
+rest of the system.
 
 However not all mainstream operating systems today are supporting 
 container-based virtualization also called operating-system-level 
@@ -291,13 +292,13 @@ overhead you have when running your application in a virtual machine is much
 larger than running it on your machine natively.
 
 For a developer these figures are not that appealing and because of that they 
-usually fall back to bare metal solutions because it's faster, no doubt about 
-that.
+usually run their development tools directly on host because it's faster, 
+no doubt about that.
 
 However by doing so, they lose some of the flexibility over their development 
 environment. The whole point of isolation that virtual machines or containers 
 can provide you, is that you can have the same set of tools with different 
-configuration and versions seamlessly on the same machine without ever 
+configurations and versions seamlessly on the same machine without ever 
 conflicting with each other. And this is why some people are still willing to 
 use virtual machines to develop their projects, because the benefit they can 
 get from isolation outweighs the performance impact that they have on their 
