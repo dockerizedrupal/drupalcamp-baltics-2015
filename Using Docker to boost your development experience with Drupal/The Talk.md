@@ -228,27 +228,27 @@ operating system at this time?
 
 Well, there are a couple of reasons for that.
 
-Some of you may know that Docker is a high level containerization technology. 
-In other words it means that your Dockerized applications also known as 
-containers are running in isolation from other processes on the same machine.
- 
+Some of you may know that Docker is a containerization technology. In other 
+words it means that your Dockerized applications also known as containers are 
+running in isolation from other processes on the same machine.
+
 The isolation is done by the host's operating system kernel itself and not by 
 some other piece of software like in case for virtual machines where the 
-hypervisor is in the role that isolates your guest operating system in a lower 
-level.
+hypervisor is in the role that isolates your guest operating system.
 
 However not all mainstream operating systems today are supporting 
-operating-system-level virtualization.
+container-based virtualization also called operating-system-level 
+virtualization.
 
 We look at you Mac and Windows.
 
 So my theory is that since Linux is considered a mainstream operating system in 
-the technology world and the Linux kernel does support operating-system-level 
-virtualization the only logical conclusion is that there were no other feasible 
-options available.
+the technology world and the Linux kernel does support container-based 
+virtualization, then the only logical conclusion is that there were no other 
+feasible options available to choose from.
 
 Then you might ask, what about operating systems like FreeBSD and Solaris that 
-are also supporting this operating-system-level virtualization concept?
+are also supporting this container-based virtualization concept?
 
 I'm pretty sure that in the future they will be supported by Docker natively, 
 because since Docker version 0.9 Docker developers decoupled the execution 
@@ -260,7 +260,7 @@ that would allow a process to run in a sandboxed environment.
 
 As far as I know there already is an execution driver available for FreeBSD 
 that utilizes the jail mechanism on that operating system to isolate processes, 
-although it's still considered experimental project.
+although it's still considered as an experimental project.
 
 And also Microsoft has started to understand the importance of containerization 
 technology by adding containerization primitives to the Windows kernel, which 
@@ -274,7 +274,7 @@ SWITCH SLIDE #9
 
 ---
 
-
+The two main 
 
 ---
 
