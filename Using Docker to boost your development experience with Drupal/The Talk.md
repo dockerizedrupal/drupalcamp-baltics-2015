@@ -332,18 +332,17 @@ SWITCH SLIDE #10
 
 ---
 
+Now that we have a better understanding of some fundamentals that enables 
+Docker to do its work, we are going to explain you next some of the internals 
+about Docker in more detail.
 
-
----
-
-SWITCH SLIDE
-
----
-
-What is an image?
+One of the main components in Docker is an image.
 
 A Docker image is a read-only template for your application. Basically an image 
 is a collection of files that your application needs in order to run.
+
+For example an image could contain a Linux operating system like Debian with 
+Apache and your web application files.
 
 It is very similar conceptually to a tarball, which is a collection of files 
 and directories which you can move around as a single unit. Docker image is 
@@ -361,7 +360,7 @@ built an image, you have added all the dependencies that your application
 needs, but you are required to make a change to that image in the future.
 
 For example you may need to update a library that your application is using or 
-patch a vulnerabilty.
+patch a vulnerabilty for a third party service.
 
 And lets say several months goes by and the change will not be done by you, but 
 by another developer that didn't build this image himself. 
@@ -376,17 +375,13 @@ exactly you built it yourself.
 I guess you guys can see the issue here?
 
 Fortunately there is a better way to do it. Docker is able to build an image by 
-reading instructions from a text file. Docker officially calls it as 
-Docekrfile.
-
-Every time you want to run your application, first you have to deploy your 
-Docker image to your server and create a container from it which is the running 
-instance of your application.
+reading instructions from a text file. Docker officially calls it the 
+Dockerfile.
 
 So the idea that you can put your application and all of its dependencies into 
-a single package, and build the package automatically in a repeatable way 
-removes so much of the complexity when deploying your application to a server 
-or sharing it with other developers.
+a single package, and build it automatically in a repeatable way, removes so 
+much of the complexity when deploying your application to another machine or 
+sharing it with other developers.
 
 ---
 
