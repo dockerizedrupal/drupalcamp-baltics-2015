@@ -712,8 +712,6 @@ From that day on I never
 
 Why have we decided to use Docker in our work environment?
 
-Support for different platform
-
 What problems Docker solves and what problems Docker introduces (multiple developers)
 
 A developer 90% of the time doesn’t event relize that he/she is working woth Docker while developing in Drupal.
