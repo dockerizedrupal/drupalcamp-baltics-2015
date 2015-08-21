@@ -324,8 +324,7 @@ So like every piece of technology in this world is trying to solve a particular
 problem, operating-system-level virtualization also has its place and purpose 
 to exist. Unfortunately it's very uncommon to have a technology that solves 
 many different problems at once without making any compromises to other parts 
-of the system. The same rule applies for the containerization technology as 
-well.
+of the system. The same rule applies to containerization technology as well.
 
 ---
 
