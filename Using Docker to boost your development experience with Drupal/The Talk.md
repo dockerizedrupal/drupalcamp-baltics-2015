@@ -301,8 +301,8 @@ can provide you, is that you can have the same set of tools with different
 configurations and versions seamlessly on the same machine without ever 
 conflicting with each other. And this is why some people are still willing to 
 use virtual machines to develop their projects, because the benefit they can 
-get from isolation outweighs the performance impact that they have on their 
-system.
+get from isolation outweighs the performance impact that using virtual machines 
+have on their system.
 
 These are the issues that using containers are good
 
