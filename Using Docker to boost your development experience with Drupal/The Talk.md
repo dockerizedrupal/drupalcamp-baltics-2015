@@ -8,10 +8,10 @@ SWITCH SLIDE #1
 
 Hello guys!
 
-My name is Jürgen, I'm a full time Drupal developer at Fenomen web agency. I 
-have about three and a half years of experience with Drupal professionally, but 
-unfortunately at the same time I don't have any real experience sharing my 
-knowledge and opinions publicly to others.
+My name is Jürgen and I'm from Estonia. I'm a full time Drupal developer at 
+Fenomen web agency. I have about three and a half years of experience with 
+Drupal professionally, but unfortunately at the same time I don't have any real 
+experience sharing my knowledge and opinions publicly to others.
 
 However I like to believe that the fear to fail in front of an audience 
 shouldn't be the dictating factor not to do it, because if the goal is to 
@@ -22,8 +22,8 @@ So I feel that it's my responsibility to make my first real contribution to
 Drupal community today by giving this small talk with my good colleague Mait.
 
 And since the amount of time that have been given to us to make this 
-presentation is finite and a good developer shouldn't ever go overtime, we 
-have left no room for any improvisation, so please don't expect to hear any 
+presentation is finite and a good developer is supposed to never go overtime, 
+we have left no room for any improvisation, so please don't expect to hear any 
 jokes during this presentation.
 
 Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
@@ -228,10 +228,14 @@ operating system at this time?
 
 Well, there are a couple of reasons for that.
 
-Some of you may know that Docker is a containerization technology. In other 
-words it means that your Dockerized applications also known as containers are 
-running in isolation from other processes on the same machine. The isolation is 
-provided by the host's operating system kernel itself.
+Some of you may know that Docker is a high level containerization technology. 
+In other words it means that your Dockerized applications also known as 
+containers are running in isolation from other processes on the same machine.
+ 
+The isolation is done by the host's operating system kernel itself and not by 
+some other piece of software like in case for virtual machines where the 
+hypervisor is in the role that isolates your guest operating system in a lower 
+level.
 
 However not all mainstream operating systems today are supporting 
 operating-system-level virtualization.
@@ -254,7 +258,8 @@ Basically you can write a backend execution driver for Docker Engine for your
 operating system if it has some kind of containerization primitives in place 
 that would allow a process to run in a sandboxed environment.
 
-As far as I know there already is an execution driver available to FreeBSD, 
+As far as I know there already is an execution driver available for FreeBSD 
+that utilizes the jail mechanism on that operating system to isolate processes, 
 although it's still considered experimental project.
 
 And also Microsoft is adding containerization primitives to the Windows kernel, 
@@ -265,6 +270,14 @@ future as well.
 ---
 
 SWITCH SLIDE #9
+
+---
+
+
+
+---
+
+SWITCH SLIDE #10
 
 ---
 
