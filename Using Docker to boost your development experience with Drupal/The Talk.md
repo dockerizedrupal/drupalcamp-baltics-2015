@@ -2,7 +2,7 @@
 
 ---
 
-SWITCH SLIDE #1
+SWITCH SLIDE #01
 
 ---
 
@@ -42,7 +42,7 @@ Docker. How can these two technologies work together and why you should care.
 
 ---
 
-SWITCH SLIDE #2
+SWITCH SLIDE #02
 
 ---
 
@@ -74,7 +74,7 @@ changing quite rapidly.
 
 ---
 
-SWITCH SLIDE #3
+SWITCH SLIDE #03
 
 ---
 
@@ -106,7 +106,7 @@ using Docker.
 
 ---
 
-SWITCH SLIDE #4
+SWITCH SLIDE #04
 
 ---
 
@@ -140,7 +140,7 @@ So just using VirtualBox to run Docker may not work for everybody.
 
 ---
 
-SWITCH SLIDE #5
+SWITCH SLIDE #05
 
 ---
 
@@ -164,7 +164,7 @@ If you are already using Vagrant, then this option is probably best for you.
 
 ---
 
-SWITCH SLIDE #6
+SWITCH SLIDE #06
 
 ---
 
@@ -195,7 +195,7 @@ Docker ecosystem on that platform is superb.
 
 ---
 
-SWITCH SLIDE #7
+SWITCH SLIDE #07
 
 ---
 
@@ -225,7 +225,7 @@ natively.
 
 ---
 
-SWITCH SLIDE #8
+SWITCH SLIDE #08
 
 ---
 
@@ -277,14 +277,14 @@ as well.
 
 ---
 
-SWITCH SLIDE #9
+SWITCH SLIDE #09
 
 ---
 
 From a developer point of view, the two primary advantages of container-based 
 virtualization over whole-system virtualization is the efficiency, how much 
 resources your application needs from your hardware to be able to run and the 
-speed, how quickly you can start and build your application.
+speed, how quickly you can start and rebuild your application.
 
 A typical virtual machine is usually a couple of gigabytes in size, it takes  
 minutes to start and many more minutes to rebuild it from scratch. The 
@@ -332,6 +332,8 @@ well.
 SWITCH SLIDE #10
 
 ---
+
+
 
 ---
 
