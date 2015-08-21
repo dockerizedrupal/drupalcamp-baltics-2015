@@ -688,26 +688,6 @@ immediately, and you don't have to know the details how some services work for t
 ***So we started solving one issue that could have been sovled without Docker as well, 
 but by using Docker to solve that we made some great imrpovements in other fields as well.
 
-
----
-
-
-so now that everyone are prepared for what comes next, let's start the presentation
-
-Exactly a year ago I found this tool called Docker.
-
-After playing with it some time, it blew my mind, because never before I would have been imagined that creating isolated environments
-for applications and services could be so fast and intuitive.
-
-I've always liked the idea of virtualization, but at the same time it has always been somewhat heavy in terms on resources it needs for running and starting a virtualized machine takes too much time that it’s not 
-
-The fact that I now have almost 4000 commits in GitHub shows that I have discovered something awesome that is worth the time to invest in.
-
-Docker skyrocketed my productivity immensely. It molded my thinking in a way that
-
-From that day on I never
-
-
 ## Backlog
 
 Why have we decided to use Docker in our work environment?
