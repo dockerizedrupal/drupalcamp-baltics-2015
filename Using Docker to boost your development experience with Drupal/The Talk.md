@@ -410,21 +410,23 @@ website.
 However, to get some idea how Dockerfile works we still need to give you
 some basic understanding of it.
 
-We have already mentioned that Dockerfile allows you to build Docker images.
-It's a simple text file which contains a series of instructions on how to build 
+We have already mentioned that Dockerfile allows you to build Docker images and
+it's a simple text file that contains a series of instructions on how to build 
 your image.
 
-You might be surprised how simple it is to work with a Dockerfile. If you are 
-familiar with Linux command line interface then you basically already know how 
-to write a Dockerfile.
+You might be surprised how simple it is to work with a Dockerfile.
+
+If you are familiar with Linux command line interface then you basically 
+already know how to write a Dockerfile.
 
 The only key difference between executing a command directly in a terminal and 
 in a Dockerfile, is that, a command in a Dockerfile doesn't expect you to 
 interact with it during the image building process.
 
-So you have to construct your commands that expect an input form a user during 
-execution in a way that all the input that your command needs are directly 
-piped to that command in advance.
+So you have to construct your command that expect an input form a user during 
+runtime in a way that all the input that your command needs are directly piped 
+to that command in advance or using some command line options to make choices 
+if a particular command supports that.
 
 ---
 
