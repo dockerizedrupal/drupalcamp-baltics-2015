@@ -37,8 +37,9 @@ working with Drupal a little bit more than a year professionally. Also, this is
 my first DrupalCamp, so I'm very delighted that I have given the opportunity to 
 be here in front of you, fellow Drupal enthusiasts.
 
-So now that everyone briefly knows who we are, lets talk about Drupal and 
-Docker. How can these two technologies work together and why you should care.
+So now that we have your attention and you briefly know who we are and what to 
+expect from how this presentation may go, lets talk about Drupal and Docker. 
+How can these two technologies work together and why you should care.
 
 ---
 
