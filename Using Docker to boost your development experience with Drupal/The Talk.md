@@ -454,15 +454,27 @@ SWITCH TO SLIDE #13
 ---
 
 This is how a simple Dockerfile looks like. In summary, you can build a Docker 
-image from it that installs Apache on top of Debian filesystem and it replaces 
+image from it, that installs Apache on top of Debian filesystem and it replaces 
 the contents of the default index.html file to display "Hello, DrupalCamp 
 Baltics 2015!".
 
-The format of the file is very simple. At the left you have an instruction, 
-like for example FROM on the first line and to the right you have arguments for 
-that instruction.
+The format of the Dockerfile is very simple. At the left you have an 
+instruction, like for example the keyword FROM at the first line and to the 
+right you have arguments for that instruction.
 
+The first line tells Docker Engine what is the base image that your new image 
+will be built upon. In this example it will be the official Debian image, which 
+contains the files and directories which Debian itself is made out of. As you 
+may know everything is a file in Linux, so you if you think about that concept 
+then maybe it's much more easier for you to understand how images work.
 
+I know, it helped me to understand it more.
+
+You can use every other Docker image as your base image. This gives us the 
+flexibility to reuse already built images, which increases the efficiency of 
+the image build process.
+
+Lets say we have created a Docker image that 
 
 ---
 
