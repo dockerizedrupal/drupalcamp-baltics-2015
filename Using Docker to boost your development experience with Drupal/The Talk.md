@@ -34,7 +34,7 @@ analyze everything from the outside perspective.
 
 Demos that we have prepared for you to show are in video format, because too 
 often we have witnessed the rage of the demogods, whether the network is 
-unreliable or piece of software just decides to not work.
+unreliable or a piece of software just decides not to function.
 
 Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
 working with Drupal a little bit more than a year professionally. Also, this is 
