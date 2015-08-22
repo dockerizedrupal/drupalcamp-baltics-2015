@@ -32,6 +32,10 @@ topic then we mostly address only those properties that matter most to a
 Drupal developer like myself. Mainly because we simply don't have time to 
 analyze everything from the outside perspective.
 
+Demos that we have prepared for you to show are in video format, because too 
+often we have witnessed the rage of the demogods, whether the network is 
+unreliable or piece of software just decides to not work.
+
 Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
 working with Drupal a little bit more than a year professionally. Also, this is 
 my first DrupalCamp, so I'm very delighted that I have given the opportunity to 
@@ -357,8 +361,8 @@ Docker image can be pushed into a centralized registry where other parties can
 easily pull it to their machine.
 
 There are several companies that are providing public and private registries on 
-the internet. Docker, a company behind the Docker project itself provides a 
-public registry to everyone for free and a private registry for a fee.
+the internet. Docker, a company behind the Docker project also provides a 
+public registry to everyone to use for free and a private registry for a fee.
 
 I definitely recommend you to use any of these services if you need to make 
 your images easily accessible to others.
@@ -407,10 +411,11 @@ I don't want go into much detail about explaining you everything there is to a
 Dockerfile, because most of that you can easily find on the official Docker 
 website.
 
-However, to get some idea how Docker works we still need to give you some basic 
-understanding of it.
+However, to get some better idea how Docker works we still need to give you 
+some basic understanding of it.
 
-We have already mentioned that Dockerfile allows you to build Docker images.
+If you have been listening then you already know that Dockerfile in a way is a 
+blueprint for your Docker images.
 
 It's a simple text file that contains a series of instructions on how to build 
 your image.
@@ -453,10 +458,11 @@ SWITCH TO SLIDE #13
 
 ---
 
-This is how a simple Dockerfile looks like. You can build a Docker image from 
-it that installs Apache on top of Debian filesystem and it replaces the 
-contents of the default index.html file to display "Hello, DrupalCamp Baltics 
-2015!".
+This is how a simple Dockerfile looks like.
+
+You can build a Docker image from it, that installs Apache on top of Debian 
+filesystem and it replaces the contents of the default index.html file to 
+display "Hello, DrupalCamp Baltics 2015!".
 
 The format of the Dockerfile is very simple. At the left you have an 
 instruction usually in uppercase, but can also be in lowercase, like for 
@@ -468,32 +474,39 @@ will be built upon. In this example it will be the official Debian image, which
 contains the files and directories which Debian itself is made out of. As you 
 may know everything is a file in Linux, so if you think about that concept more 
 closely then maybe it's much easier for you to understand how Docker images 
-work.
+actually work.
 
 I know, it helped me to better understand it.
 
 You can use every other Docker image as your base image. This gives us the 
-flexibility to reuse already built images, which increases the efficiency of 
-the image build process.
+flexibility to reuse already built images and increase the efficiency of the 
+image building process.
 
-Lets say we have created a Docker image from this exact example. And we also 
-have two different Drupal projects that are going to use this image to serve 
-files over the web.
+Lets say we have two different Drupal projects that are going to use Apache to 
+serve files over the web.
+
+And use this exact example as our basis for our new Dockerfiles for our 
+projects.
 
 One of these projects also has to support HTTPS.
 
-So there are several ways how we can achieve that.
+So there are several ways how we could approach to solve this problem.
 
-One way is to make a copy from this example Dockerfile and modify it by adding 
-some commands that enables TLS for Apache.
+We just use this unmodified example Dockerfile for our project that doesn't 
+need HTTPS support and create a Docker image from it.
 
-But by doing so, Apache will be also installed if we build an image from the 
-modified Dockerfile. 
+And for the other project we make a copy from this example Dockerfile and 
+modify it by adding some commands that enables TLS for Apache.
+
+But by doing so, Apache will be also installed during the build process if we 
+build an image from the modified Dockerfile. 
 
 So the more efficient and better way to do it is to use this unmodified example 
-as our base image for the new image that requires TLS support.
+Docekrfile as our base image for the new image that requires TLS support.
 
-In that way the build process is relatively short for that particular project.
+
+
+In that way the build process is relatively short for the other project.
 
 
 The same efficienys happens in the Dockerfile itself
