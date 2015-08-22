@@ -386,8 +386,8 @@ There are a couple ways how you can build a Docker image. You can build an
 image either by hand or in an automated way.
 
 The problem building an image by hand is that for example if you have already
-built an image, you have added all the dependencies that your application 
-needs and you are required to make a change to that image in the future.
+built an image by executing a series of commands on top of each other and you 
+are required to make a change to that image in the future.
 
 For example you may need to update a library that your application is using or 
 patch a vulnerability for a third party service.
@@ -395,19 +395,26 @@ patch a vulnerability for a third party service.
 And lets say several months goes by and the change will not be done by you, but 
 by another developer that didn't build this image in the first place. 
 
+This is very real scenario that could happen to any of you.
+
 He probably don't have any clue how the image was made and what exactly is 
-packed into that image.
+packed into that image, because there is no history nowhere to be found that 
+would tell him the exact steps that were executed to build this image.
+
+Of course you can always document them to somewhere, but it would still be hard 
+to manage, especially if there are hundreds of commands that were needed to 
+perform to build this image.
 
 So in a sense you literally have given him a black box, which is very hard to 
 work with. I'm sure even you, the author of the image probably would not 
 remember how exactly you built it yourself.
 
-Although in some use cases you may not have a choice and you have build or 
+Although in some use cases you may not have a choice and you have to build or 
 extend an image manually, nevertheless there is a better way to build a Docker 
 image.
 
 Docker is able to build an image by reading instructions from a text file. The 
-official term that describes this file is Dockerfile.
+official term for that file is called Dockerfile.
 
 We will not be covering the manual process in this presentation, because 
 honestly we personally have not had a reason to use it in practice.
