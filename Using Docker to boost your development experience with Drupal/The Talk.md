@@ -364,14 +364,22 @@ There are several companies that are providing public and private registries on
 the internet. Docker, a company behind the Docker project also provides a 
 public registry to everyone to use for free and a private registry for a fee.
 
-I definitely recommend you to use any of these services if you need to make 
-your images easily accessible to others.
+The name they have given to describe that service is called Docker Hub.
 
-Docker Registry is also available as an open source software, so you can set up
+I definitely recommend you to use Docker Hub if you need to make your images 
+easily accessible to others.
+
+Docker registry is also available as an open source software, so you can set up
 a private registry relatively easily on your own server.
 
-There are many ways how you can build a Docker image. You can build an image
-either by hand or in an automated way.
+---
+
+SWITCH TO SLIDE #11
+
+---
+
+There are a couple ways how you can build a Docker image. You can build an 
+image either by hand or in an automated way.
 
 The problem building an image by hand is that for example if you have already
 built an image, you have added all the dependencies that your application 
@@ -381,20 +389,24 @@ For example you may need to update a library that your application is using or
 patch a vulnerability for a third party service.
 
 And lets say several months goes by and the change will not be done by you, but 
-by another developer that didn't build this image himself. 
+by another developer that didn't build this image in the first place. 
 
 He probably don't have any clue how the image was made and what exactly is 
 packed into that image.
 
-So in a sense you literally gave him a black box, which is very hard to work 
-with. I'm sure even you, the author of the image probably will not remember how 
-exactly you built it yourself.
+So in a sense you literally have given him a black box, which is very hard to 
+work with. I'm sure even you, the author of the image probably would not 
+remember how exactly you built it yourself.
 
-I guess you guys can see the issue here?
+Although in some use cases you may not have a choice and you have build or 
+extend an image manually, nevertheless there is a better way to build a Docker 
+image.
 
-Fortunately there is a better way to do it. Docker is able to build an image by 
-reading instructions from a text file. The official term to describe to this
-file is Dockerfile.
+Docker is able to build an image by reading instructions from a text file. The 
+official term that describes this file is Dockerfile.
+
+We will not be covering the manual process in this presentation, because 
+honestly we personally have not had a reason to use it in practice.
 
 So the idea that you can put your application and all of its dependencies into 
 a single standardized package and build it automatically in a repeatable way 
@@ -404,7 +416,7 @@ with other developers.
 
 ---
 
-SWITCH TO SLIDE #11
+SWITCH TO SLIDE #12
 
 ---
 
@@ -416,12 +428,12 @@ However, to get some better idea how Docker works we still need to give you
 some basic understanding of it.
 
 If you have been listening then you already know that Dockerfile in a way is a 
-blueprint for your Docker images.
+blueprint for your Docker image.
 
 It's a simple text file that contains a series of instructions on how to build 
 your image.
 
-You might be surprised how simple it is to work with a Dockerfile.
+You might be surprised how simple it actually is to work with the Dockerfile.
 
 If you are familiar with Linux command line interface then you basically 
 already know how to write a Dockerfile.
@@ -430,14 +442,14 @@ The only key difference between executing a command directly in a terminal and
 in a Dockerfile, is that, a command in a Dockerfile doesn't expect you to 
 interact with it during the image building process.
 
-So you have to construct your command that expect an input form a user during 
+So you have to construct your command that expects an input form a user during 
 runtime in a way that all the input that your command needs are directly piped 
-to that command in advance or using some command line flags to make choices if 
-a particular command supports that.
+to that command in advance or using command line flags to make choices if a 
+particular command supports that.
 
 ---
 
-SWITCH TO SLIDE #12
+SWITCH TO SLIDE #13
 
 ---
 
@@ -448,14 +460,17 @@ you can cancel the operation or continue with the installation process.
 
 But if you would let Docker Engine to execute the same command from a 
 Dockerfile, the build process would fail immediately, because it's fully 
-automatic and doesn't expect any interaction from a user.
+automated and doesn't expect any interaction from a user.
+
+By adding -y flag to your apt-get install command, a package will be installed 
+without first asking your confirmation.
 
 So if your command line fu is not that great, then by writing Dockerfiles you 
-will definitely improve that skill a lot.
+will definitely improve that skill by a lot.
 
 ---
 
-SWITCH TO SLIDE #13
+SWITCH TO SLIDE #14
 
 ---
 
@@ -465,6 +480,26 @@ You can build a Docker image from it, that installs Apache on top of Debian
 filesystem and it replaces the contents of the default index.html file to 
 display "Hello, DrupalCamp Baltics 2015!".
 
+Let's see the image building process in action, before we continue with the 
+rest of the presentation.
+
+---
+
+PLAY DEMO VIDEO #01
+
+---
+
+So there you go, in this little demo we built a Docker image and started
+a container where the Apache service were listening on port 80. We also saw 
+that making a HTTP request to a loopback address through a web browser, we got 
+the actual response with the right payload.
+
+---
+
+SWITCH TO SLIDE #15
+
+---
+
 The format of the Dockerfile is very simple. At the left you have an 
 instruction usually in uppercase, but can also be in lowercase, like for 
 example the keyword FROM at the first line and to the right you have arguments 
@@ -472,10 +507,14 @@ for that instruction.
 
 The first line tells Docker Engine what is the base image that your new image 
 will be built upon. In this example it will be the official Debian image, which 
-contains the files and directories which Debian itself is made out of. As you 
-may know everything is a file in Linux, so if you think about that concept more 
-closely then maybe it's much easier for you to understand how Docker images 
-actually work.
+contains the files and directories which Debian itself is made out of.
+
+If a base image doesn't exist on your host at the time of building the image, 
+it will automatically pulled from the Docker Hub.
+
+As you may know everything is a file in Linux, so if you think about that 
+concept more closely then maybe it's much easier for you to understand how 
+Docker images actually work.
 
 I know, it helped me to better understand it.
 
@@ -491,7 +530,7 @@ projects.
 
 One of these projects also has to support HTTPS.
 
-So there are several ways how we could approach to solve this problem.
+So there are several ways how we could approach this problem to solve it.
 
 We just use this unmodified example Dockerfile for our project that doesn't 
 need HTTPS support and create a Docker image from it.
@@ -505,12 +544,13 @@ build an image from the modified Dockerfile.
 So the more efficient and better way to do it is to use this unmodified example 
 Docekrfile as our base image for the new image that requires TLS support.
 
-
-
 In that way the build process is relatively short for the other project.
 
+One important and very useful property of Dockerfile that you should be aware 
+of is that every instruction in your Dockerfile is by default cached.
 
-The same efficienys happens in the Dockerfile itself
+This means for example if your build requires many instructions to run and some 
+may take a very long time to finish. So 
 
 ---
 
