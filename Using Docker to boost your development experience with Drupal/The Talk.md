@@ -2,7 +2,7 @@
 
 ---
 
-SWITCH SLIDE #01
+SWITCH TO SLIDE #01
 
 ---
 
@@ -43,7 +43,7 @@ How can these two technologies work together and why you should care.
 
 ---
 
-SWITCH SLIDE #02
+SWITCH TO SLIDE #02
 
 ---
 
@@ -75,7 +75,7 @@ changing quite rapidly.
 
 ---
 
-SWITCH SLIDE #03
+SWITCH TO SLIDE #03
 
 ---
 
@@ -107,7 +107,7 @@ using Docker.
 
 ---
 
-SWITCH SLIDE #04
+SWITCH TO SLIDE #04
 
 ---
 
@@ -141,7 +141,7 @@ So just using VirtualBox to run Docker may not work for everybody.
 
 ---
 
-SWITCH SLIDE #05
+SWITCH TO SLIDE #05
 
 ---
 
@@ -165,7 +165,7 @@ If you are already using Vagrant, then this option is probably best for you.
 
 ---
 
-SWITCH SLIDE #06
+SWITCH TO SLIDE #06
 
 ---
 
@@ -196,7 +196,7 @@ Docker ecosystem on that platform is superb.
 
 ---
 
-SWITCH SLIDE #07
+SWITCH TO SLIDE #07
 
 ---
 
@@ -226,7 +226,7 @@ natively.
 
 ---
 
-SWITCH SLIDE #08
+SWITCH TO SLIDE #08
 
 ---
 
@@ -278,7 +278,7 @@ as well.
 
 ---
 
-SWITCH SLIDE #09
+SWITCH TO SLIDE #09
 
 ---
 
@@ -329,7 +329,7 @@ of the system. The same rule applies to containerization technology as well.
 
 ---
 
-SWITCH SLIDE #10
+SWITCH TO SLIDE #10
 
 ---
 
@@ -399,7 +399,7 @@ sharing it with other developers.
 
 ---
 
-SWITCH SLIDE #11
+SWITCH TO SLIDE #11
 
 ---
 
@@ -410,8 +410,9 @@ website.
 However, to get some idea how Dockerfile works we still need to give you
 some basic understanding of it.
 
-We have already mentioned that Dockerfile allows you to build Docker images and
-it's a simple text file that contains a series of instructions on how to build 
+We have already mentioned that Dockerfile allows you to build Docker images.
+
+It's a simple text file that contains a series of instructions on how to build 
 your image.
 
 You might be surprised how simple it is to work with a Dockerfile.
@@ -425,12 +426,12 @@ interact with it during the image building process.
 
 So you have to construct your command that expect an input form a user during 
 runtime in a way that all the input that your command needs are directly piped 
-to that command in advance or using some command line options to make choices 
-if a particular command supports that.
+to that command in advance or using some command line flags to make choices if 
+a particular command supports that.
 
 ---
 
-SWITCH SLIDE #12
+SWITCH TO SLIDE #12
 
 ---
 
@@ -440,21 +441,28 @@ without adding any extra flags you will be prompted to make a choice, either
 you can cancel the operation or continue with the installation process.
 
 But if you would let Docker Engine to execute the same command from a 
-Dockerfile, the build process would fail immediately, because the build process 
-is fully automatic and doesn't expect any interaction from a user.
+Dockerfile, the build process would fail immediately, because it's fully 
+automatic and doesn't expect any interaction from a user.
 
 So if your command line fu is not that great, then by writing Dockerfiles you 
 will definitely improve that skill a lot.
 
 ---
 
-SWITCH SLIDE 
+SWITCH TO SLIDE #13
 
 ---
 
+This is how a simple Dockerfile looks like. In summary, you can build a Docker 
+image from it that installs Apache on top of Debian filesystem and it replaces 
+the contents of the default index.html file to display "Hello, DrupalCamp 
+Baltics 2015!".
+
+
+
 ---
 
-SWITCH SLIDE
+SWITCH TO SLIDE
 
 ---
 
@@ -462,7 +470,7 @@ SWITCH SLIDE
 
 ---
 
-SWITCH SLIDE
+SWITCH TO SLIDE
 
 ---
 
@@ -501,7 +509,7 @@ itself makes use of are actually provided by Linux kernel itself.
 
 ---
 
-SWITCH SLIDE
+SWITCH TO SLIDE
 
 ---
 
@@ -537,7 +545,7 @@ channel where the guys are demonstrating this functionality.
 
 ---
 
-SWITCH SLIDE
+SWITCH TO SLIDE
 
 ---
 
@@ -545,7 +553,7 @@ What problems does it solve?
 
 ---
 
-SWITCH SLIDE
+SWITCH TO SLIDE
 
 ---
 
