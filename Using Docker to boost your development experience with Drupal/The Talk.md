@@ -409,6 +409,10 @@ website.
 However, to get some idea how Dockerfile works we still need to give you
 some basic understanding of it.
 
+We have already mentioned that Dockerfile allows you to build Docker images.
+It's a simple text file which contains a series of instructions on how to build 
+your image.
+
 You might be surprised how simple it is to work with a Dockerfile. If you are 
 familiar with Linux command line interface then you basically already know how 
 to write a Dockerfile.
