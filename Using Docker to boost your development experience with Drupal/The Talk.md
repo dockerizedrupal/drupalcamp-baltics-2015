@@ -393,13 +393,14 @@ exactly you built it yourself.
 I guess you guys can see the issue here?
 
 Fortunately there is a better way to do it. Docker is able to build an image by 
-reading instructions from a text file. Docker officially calls it the 
-Dockerfile.
+reading instructions from a text file. The official term to describe to this
+file is Dockerfile.
 
 So the idea that you can put your application and all of its dependencies into 
-a single package, build it automatically in a repeatable way, store it in a
-centralized repository, removes so much of the complexity when deploying your 
-application to another machine or sharing it with other developers.
+a single standardized package and build it automatically in a repeatable way 
+and also store it in a centralized repository, removes so much of the 
+complexity when deploying your application to another machine or sharing it 
+with other developers.
 
 ---
 
