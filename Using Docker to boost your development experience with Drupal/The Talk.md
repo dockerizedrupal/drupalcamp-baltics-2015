@@ -342,8 +342,8 @@ One of the main components in Docker is an image.
 A Docker image is a read-only template for your application. Basically an image 
 is a collection of files that your application needs in order to run.
 
-For example an image could contain a Linux operating system like Debian with 
-Apache and your Drupal project files.
+For example an image could contain a Linux distribution like Debian with Apache 
+and your Drupal project files.
 
 It is very similar conceptually to a tarball, which is a collection of files 
 and directories which you can move around as a single unit. Docker image is 
@@ -356,12 +356,12 @@ of gigabytes to infinity in theory.
 Docker image can be pushed into a centralized registry where other parties can 
 easily pull it to their machine.
 
-There are several companies on the internet that are providing public and 
-private registries. Docker a company behind the Docker project itself provides 
-a public registry to everyone for free nad a private registry for a fee.
+There are several companies that are providing public and private registries on 
+the internet. Docker, a company behind the Docker project itself provides a 
+public registry to everyone for free and a private registry for a fee.
 
-I definitely recommend you to use Docker Hub if you need to make your images 
-easily accessible to others.
+I definitely recommend you to use any of these services if you need to make 
+your images easily accessible to others.
 
 Docker Registry is also available as an open source software, so you can set up
 a private registry relatively easily on your own server.
@@ -371,7 +371,7 @@ either by hand or in an automated way.
 
 The problem building an image by hand is that for example if you have already
 built an image, you have added all the dependencies that your application 
-needs, but you are required to make a change to that image in the future.
+needs and you are required to make a change to that image in the future.
 
 For example you may need to update a library that your application is using or 
 patch a vulnerability for a third party service.
@@ -393,9 +393,9 @@ reading instructions from a text file. Docker officially calls it the
 Dockerfile.
 
 So the idea that you can put your application and all of its dependencies into 
-a single package, and build it automatically in a repeatable way, removes so 
-much of the complexity when deploying your application to another machine or 
-sharing it with other developers.
+a single package, build it automatically in a repeatable way, store it in a
+centralized repository, removes so much of the complexity when deploying your 
+application to another machine or sharing it with other developers.
 
 ---
 
