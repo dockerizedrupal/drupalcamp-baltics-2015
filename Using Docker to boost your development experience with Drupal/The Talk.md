@@ -6,6 +6,8 @@ SWITCH TO SLIDE #01
 
 ---
 
+![](SWITCH TO SLIDE #01.png?raw=true)
+
 Hello guys!
 
 My name is Jürgen and I'm from Estonia. I'm a full time Drupal developer at 
