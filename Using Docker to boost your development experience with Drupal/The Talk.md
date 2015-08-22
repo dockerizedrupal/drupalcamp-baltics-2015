@@ -407,8 +407,8 @@ I don't want go into much detail about explaining you everything there is to a
 Dockerfile, because most of that you can easily find on the official Docker 
 website.
 
-However, to get some idea how Dockerfile works we still need to give you
-some basic understanding of it.
+However, to get some idea how Docker works we still need to give you some basic 
+understanding of it.
 
 We have already mentioned that Dockerfile allows you to build Docker images.
 
@@ -482,8 +482,10 @@ files over the web.
 
 One of these projects also has to support HTTPS.
 
-So there are several ways how we can achieve that. One way is to modify this 
-same Dockerfile and add some commands that enables TLS for Apache.
+So there are several ways how we can achieve that.
+
+One way is to make a copy from this example Dockerfile and modify it by adding 
+some commands that enables TLS for Apache.
 
 But by doing so, Apache will be also installed if we build an image from the 
 modified Dockerfile. 
