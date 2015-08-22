@@ -579,11 +579,11 @@ SWITCH TO SLIDE
 
 What is a container?
 
-From a developer point of view, a container provides an isolated virtual 
+From your application point of view, a container provides an isolated virtual 
 environment for your application.
 
-This means that your application process is securely isolated from other 
-processes on the same host.
+This means that your application process is isolated from other processes on 
+the same host.
 
 It can have a separate network interface or share a network interface with 
 host's interface or with other containers, you can also control how much 
@@ -592,6 +592,8 @@ memory consumption to a specific value if for example you run multiple container
 on the same host for the same application.
 
 , CPU, disk space and many more).
+
+if you prioved the right capapabilitys you can even use hardware devices erc
 
 You can even limit the disk space that your application could have access to.
 
