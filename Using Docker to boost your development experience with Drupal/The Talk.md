@@ -89,7 +89,7 @@ Docker is a piece of technology that allows you, the developer, to wrap your
 application and all of its dependencies that it needs in order to run into a 
 standardized package, which you can run virtually in any host.
 
-The only requirement to get your application running in 99% of the time is that 
+The only requirement to get your application running in 98% of the time is that 
 you also need to have Docker installed on that host.
 
 Because Docker relies heavily on Linux kernel specific features, you can 
@@ -337,21 +337,20 @@ SWITCH TO SLIDE #10
 
 ---
 
-Now that we have a better understanding of some fundamentals that enables 
+Now that you have a better understanding of some fundamentals that enables 
 Docker to do its work, we are going to explain you next some of the internals 
 about Docker in more detail.
 
-One of the main components in Docker is an image.
+One of the building blocks of Docker is the concept of image.
 
-A Docker image is a read-only template for your application. Basically an image 
-is a collection of files that your application needs in order to run.
+A Docker image is a read-only template, which in simply put is a collection of 
+files that your application needs in order to run.
 
 For example an image could contain a Linux distribution like Debian with Apache 
 and your Drupal project files.
 
 It is very similar conceptually to a tarball, which is a collection of files 
-and directories which you can move around as a single unit. Docker image is 
-basically like that.
+and directories which you can move around as a single unit.
 
 Depending on your application and its dependencies the Docker image can be 
 either very small, something around few megabytes, or very large, from a couple 
@@ -364,13 +363,18 @@ There are several companies that are providing public and private registries on
 the internet. Docker, a company behind the Docker project also provides a 
 public registry to everyone to use for free and a private registry for a fee.
 
-The name they have given to describe that service is called Docker Hub.
+The name they have given to that service is called Docker Hub.
 
 I definitely recommend you to use Docker Hub if you need to make your images 
 easily accessible to others.
 
 Docker registry is also available as an open source software, so you can set up
 a private registry relatively easily on your own server.
+
+Using a registry requires usually access to a network, so in case where your 
+machine is not virtually able to communicate with a registry, there is always 
+an option to export or import an image from a file, which you can move around 
+through other mediums.
 
 ---
 
