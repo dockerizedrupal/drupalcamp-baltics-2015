@@ -458,6 +458,10 @@ image from it that installs Apache on top of Debian filesystem and it replaces
 the contents of the default index.html file to display "Hello, DrupalCamp 
 Baltics 2015!".
 
+The format of the file is very simple. At the left you have an instruction, 
+like for example FROM on the first line and to the right you have arguments for 
+that instruction.
+
 
 
 ---
