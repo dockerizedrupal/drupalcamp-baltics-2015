@@ -320,7 +320,7 @@ So where is the catch you may ask now? Why isn't everybody using containers
 instead of virtual machines?
 
 The primary disadvantage of operating-system-level virtualization in my opinion 
-in practise is that you can not run applications in containers that are 
+in practice is that you can not run applications in containers that are 
 compiled for a different operating system as your host. For example you can not 
 run Windows based executables directly in a container if your host operating 
 system is Linux. There is no such limitations for virtual machines.
@@ -442,7 +442,7 @@ If you have been listening then you already know that Dockerfile in a way is a
 blueprint for your Docker image.
 
 It's a simple text file that contains a series of instructions on how to build 
-your image.
+an image.
 
 You might be surprised how simple it actually is to work with the Dockerfile.
 
@@ -488,8 +488,8 @@ SWITCH TO SLIDE #14
 This is how a simple Dockerfile looks like.
 
 You can build a Docker image from it, that installs Apache on top of Debian 
-filesystem and it replaces the contents of the default index.html file to 
-display "Hello, DrupalCamp Baltics 2015!".
+filesystem and it replaces the contents of the default index.html file with 
+the sentence "Hello, DrupalCamp Baltics 2015!".
 
 Let's see the image building process in action, before we continue with the 
 rest of the presentation.
