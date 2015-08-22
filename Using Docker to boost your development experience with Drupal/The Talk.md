@@ -436,6 +436,9 @@ But if you would let Docker Engine to execute the same command from a
 Dockerfile, the build process would fail immediately, because the build process 
 is fully automatic and doesn't expect any interaction from a user.
 
+So if your command line fu is not that great, then by writing Dockerfiles you 
+will definitely improve that skill a lot.
+
 ---
 
 SWITCH SLIDE 
