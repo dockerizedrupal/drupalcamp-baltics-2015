@@ -13,7 +13,7 @@ Fenomen web agency. I have about three and a half years of experience with
 Drupal professionally, but unfortunately at the same time I don't have any real 
 experience sharing my knowledge and opinions publicly to others.
 
-However I like to believe that the fear to fail in front of an audience 
+However, I like to believe that the fear to fail in front of an audience 
 shouldn't be the dictating factor not to do it, because if the goal is to 
 improve their own and other people's work, then it's more sustainable to give 
 than receive.
@@ -243,7 +243,7 @@ some other piece of software like in case for virtual machines where the
 hypervisor is in the role that isolates your guest operating system from the 
 rest of the system.
 
-However not all mainstream operating systems today are supporting 
+However, not all mainstream operating systems today are supporting 
 container-based virtualization also called operating-system-level 
 virtualization.
 
@@ -299,7 +299,7 @@ For a developer these figures are not that appealing and because of that they
 usually run their development tools directly on their host because it's faster, 
 there is no doubt about that.
 
-However by doing so, they lose some of the flexibility over their development 
+However, by doing so, they lose some of the flexibility over their development 
 environment. The whole point of isolation that virtual machines or containers 
 can provide you, is that you can have the same set of tools with different 
 configurations and versions seamlessly on the same machine without ever 
@@ -342,15 +342,28 @@ A Docker image is a read-only template for your application. Basically an image
 is a collection of files that your application needs in order to run.
 
 For example an image could contain a Linux operating system like Debian with 
-Apache and your web application files.
+Apache and your Drupal project files.
 
 It is very similar conceptually to a tarball, which is a collection of files 
 and directories which you can move around as a single unit. Docker image is 
-exactly like that.
+basically like that.
 
 Depending on your application and its dependencies the Docker image can be 
 either very small, something around few megabytes, or very large, from a couple 
 of gigabytes to infinity in theory.
+
+Docker image can be pushed into a centralized registry where other parties can 
+easily pull it to their machine.
+
+There are several companies on the internet that are providing public and 
+private registries. Docker a company behind the Docker project itself provides 
+a public registry to everyone for free nad a private registry for a fee.
+
+I definitely recommend you to use Docker Hub if you need to make your images 
+easily accessible to others.
+
+Docker Registry is also available as an open source software, so you can set up
+a private registry relatively easily on your own server.
 
 There are many ways how you can build a Docker image. You can build an image
 either by hand or in an automated way.
@@ -368,7 +381,7 @@ by another developer that didn't build this image himself.
 He probably don't have any clue how the image was made and what exactly is 
 packed into that image.
 
-So you literally gave him a black box in a sense, which is very hard to work 
+So in a sense you literally gave him a black box, which is very hard to work 
 with. I'm sure even you, the author of the image probably will not remember how 
 exactly you built it yourself.
 
@@ -385,14 +398,20 @@ sharing it with other developers.
 
 ---
 
-SWITCH SLIDE
+SWITCH SLIDE #11
 
 ---
 
-So how does a Dockerfile work?
+I don't want go into much detail about explaining you everything there is to a 
+Dockerfile, because most of that you can easily find on the official Docker 
+website.
 
-It's actually very simple to work with. If you are familiar with Linux command 
-line interface then you basically already know how to write a Dockerfile.
+However, to get some idea how Dockerfile works we still need to give you
+some basic understanding of it.
+
+You might be surprised how simple it is to work with a Dockerfile. If you are 
+familiar with Linux command line interface then you basically already know how 
+to write a Dockerfile.
 
 The only key difference between executing a command directly in a terminal and 
 in a Dockerfile, is that, a command in a Dockerfile doesn't expect you to 
