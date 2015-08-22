@@ -459,15 +459,16 @@ contents of the default index.html file to display "Hello, DrupalCamp Baltics
 2015!".
 
 The format of the Dockerfile is very simple. At the left you have an 
-instruction, like for example the keyword FROM at the first line and to the 
-right you have arguments for that instruction.
+instruction usually in uppercase, but can also be in lowercase, like for 
+example the keyword FROM at the first line and to the right you have arguments 
+for that instruction.
 
 The first line tells Docker Engine what is the base image that your new image 
 will be built upon. In this example it will be the official Debian image, which 
 contains the files and directories which Debian itself is made out of. As you 
-may know everything is considered as a file in Linux, so if you think about 
-that concept then maybe it's much more easier for you to understand how Docker 
-images work.
+may know everything is a file in Linux, so if you think about that concept more 
+closely then maybe it's much easier for you to understand how Docker images 
+work.
 
 I know, it helped me to better understand it.
 
@@ -475,8 +476,25 @@ You can use every other Docker image as your base image. This gives us the
 flexibility to reuse already built images, which increases the efficiency of 
 the image build process.
 
-Lets say we have created a Docker image that is using like in this case a 
-Debian image as its base image and in our new image we have installed Apache.
+Lets say we have created a Docker image from this exact example. And we also 
+have two different Drupal projects that are going to use this image to serve 
+files over the web.
+
+One of these projects also has to support HTTPS.
+
+So there are several ways how we can achieve that. One way is to modify this 
+same Dockerfile and add some commands that enables TLS for Apache.
+
+But by doing so, Apache will be also installed if we build an image from the 
+modified Dockerfile. 
+
+So the more efficient and better way to do it is to use this unmodified example 
+as our base image for the new image that requires TLS support.
+
+In that way the build process is relatively short for that particular project.
+
+
+The same efficienys happens in the Dockerfile itself
 
 ---
 
