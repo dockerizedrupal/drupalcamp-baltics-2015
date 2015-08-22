@@ -6,7 +6,7 @@ SWITCH TO SLIDE #01
 
 ---
 
-![](SWITCH TO SLIDE #01.png?raw=true)
+![](Using Docker to boost your development experience with Drupal/SWITCH TO SLIDE #01.png?raw=true)
 
 Hello guys!
 
