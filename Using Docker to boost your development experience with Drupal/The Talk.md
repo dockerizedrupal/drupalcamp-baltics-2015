@@ -418,10 +418,29 @@ in a Dockerfile, is that, a command in a Dockerfile doesn't expect you to
 interact with it during the image building process.
 
 So you have to construct your commands that expect an input form a user during 
-execution in a way that all the input that your command needs are piped 
-directly to that command in advance.
+execution in a way that all the input that your command needs are directly 
+piped to that command in advance.
 
-A good example to illutsrate is
+---
+
+SWITCH SLIDE #12
+
+---
+
+A good example to illustrate this is installing Apache thought a Debian package
+management system. By default if you install a package with apt-get install 
+without adding any extra flags you will be prompted to make a choice, either 
+you can cancel the operation or continue with the installation process.
+
+But if you would let Docker Engine to execute the same command from a 
+Dockerfile, the build process would fail immediately, because the build process 
+is fully automatic and doesn't expect any interaction from a user.
+
+---
+
+SWITCH SLIDE 
+
+---
 
 ---
 
@@ -734,6 +753,8 @@ docekr fits perfectly into our current infrastructure, since 95% of our develope
 are using Linux for development.
 
 solomon shykes
+
+dynamic runtime vs dockerfile vs puppet
 
 ## Questions and answers
 
