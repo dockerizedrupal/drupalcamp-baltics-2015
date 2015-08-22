@@ -95,8 +95,8 @@ Docker also gives you tools so you can share your application with others with
 ease.
 
 That is I think the most simplified high level explanation I could think of how 
-I would describe Docker to a Drupal developer very briefly that has never used 
-Docker before.
+I would describe Docker to a Drupal developer that has never used 
+Docker before very briefly.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
@@ -114,7 +114,7 @@ Docker only runs natively on Linux, however not everyone is using Linux today
 as their primary development environment.
 
 Fortunately, there are multiple options for running Docker on a non Linux 
-host.
+hosts.
 
 The most portable and flexible way to use Docker on non Linux hosts is to use 
 whole-system virtualization technology. 
@@ -211,8 +211,8 @@ other, these two programs don't have to be running on the same machine, which
 gives you a flexibility to run and manage your Dockerized applications very 
 conveniently on remote machines over a network.
 
-This same flexibility allows you to use Docker for example on Mac or Windows 
-very seamlessly.
+This same flexibility allows you to use Docker very seamlessly for example on 
+Mac or Windows.
 
 Despite that, that Docker Engine can run only on Linux, you can still run it in 
 Linux based virtual machine and since Docker Client doesn't depend on Linux 
@@ -360,7 +360,7 @@ built an image, you have added all the dependencies that your application
 needs, but you are required to make a change to that image in the future.
 
 For example you may need to update a library that your application is using or 
-patch a vulnerabilty for a third party service.
+patch a vulnerability for a third party service.
 
 And lets say several months goes by and the change will not be done by you, but 
 by another developer that didn't build this image himself. 
@@ -389,7 +389,20 @@ SWITCH SLIDE
 
 ---
 
-What is a Dockerfile?
+So how does a Dockerfile work?
+
+It's actually very simple to work with. If you are familiar with Linux command 
+line interface then you basically already know how to write a Dockerfile.
+
+The only key difference between executing a command directly in a terminal and 
+in a Dockerfile, is that, a command in a Dockerfile doesn't expect you to 
+interact with it during the image building process.
+
+So you have to construct your commands that expect an input form a user during 
+execution in a way that all the input that your command needs are piped 
+directly to that command in advance.
+
+A good example to illutsrate is
 
 ---
 
