@@ -363,7 +363,7 @@ Docker image can be pushed into a centralized registry where other parties can
 easily pull it to their machine.
 
 There are several companies that are providing public and private registries on 
-the internet. Docker, a company behind the Docker project also provides a 
+the internet today. Docker, a company behind the Docker project also provides a 
 public registry to everyone to use for free and a private registry for a fee.
 
 The name they have given to that service is called Docker Hub.
@@ -376,8 +376,8 @@ a private registry relatively easily on your own server.
 
 Using a registry requires usually access to a network, so in case where your 
 machine is not virtually able to communicate with a registry, there is always 
-an option to export or import an image from a file, which you can move around 
-through other mediums.
+an option to export an image to a file, which you can move around through other 
+mediums.
 
 ---
 
