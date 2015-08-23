@@ -703,7 +703,34 @@ SWITCH TO SLIDE #18
 
 ---
 
+Before deploying Docker to our development environments the setup we had in 
+simply put, was not very efficient and scalable when working in a team.
 
+Our team is relatively small and the amount of projects each our developer has 
+to work on or maintain at any given time relative to our team size is quite 
+large.
+
+Imagine having to work on more than 5 different projects on a single day. And 
+more than half of them aren't even developed by you, so the time you would need 
+to put into getting each project up and running on a standard LAMP setup can be 
+quite large.
+
+When we take also into account that you probably only have to fix some very
+easy bugs that would take you only about ten to fifteen minutes to solve, then 
+the total time you have to invest to resolve a single bug might be more than 
+three times higher than the initial estimate.
+
+Even more time you would need to waste if the fifteen minute bug requires you 
+to set up and configure for example LDAP server to fix it, which is not that 
+easy do to for everyone.
+
+So a bug that would be normally resolvable by any Drupal developer because the 
+nature of the bug itself doesn't require a high level of skill, might 
+still be too difficult for a junior developer to fix, because he may lack the 
+knowledge and the know-how needed to set up the project on his machine.
+
+As you can see there are multiple issues using this kind of a set up in that 
+work environment.
 
 ---
 
