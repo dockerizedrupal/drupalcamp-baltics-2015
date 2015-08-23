@@ -704,7 +704,8 @@ SWITCH TO SLIDE #18
 ---
 
 Before deploying Docker to our development environments the setup we had in 
-simply put, was not very efficient and scalable when working in a team.
+simply put, was not very efficient and scalable when working in a team 
+environment.
 
 Our team is relatively small and the amount of projects each our developer has 
 to work on or maintain at any given time relative to our team size is quite 
@@ -737,8 +738,14 @@ nature of the bug itself doesn't require a high level of skill, might
 still be too difficult for a junior developer to fix, because he may lack the 
 knowledge and the know-how needed to set up the project on his machine.
 
-As you can see there are multiple issues using this kind of a set up in that 
-work environment.
+Our experience has shown that most who are affected directly by using this 
+development environment are front-end developers, because if they start to set 
+up a bit more complex project by their own, they immediately get stuck. Because 
+the area of expertise you need to have to finish your task doesn't belong 
+directly to a front-end developer's domain.
+
+As you can see there are many issues using this kind of a set up in that 
+work environment. 
 
 ---
 
