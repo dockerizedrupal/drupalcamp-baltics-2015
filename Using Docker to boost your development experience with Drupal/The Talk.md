@@ -689,7 +689,7 @@ SWITCH TO SLIDE #17
 With this little demo we have finished the first part of our presentation.
 
 We will now going to talk about why and how we at Fenomen switched our 
-development environments from a standard LAMP setup to Docker to develop Drupal 
+development environments from standard LAMP setup to Docker to develop Drupal 
 projects.
 
 Maybe you are right now experiencing the same problems as we did in our 
