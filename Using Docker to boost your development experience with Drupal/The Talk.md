@@ -493,41 +493,30 @@ You can build a Docker image from it, that installs Apache on top of Debian
 filesystem and it replaces the contents of the default index.html file with 
 the sentence "Hello, DrupalCamp Baltics 2015!".
 
-Let's see the image building process in action, before we continue with the 
-rest of the presentation.
+As you can see the format of the Dockerfile is very simple.
 
----
+On the first line you have a simple comment that is there to give you some 
+insight about the Dockerfile.
 
-PLAY DEMO VIDEO #01
+On the second line at the left you have an instruction usually in uppercase, 
+like in this case the keyword FROM and to the right you have arguments for that 
+instruction.
 
----
+Every other line in Dockerfile expect the comments are following the same 
+pattern.
 
-So there you go, in this little demo we built a Docker image and started
-a container where the Apache service were listening on port 80. We also saw 
-that making a HTTP request to a loopback address through a web browser, we got 
-the actual response with the right payload.
+So let's look into more detail about each instruction in this example.
 
----
-
-SWITCH TO SLIDE #15
-
----
-
-The format of the Dockerfile is very simple. At the left you have an 
-instruction usually in uppercase, but can also be in lowercase, like for 
-example the keyword FROM at the first line and to the right you have arguments 
-for that instruction.
-
-The first line tells Docker Engine what is the base image that your new image 
+The second line tells Docker Engine what is the base image that your new image 
 will be built upon. In this example it will be the official Debian image, which 
 contains the files and directories which Debian itself is made out of.
 
 If a base image doesn't exist on your host at the time of building the image, 
-it will automatically pulled from the Docker Hub.
+it will be automatically pulled from the Docker Hub.
 
 As you may know everything is a file in Linux, so if you think about that 
 concept more closely then maybe it's much easier for you to understand how 
-Docker images actually work.
+Docker images can work.
 
 I know, it helped me to better understand it.
 
@@ -555,9 +544,17 @@ But by doing so, Apache will be also installed during the build process if we
 build an image from the modified Dockerfile. 
 
 So the more efficient and better way to do it is to use this unmodified example 
-Docekrfile as our base image for the new image that requires TLS support.
+Docekrfile as our base image for the new image that requires HTTPS support.
 
-In that way the build process is relatively short for the other project.
+In that way the build process is relatively short for the other project, 
+because the process installing Apache has to occur only once.
+
+The fifth line is just there to tell who is the maintainer of the image. This 
+metadata will be directly stored on the image and can be queried any time.
+
+On line eight, eleven and fourteen, we can see a RUN instruction, which is the 
+most common instruction in a Dockerfile. RUN instruction executes a command and 
+commits the change to filesystem back into your image.
 
 One important and very useful property of Dockerfile that you should be aware 
 of is that every instruction in your Dockerfile is by default cached.
@@ -656,7 +653,19 @@ SWITCH TO SLIDE
 
 ---
 
-What problems does it solve?
+Let's see the image building process in action, before we continue with the 
+rest of the presentation.
+
+---
+
+PLAY DEMO VIDEO #01
+
+---
+
+So there you go, in this little demo we built a Docker image and started
+a container where the Apache service were listening on port 80. We also saw 
+that making a HTTP request to a loopback address through a web browser, we got 
+the actual response with the right payload.
 
 ---
 
