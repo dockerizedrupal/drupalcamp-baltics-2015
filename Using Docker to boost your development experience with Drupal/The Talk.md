@@ -41,8 +41,8 @@ my first DrupalCamp, so I'm very delighted that I have given the opportunity to
 be here in front of you, fellow Drupal enthusiasts.
 
 So now that we have your attention and you briefly know who we are and what to 
-expect from how this presentation, lets talk about Drupal and Docker. How can 
-these two technologies work together and why you should care.
+expect from this presentation, lets talk about Drupal and Docker. How can these 
+two technologies work together and why you should care.
 
 ---
 
@@ -118,7 +118,7 @@ Docker only runs natively on Linux, however not everyone is using Linux today
 as their primary development environment.
 
 Fortunately, there are multiple options for running Docker on a non Linux 
-hosts.
+host.
 
 The most portable and flexible way to use Docker on non Linux hosts is to use 
 whole-system virtualization technology. 
@@ -397,7 +397,7 @@ patch a vulnerability for a third party service.
 And lets say several months goes by and the change will not be done by you, but 
 by another developer that didn't build this image in the first place. 
 
-This is very real scenario that could happen to any of you.
+This is a very real scenario that could happen to any of you.
 
 He probably don't have any clue how the image was made and what exactly is 
 packed into that image, because there is no history nowhere to be found that 
@@ -448,13 +448,13 @@ capabilities.
 
 Containers are created from Docker images. 
 
-By giving right capabilities to a container you can even make you physical 
-devices available to your application running in a container. 
+By giving right capabilities to a container you can even make your physical 
+devices available to your application running inside the container. 
 
 A container can have a separate network interface or share a network interface 
 with host's interface or with other containers. You can also control how much 
 resources your applications can have on the host. You may want to limit the 
-memory, CPU or disk space consumption to a specific values if for example you 
+memory, CPU or disk space consumption to a specific value if for example you 
 run multiple containers on the same machine.
 
 Because you have such a fine control over resource allocation, Docker also 
@@ -499,7 +499,8 @@ Docker image in this case is like a class that contains your application code
 and all of its dependencies and you create containers that are derived from 
 that Docker image, which then are created or destroyed on demand just like 
 objects in PHP. So you can run multiple containers from a single image with 
-different arguments.
+different arguments to modify your application or container behaviour on 
+runtime.
 
 You can share a Docker image with other developers as easily as you can share
 a class that have been written to a text file, but you can't share Docker 
@@ -614,7 +615,7 @@ Lets say we have two different Drupal projects that are going to use Apache to
 serve files over the web.
 
 And use this exact example as the basis for our new Dockerfiles for each 
-projects.
+project.
 
 One of these projects also has to support HTTPS.
 
@@ -627,10 +628,10 @@ And for the other project we make a separate copy from this Dockerfile and
 modify it by adding some commands that enables TLS for Apache.
 
 But by doing so, Apache will be installed each time we build an image for our 
-project.
+projects.
 
-So the more efficient way to do it, is to use this unmodified example 
-Docekrfile as our base image for the new image that requires HTTPS support.
+So the more efficient way to do it, is to use this unmodified example as our 
+base image for the new image that requires HTTPS support.
 
 In that way the build process is relatively short for the other project, 
 because Apache is installed only during when we build the base image.
