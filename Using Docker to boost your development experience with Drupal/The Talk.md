@@ -656,8 +656,10 @@ Apache will be started in the foreground if you launch the container. As long
 as the resulting process lives, the container will also stay running. If the 
 process is killed inside the container, the container will also stop.
 
-Now that we have covered most of the basics there is to Docker we are going to 
-show you a small demo where you can see the image building process in action,
+Now that we have covered most of the basics there is to Docker that are
+important, so you would be able follow the rest of the presentation, we are 
+going to show you now a small demo where you can see the Docker image building 
+process in action,
 
 ---
 
@@ -666,9 +668,17 @@ PLAY DEMO VIDEO #01
 ---
 
 So there you go, in this little demo we built a Docker image and started
-a container where the Apache service were listening on port 80. We also saw 
-that making a HTTP request to a loopback address through a web browser, we got 
-the actual response with the right payload.
+a container.
+
+Inside the container Apache were listening on port 80.
+
+We also saw that making HTTP request to a loopback address through the web 
+browser, we got the actual response form the web server running inside the 
+container with the right payload.
+
+An action that only took about a minute to perform in practices took nearly 
+half an hour to explain. So this should give you some idea how powerful it is 
+to have a Docker in your development environment toolbox.
 
 ---
 
