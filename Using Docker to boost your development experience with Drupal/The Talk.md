@@ -471,39 +471,47 @@ than the container itself.
 
 ---
 
-SWITCH TO SLIDE
+SWITCH TO SLIDE #13
 
 ---
 
-In my opinion, a good example how it might be easier for you to understand the 
-relationship between a Docker image and a Docker container is, if you 
-think about the basic concept of object-oriented programming paradigm, which I'm
-sure you know well, since most of you here are developers I suppose.
+For some of you the concept between a Docker image and a Docker container might 
+still be a bit unclear.
 
-If you don't know it yet, then Drupal 8 definitely forces you to learn it, 
-which is a good thing.
+I once had to explain this to another Drupal developer that also didn't get the 
+concept right away.
 
-In OOP you have classes that specifies the structure of data and the behaviour 
-of your objects. It's basically a template or blueprint for your objects.
+So the alternative explanation I gave him helped him to better understand it.
 
-The same concept can be applied to the relationship between Docker images and 
-Docker containers.
+Most of you here are PHP programmers, at some time you probably have acquired 
+some knowledge about object-oriented programming.
+
+Try to think about the most basic concept of object-oriented programming 
+paradigm where you have a class and an object.
+
+A class is a blueprint, which specifies the structure of data and the behaviour 
+of your objects.
+
+The same concept can be applied to the relationship between a Docker image and 
+a Docker container.
 
 Docker image in this case is like a class that contains your application code 
-and all of its dependencies and you can create containers that are derived from that 
-Docker image, which then are created or destroyed on demand just like objects. 
+and all of its dependencies and you create containers that are derived from 
+that Docker image, which then are created or destroyed on demand just like 
+objects in PHP. So you can run multiple containers from a single image with 
+different arguments.
 
-You can share your Docker image with other developers just like you can share
-your class that you have written as a text file, but you can't share Docker 
-containers because they are the running instances of that image just like 
-objects.
+You can share a Docker image with other developers as easily as you can share
+a class that have been written to a text file, but you can't share Docker 
+containers with conventional tools because they are the running instances of 
+that image just like objects.
 
 But just so you know, in the future you actually could send a running container 
-from one host to another by creating a full snapshot (which imcludes memory dump, mutable data 
-etc.) from the container, but this feature is still in an experimental phase.
+from one machine to another by being able to create a full snapshot from a 
+container, but this feature is still in an experimental phase.
 
-There is a video from the last DockerCon on YouTube in the official Docker 
-channel where the guys are demonstrating this functionality.
+If today you already can create a snapshot only from the container files then 
+in the future the snapshot also will include a memory dump.
 
 ---
 
