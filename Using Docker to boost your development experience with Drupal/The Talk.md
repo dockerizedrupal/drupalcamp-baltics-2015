@@ -101,7 +101,7 @@ ease.
 
 That is I think the most simplified high level explanation I could think of how 
 I would describe Docker to a Drupal developer that has never used 
-Docker before very briefly.
+Docker before.
 
 There is obviously much more to Docker than I have managed to describe in that 
 short description, but we will focus mostly on these aspects of Docker in this 
@@ -214,7 +214,7 @@ interact with Docker Engine.
 Because Docker Engine and Docker Client can speak TCP to communicate with each 
 other, these two programs don't have to be running on the same machine, which 
 gives you a flexibility to run and manage your Dockerized applications very 
-conveniently on remote machines over a network.
+conveniently on remote machines over the network.
 
 This same flexibility allows you to use Docker very seamlessly for example on 
 Mac or Windows.
@@ -252,7 +252,7 @@ However, not all mainstream operating systems today are supporting
 container-based virtualization also called operating-system-level 
 virtualization.
 
-We look at you Mac and Windows.
+By that we mean Mac and Windows.
 
 So my theory is that since Linux is considered a mainstream operating system in 
 the technology world and the Linux kernel does support container-based 
@@ -277,8 +277,7 @@ although it's still considered as an experimental project.
 And also Microsoft has started to understand the importance of containerization 
 technology by adding containerization primitives to the Windows kernel, which 
 currently are only available in the just released Windows Server 2016 Tech 
-Preview 3. So expect to be able to use Docker on Windows Server in the future 
-as well.
+Preview 3. So expect to be able to use Docker on Windows in the future as well.
 
 ---
 
@@ -324,6 +323,10 @@ in practice is that you can not run applications in containers that are
 compiled for a different operating system as your host. For example you can not 
 run Windows based executables directly in a container if your host operating 
 system is Linux. There is no such limitations for virtual machines.
+
+But since most of the third party services that are usually used in along side 
+with Drupal, are able to run on Linux anyways, so using containers wouldn't be 
+a problem for a Drupal developer.
 
 So like every piece of technology in this world is trying to solve a particular 
 problem, operating-system-level virtualization also has its place and purpose 
