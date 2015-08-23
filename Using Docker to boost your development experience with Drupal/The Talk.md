@@ -692,8 +692,9 @@ We will now going to talk about why and how we at Fenomen switched our
 development environments from a standard LAMP setup to Docker to develop Drupal 
 projects.
 
-And maybe you are experiencing the same issues as we did and our experience 
-using Docker could help you resolve them.
+Maybe you are experiencing right now the same issues as we did before 
+discovering Docker and our experience using and deploying Docker within our 
+team could help you resolve them.
 
 If I'm very honest with you, then the real reason why we ended up using Docker 
 in our development environment was actually by accident. So you may think now what 
