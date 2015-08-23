@@ -446,20 +446,20 @@ Sharing the host's operating system kernel with other containers, allows your
 application to be more efficient, but still giving you virtual machine like 
 capabilities.
 
-Containers are created from a Docker image, which are 
-
-A container can have a separate network interface or share a network interface 
-with host's interface or with other containers. You can also control how much 
-resources your applications can have on the host. You may want to limit the 
-memory, cpu and disk space consumption to a specific values if for example you 
-run multiple containers on the same machine.
+Containers are created from Docker images. 
 
 By giving right capabilities to a container you can even make you physical 
 devices available to your application running in a container. 
 
+A container can have a separate network interface or share a network interface 
+with host's interface or with other containers. You can also control how much 
+resources your applications can have on the host. You may want to limit the 
+memory, CPU or disk space consumption to a specific values if for example you 
+run multiple containers on the same machine.
+
 Because you have such a fine control over resource allocation, Docker also 
 gives you tools to get the necessary metrics for your application, which you 
-can useto monitor you application performance.
+can use to monitor you application performance.
 
 Containers are very lightweight. You could run hundreds, even thousands of 
 containers on a single host, that's how lightweight they are when compared to 
