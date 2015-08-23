@@ -251,7 +251,7 @@ However, not all mainstream operating systems today are supporting
 container-based virtualization also called operating-system-level 
 virtualization.
 
-By that we mean Mac and Windows.
+By that I mean Mac and Windows.
 
 So my theory is that since Linux is considered a mainstream operating system in 
 the technology world and the Linux kernel does support container-based 
@@ -527,40 +527,47 @@ image building process.
 Lets say we have two different Drupal projects that are going to use Apache to 
 serve files over the web.
 
-And use this exact example as our basis for our new Dockerfiles for our 
+And use this exact example as the basis for our new Dockerfiles for each 
 projects.
 
 One of these projects also has to support HTTPS.
 
-So there are several ways how we could approach this problem to solve it.
+So there are several ways how we could approach this problem and solve it.
 
-We just use this unmodified example Dockerfile for our project that doesn't 
-need HTTPS support and create a Docker image from it.
+We just use this exact example for our project that doesn't need HTTPS support 
+and create a Docker image from it.
 
-And for the other project we make a copy from this example Dockerfile and 
+And for the other project we make a separate copy from this Dockerfile and 
 modify it by adding some commands that enables TLS for Apache.
 
-But by doing so, Apache will be also installed during the build process if we 
-build an image from the modified Dockerfile. 
+But by doing so, Apache will be installed each time we build an image for our 
+project.
 
-So the more efficient and better way to do it is to use this unmodified example 
+So the more efficient way to do it, is to use this unmodified example 
 Docekrfile as our base image for the new image that requires HTTPS support.
 
 In that way the build process is relatively short for the other project, 
-because the process installing Apache has to occur only once.
+because Apache is installed only during when we build the base image.
 
 The fifth line is just there to tell who is the maintainer of the image. This 
 metadata will be directly stored on the image and can be queried any time.
 
-On line eight, eleven and fourteen, we can see a RUN instruction, which is the 
-most common instruction in a Dockerfile. RUN instruction executes a command and 
-commits the change to filesystem back into your image.
+On line eight, eleven and fourteen, we can see the RUN instruction, which is 
+the most common instruction in the Dockerfile. RUN instruction executes a 
+command and commits the change to filesystem back into your image.
 
-One important and very useful property of Dockerfile that you should be aware 
-of is that every instruction in your Dockerfile is by default cached.
+If you have not yet noticed then you can see that on line eleven we execute
+apt-get install with the -y flag, so the build process wouldn't be interrupted,
 
-This means for example if your build requires many instructions to run and some 
-may take a very long time to finish. So 
+Line seventeen informs Docker Engine that the Apache is running inside the
+container and is listening on port 80. This is useful if your services running 
+in multiple containers need to talk to each other and by exposing a fixed port, 
+they can easily discover each other.
+
+The last instruction is the entrypoint for your container. In this example 
+Apache will be started in the foreground if you launch the container. As long 
+as the resulting process lives, the container will also stay running. If the 
+process is killed inside the container, the container will also stop.
 
 ---
 
