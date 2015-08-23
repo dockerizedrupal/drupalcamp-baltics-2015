@@ -325,8 +325,8 @@ run Windows based executables directly in a container if your host operating
 system is Linux. There is no such limitations for virtual machines.
 
 But since most of the third party services that are usually used in along side 
-with Drupal, are able to run on Linux anyways, so using containers wouldn't be 
-a problem for a Drupal developer.
+with Drupal are able to run on Linux anyways, so using containers mostly 
+wouldn't be a problem for a Drupal developer.
 
 So like every piece of technology in this world is trying to solve a particular 
 problem, operating-system-level virtualization also has its place and purpose 
