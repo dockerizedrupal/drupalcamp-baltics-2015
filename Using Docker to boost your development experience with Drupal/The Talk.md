@@ -670,7 +670,7 @@ PLAY DEMO VIDEO #01
 So there you go, in this little demo we built a Docker image and started
 a container.
 
-Inside the container Apache were listening on port 80.
+Inside the container Apache process were started on port 80.
 
 We also saw that making HTTP request to a loopback address through the web 
 browser, we got the actual response form the web server running inside the 
