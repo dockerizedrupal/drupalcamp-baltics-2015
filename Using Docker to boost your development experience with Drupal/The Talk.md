@@ -421,11 +421,84 @@ official term for that is Dockerfile.
 We will not be covering the manual process in this presentation, because 
 honestly we personally have not had a reason to use it in practice.
 
-So the idea that you can put your application and all of its dependencies into 
-a single standardized package and build it automatically in a repeatable way 
-and also store it in a centralized repository, removes so much of the 
-complexity when deploying your application to another machine or sharing it 
-with other developers.
+---
+
+SWITCH TO SLIDE #12
+
+---
+
+Another important concept in Docker is a container. Without understanding the 
+basics of it, it is very hard to understand how Docker works.
+
+From your application point of view, a container provides an isolated virtual 
+environment for your application that feels like a lightweight virtual machine.
+
+But from a technical point of view they still are different virtualization 
+concepts.
+
+This means that your application process is virtually isolated from other 
+processes running on the same machine.
+
+A container can have a separate network interface or share a network interface 
+with host's interface or with other containers. You can also control how much 
+resources your applications can have on the host. You may want to limit the 
+memory, cpu and disk space consumption to a specific values if for example you 
+run multiple containers on the same machine.
+
+By giving right capabilities to a container you can even share you physical 
+devices with your application running in a container. 
+
+Because you have such a fine control of resource allocation, Docker also gives 
+you tools to get the necessary metrics for your application, which you can use
+to monitor you application performance.
+
+Containers are very lightweight. You could run hundreds, even thousands of 
+containers on a single host, that's how lightweight they are when compared to 
+virtual machines.
+
+At the last DockerCon that took place in couple of months ago in USA, San Francisco
+they demod how they managed to run run 250 containers on a Raspberry Pi 2.
+
+https://www.youtube.com/watch?v=MHJmNZSRve0
+
+The underlying techonolgy (namespace isolation and control groups) that Docker 
+itself makes use of are actually provided by Linux kernel itself.
+
+---
+
+SWITCH TO SLIDE
+
+---
+
+A good example in my opinion how it might be easier for you to understand the 
+relationship between a Docker image and a Docker container is, if you 
+think about the basic concept of object-oriented programming paradigm, which I'm
+sure you know well, since most of you here are developers I suppose.
+
+If you don't know it yet, then Drupal 8 definitely forces you to learn it, 
+which is a good thing.
+
+In OOP you have classes that specifies the structure of data and the behaviour 
+of your objects. It's basically a template or blueprint for your objects.
+
+The same concept can be applied to the relationship between Docker images and 
+Docker containers.
+
+Docker image in this case is like a class that contains your application code 
+and all of its dependencies and you can create containers that are derived from that 
+Docker image, which then are created or destroyed on demand just like objects. 
+
+You can share your Docker image with other developers just like you can share
+your class that you have written as a text file, but you can't share Docker 
+containers because they are the running instances of that image just like 
+objects.
+
+But just so you know, in the future you actually could send a running container 
+from one host to another by creating a full snapshot (which imcludes memory dump, mutable data 
+etc.) from the container, but this feature is still in an experimental phase.
+
+There is a video from the last DockerCon on YouTube in the official Docker 
+channel where the guys are demonstrating this functionality.
 
 ---
 
@@ -552,9 +625,9 @@ because Apache is installed only during when we build the base image.
 The fifth line is just there to tell who is the maintainer of the image. This 
 metadata will be directly stored on the image and can be queried any time.
 
-On line eight, eleven and fourteen, we can see the RUN instruction, which is 
-the most common instruction in the Dockerfile. RUN instruction executes a 
-command and commits the change to filesystem back into your image.
+On line eight, eleven and fourteen, we see the RUN instruction, which is the 
+most common instruction in the Dockerfile. RUN instruction executes a command 
+and commits the change to filesystem back into your image.
 
 If you have not yet noticed then you can see that on line eleven we execute
 apt-get install with the -y flag, so the build process wouldn't be interrupted,
@@ -582,77 +655,6 @@ SWITCH TO SLIDE
 SWITCH TO SLIDE
 
 ---
-
-What is a container?
-
-From your application point of view, a container provides an isolated virtual 
-environment for your application.
-
-This means that your application process is isolated from other processes on 
-the same host.
-
-It can have a separate network interface or share a network interface with 
-host's interface or with other containers, you can also control how much 
-resources your applications can have on the host. You may want to limit the 
-memory consumption to a specific value if for example you run multiple containers 
-on the same host for the same application.
-
-, CPU, disk space and many more).
-
-if you prioved the right capapabilitys you can even use hardware devices erc
-
-You can even limit the disk space that your application could have access to.
-
-Because you have such a fine control of resource allocation, Docker also gives 
-you tools to get the necessary metrics for your application, which you can use
-to monitor you application.
-
-Containers are very lightweight. You could run hundreds, even thousands of 
-containers on a single host, that's how lightweight they are.
-
-At the last DockerCon that took place in couple of months ago in USA, San Francisco
-they demod how they managed to run run 250 containers on a Raspberry Pi 2.
-
-https://www.youtube.com/watch?v=MHJmNZSRve0
-
-The underlying techonolgy (namespace isolation and control groups) that Docker 
-itself makes use of are actually provided by Linux kernel itself.
-
----
-
-SWITCH TO SLIDE
-
----
-
-A good example in my opinion how it might be easier for you to understand the 
-relationship between a Docker image and a Docker container is, if you 
-think about the basic concept of object-oriented programming paradigm, which I'm
-sure you know well, since most of you here are developers I suppose.
-
-If you don't know it yet, then Drupal 8 definitely forces you to learn it, 
-which is a good thing.
-
-In OOP you have classes that specifies the structure of data and the behaviour 
-of your objects. It's basically a template or blueprint for your objects.
-
-The same concept can be applied to the relationship between Docker images and 
-Docker containers.
-
-Docker image in this case is like a class that contains your application code 
-and all of its dependencies and you can create containers that are derived from that 
-Docker image, which then are created or destroyed on demand just like objects. 
-
-You can share your Docker image with other developers just like you can share
-your class that you have written as a text file, but you can't share Docker 
-containers because they are the running instances of that image just like 
-objects.
-
-But just so you know, in the future you actually could send a running container 
-from one host to another by creating a full snapshot (which imcludes memory dump, mutable data 
-etc.) from the container, but this feature is still in an experimental phase.
-
-There is a video from the last DockerCon on YouTube in the official Docker 
-channel where the guys are demonstrating this functionality.
 
 ---
 
