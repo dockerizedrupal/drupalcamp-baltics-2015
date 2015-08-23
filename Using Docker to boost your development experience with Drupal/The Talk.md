@@ -270,7 +270,7 @@ operating system if it has some kind of containerization primitives in place
 that would allow a process to run in a sandboxed environment.
 
 As far as I know there already is an execution driver available for FreeBSD 
-that utilizes the jail mechanism on that platform to isolate processes, 
+that utilizes the Jails mechanism on that platform to isolate processes, 
 although it's still considered as an experimental project.
 
 And also Microsoft has started to understand the importance of containerization 
@@ -428,16 +428,25 @@ SWITCH TO SLIDE #12
 ---
 
 Another important concept in Docker is a container. Without understanding the 
-basics of it, it is very hard to understand how Docker works.
+basics of it, it's very hard to understand how Docker works.
 
-From your application point of view, a container provides an isolated virtual 
+From a developer point of view, a container provides an isolated virtual 
 environment for your application that feels like a lightweight virtual machine.
 
-But from a technical point of view they still are different virtualization 
-concepts.
+But architecturally they still are different virtualization concepts.
 
 This means that your application process is virtually isolated from other 
 processes running on the same machine.
+
+From an application point of view, there is a little or no difference when 
+running your application inside or outside the container. The inside looks most 
+of the time the same like outside.
+
+Sharing the host's operating system kernel with other containers, allows your 
+application to be more efficient, but still giving you virtual machine like 
+capabilities.
+
+Containers are created from a Docker image, which are 
 
 A container can have a separate network interface or share a network interface 
 with host's interface or with other containers. You can also control how much 
@@ -445,24 +454,20 @@ resources your applications can have on the host. You may want to limit the
 memory, cpu and disk space consumption to a specific values if for example you 
 run multiple containers on the same machine.
 
-By giving right capabilities to a container you can even share you physical 
-devices with your application running in a container. 
+By giving right capabilities to a container you can even make you physical 
+devices available to your application running in a container. 
 
-Because you have such a fine control of resource allocation, Docker also gives 
-you tools to get the necessary metrics for your application, which you can use
-to monitor you application performance.
+Because you have such a fine control over resource allocation, Docker also 
+gives you tools to get the necessary metrics for your application, which you 
+can useto monitor you application performance.
 
 Containers are very lightweight. You could run hundreds, even thousands of 
 containers on a single host, that's how lightweight they are when compared to 
 virtual machines.
 
-At the last DockerCon that took place in couple of months ago in USA, San Francisco
-they demod how they managed to run run 250 containers on a Raspberry Pi 2.
-
-https://www.youtube.com/watch?v=MHJmNZSRve0
-
-The underlying techonolgy (namespace isolation and control groups) that Docker 
-itself makes use of are actually provided by Linux kernel itself.
+Starting a container takes most of the time only a couple seconds. Usually the 
+application or service running inside the container takes more time to start 
+than the container itself.
 
 ---
 
@@ -470,7 +475,7 @@ SWITCH TO SLIDE
 
 ---
 
-A good example in my opinion how it might be easier for you to understand the 
+In my opinion, a good example how it might be easier for you to understand the 
 relationship between a Docker image and a Docker container is, if you 
 think about the basic concept of object-oriented programming paradigm, which I'm
 sure you know well, since most of you here are developers I suppose.
@@ -563,7 +568,7 @@ SWITCH TO SLIDE #14
 This is how a simple Dockerfile looks like.
 
 You can build a Docker image from it, that installs Apache on top of Debian 
-filesystem and it replaces the contents of the default index.html file with 
+file system and it replaces the contents of the default index.html file with 
 the sentence "Hello, DrupalCamp Baltics 2015!".
 
 As you can see the format of the Dockerfile is very simple.
@@ -627,7 +632,7 @@ metadata will be directly stored on the image and can be queried any time.
 
 On line eight, eleven and fourteen, we see the RUN instruction, which is the 
 most common instruction in the Dockerfile. RUN instruction executes a command 
-and commits the change to filesystem back into your image.
+and commits the change to file system back into your image.
 
 If you have not yet noticed then you can see that on line eleven we execute
 apt-get install with the -y flag, so the build process wouldn't be interrupted,
