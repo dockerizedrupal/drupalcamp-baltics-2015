@@ -711,14 +711,22 @@ to work on or maintain at any given time relative to our team size is quite
 large.
 
 Imagine having to work on more than 5 different projects on a single day. And 
-more than half of them aren't even developed by you, so the time you would need 
-to put into getting each project up and running on a standard LAMP setup can be 
-quite large.
+more than half of those aren't even developed by you, so the time you would 
+need to put into getting each project up and running on a standard LAMP setup 
+can be quite large.
 
-When we take also into account that you probably only have to fix some very
-easy bugs that would take you only about ten to fifteen minutes to solve, then 
-the total time you have to invest to resolve a single bug might be more than 
-three times higher than the initial estimate.
+By standard LAMP setup I mean you have a standard Linux environment and every 
+tool or service you would need to use in your development workflow is installed 
+directly to your host.
+
+Some projects may also be a couple of years old and getting the right tools to 
+work on a newer operating system may also be more complicated than it should 
+be.
+
+When we also take into account that some of the issues you need to resolve have
+a very easy fix that would take you only about ten to fifteen minutes to 
+implement, then the total time you have to invest to resolve a single bug might 
+be more than three times higher than the initial estimate.
 
 Even more time you would need to waste if the fifteen minute bug requires you 
 to set up and configure for example LDAP server to fix it, which is not that 
