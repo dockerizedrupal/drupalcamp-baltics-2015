@@ -655,28 +655,8 @@ Apache will be started in the foreground if you launch the container. As long
 as the resulting process lives, the container will also stay running. If the 
 process is killed inside the container, the container will also stop.
 
----
-
-SWITCH TO SLIDE
-
----
-
-
-
----
-
-SWITCH TO SLIDE
-
----
-
----
-
-SWITCH TO SLIDE
-
----
-
-Let's see the image building process in action, before we continue with the 
-rest of the presentation.
+Now that we have covered most of the basics there is to Docker we are going to 
+show you a small demo where you can see the image building process in action,
 
 ---
 
