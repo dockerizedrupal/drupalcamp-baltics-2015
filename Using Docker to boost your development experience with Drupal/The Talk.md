@@ -21,10 +21,9 @@ than receive.
 So I feel that it's my responsibility to make my first real contribution to 
 Drupal community today by giving this small talk with my good colleague Mait.
 
-Because the amount of time that have been given to us to perform this 
-presentation is finite and a good developer is supposed to never go overtime, 
-we have left no room for any improvisation, so please don't expect to hear any 
-jokes during this presentation.
+Because the subject is quite large and the amount of time that have been given 
+to us to perform this presentation is finite and a good developer is supposed 
+to never go overtime, we have left no room for any improvisation.
 
 Also bear in mind that most of the statements made in this presentation are 
 made from a developer point of view. So if we talk about pros and cons of some 
@@ -417,7 +416,7 @@ extend an image manually, nevertheless there is a better way to build a Docker
 image.
 
 Docker is able to build an image by reading instructions from a text file. The 
-official term for that file is called Dockerfile.
+official term for that is Dockerfile.
 
 We will not be covering the manual process in this presentation, because 
 honestly we personally have not had a reason to use it in practice.
@@ -447,7 +446,7 @@ blueprint for your Docker image.
 It's a simple text file that contains a series of instructions on how to build 
 an image.
 
-You might be surprised how simple it actually is to work with the Dockerfile.
+You might be surprised how simple it actually is to work with a Dockerfile.
 
 If you are familiar with Linux command line interface then you basically 
 already know how to write a Dockerfile.
