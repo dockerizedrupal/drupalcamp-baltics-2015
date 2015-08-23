@@ -658,7 +658,7 @@ process is killed inside the container, the container will also stop.
 
 Now that we have covered most of the basics there is to Docker that are
 important, so you would be able follow the rest of the presentation, we are 
-going to show you now a small demo where you can see the Docker image building 
+now going to show you a small demo where you can see the Docker image building 
 process in action,
 
 ---
