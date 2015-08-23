@@ -515,7 +515,7 @@ in the future the snapshot also will include a memory dump.
 
 ---
 
-SWITCH TO SLIDE #12
+SWITCH TO SLIDE #14
 
 ---
 
@@ -548,7 +548,7 @@ particular command supports that.
 
 ---
 
-SWITCH TO SLIDE #13
+SWITCH TO SLIDE #15
 
 ---
 
@@ -569,7 +569,7 @@ will definitely improve that skill by a lot.
 
 ---
 
-SWITCH TO SLIDE #14
+SWITCH TO SLIDE #16
 
 ---
 
