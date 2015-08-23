@@ -682,15 +682,15 @@ to have a Docker in your development environment toolbox.
 
 ---
 
-SWITCH TO SLIDE
+SWITCH TO SLIDE #17
 
 ---
 
-So now that you guys have seen a little demonstration that should give you a better idea 
-how Docker works and what should you look for if you want to install it on your machine.
+With this little demo we have finished the first part of our presentation.
 
-We will now going to talk about why and how we switched our development environments 
-from standard LAMP setup to Docker for developing Drupal projects at Fenomen.
+We will now going to talk about why and how we at Fenomen switched our 
+development environments from a standard LAMP setup to Docker to develop Drupal 
+projects.
 
 And maybe you are experiencing the same issues as we did and our experience 
 using Docker could help you resolve them.
