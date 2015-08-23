@@ -6,8 +6,6 @@ SWITCH TO SLIDE #01
 
 ---
 
-![SWITCH TO SLIDE #01](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/Using%20Docker%20to%20boost%20your%20development%20experience%20with%20Drupal/SWITCH%20TO%20SLIDE%20%2301.png "SWITCH TO SLIDE #01")
-
 Hello guys!
 
 My name is Jürgen and I'm from Estonia. I'm a full time Drupal developer at 
@@ -44,8 +42,8 @@ my first DrupalCamp, so I'm very delighted that I have given the opportunity to
 be here in front of you, fellow Drupal enthusiasts.
 
 So now that we have your attention and you briefly know who we are and what to 
-expect from how this presentation may go, lets talk about Drupal and Docker. 
-How can these two technologies work together and why you should care.
+expect from how this presentation, lets talk about Drupal and Docker. How can 
+these two technologies work together and why you should care.
 
 ---
 
