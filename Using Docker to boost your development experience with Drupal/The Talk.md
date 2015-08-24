@@ -796,12 +796,12 @@ Reinstalling an operating system and configuring all the tools and services
 that a developer might need would have taken us more time than we initially had 
 been given.
 
-But unfortunately the effort we put into trying to recover the system was not 
+But unfortunately the effort we put into trying to recover his system was not 
 enough.
 
 So the only choice we had, was to reinstall the operating system, install and 
-configure all the tools that a developer needs in order to be able to develop 
-Drupal based projects.
+configure all the tools that he needed in order to be able to develop Drupal 
+based projects.
 
 We are also using phpfarm on our systems to be able to use multiple PHP 
 versions in parallel on a single host.
@@ -812,14 +812,22 @@ especially if the documentation that should assist you, is not up to date or if
 you are using a different Linux distribution or version that the documentation 
 was written for.
 
-So the time that two people had lost in a single day was pretty huge. 
+So the time that a company had lost from two developers that weren't able to 
+write code for the rest of the day, was pretty huge as you would imagine.
+
+If we would had a proper process in place that would have allowed us to build 
+and configure everything automatically the impact to the cost would have been 
+much smaller.
+
+---
+
+SWITCH TO SLIDE #20
+
+---
 
 
 
-Properly configured machine took more than half a day to set up,
-For the rest of the week we still had to install or configure some of the 
-services because we obviously had forgotten to install or configure them all at he 
-beginning.
+
 
 So when the weekend arrived I started to think about the issue more closely and how 
 could we resolve it or make it a little bit more efficient, because the current 
