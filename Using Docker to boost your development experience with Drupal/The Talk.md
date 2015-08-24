@@ -772,19 +772,20 @@ But unfortunately at this time everything didn't go as well as he would have
 planned.
 
 When he realized that his system wasn't working properly anymore after 
-attempting to fix the file permissions, he notified Jürgen.
+attempting to fix the file permissions, he notified a fellow colleague for a 
+help.
 
 After some investigation what exactly had happened to his system, we found out 
 that the following command you can see on the slide, he had entered to his 
 terminal had made his system unusable.
 
-For those who don't know what this command does, it changes every file and 
-directory ownership on your system to www-data.
+For those who don't know what this command does, it changed every file and 
+directory ownership on your his to www-data.
 
 The command in this case were executed as superuser, which makes it extra 
 dangerous.
 
-Services running on your host are not able to properly access files and 
+Services running on his host were not able to properly access files and 
 directories anymore which makes them unstable and unusable.
 
 Because this happened in the middle of the work day, we at first tried to 
@@ -802,22 +803,20 @@ So the only choice we had, was to reinstall the operating system and install
 and configure all the tools that you need, to be able develop Drupal based 
 projects.
 
+We are also using phpfarm on our systems to be able to use multiple PHP 
+versions in parallel on a single host.
+
+The issue with phpfarm is that you have to compile PHP and its extensions from 
+a source code. Compiling a large project like PHP is quite a tedious task, 
+especially if the documentation that should assist you, is not up to date or if 
+you are using a different Linux distribution or version that the documentation 
+was written for.
+
+So the time we 
 
 
 
-
-
-
-Because the incident happened in the middle of the week, we had only one choice 
-to resolve it considering the knowledge that we had at that time. In short, we 
-backed up all the necessary files, reinstalled the OS and installed all the 
-standard services and tools that a Drupal developer may need in his work.
-
-Properly configured machine took more than half a day to set up, because we are 
-using phpfarm on our systems to be able to use multiple PHP versions in 
-parallel on a single host and the documentation that we had at that time was not up-to-date 
-and didn't work out of the box for Ubuntu, so we had to deal with that as well. 
-
+Properly configured machine took more than half a day to set up,
 For the rest of the week we still had to install or configure some of the 
 services because we obviously had forgotten to install or configure them all at he 
 beginning.
