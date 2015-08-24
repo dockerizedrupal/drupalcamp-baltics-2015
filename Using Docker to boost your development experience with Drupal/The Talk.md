@@ -766,11 +766,17 @@ incorrect.
 
 He thought he could safely resolve them by himself.
 
-But unfortunately didn't.
+But unfortunately he didn't.
 
 When he realized that his system wasn't working properly anymore after trying 
 to fix the file permissions, he notified Jürgen.
- 
+
+After some investigation what exactly had happened to his system, we found out 
+that the following command you can see on the slide he had entered to a 
+terminal had made his system unusable.
+
+
+
 
  he was working on Linux and at that time he 
 was not very experienced with it.
