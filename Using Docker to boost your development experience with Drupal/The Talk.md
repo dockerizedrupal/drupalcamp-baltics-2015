@@ -754,8 +754,8 @@ SWITCH TO SLIDE #19
 ---
 
 If I'm honest with you, then the real reason why we ended up using Docker 
-in our development environment was actually by accident. To get the better idea 
-what I mean by that, let me start by telling you a relatively short story.
+in our development environment was actually by accident. To get a better idea 
+what I mean by that, let me start by telling you a short story.
 
 Last year in October one of our junior developers was working on a project. 
 
@@ -775,27 +775,17 @@ After some investigation what exactly had happened to his system, we found out
 that the following command you can see on the slide, he had entered to his 
 terminal had made his system unusable.
 
+If you don't know what this command does, it changes every file and directory 
+ownership on your system to www-data.
+
+The command in this case were executed as superuser, which makes it extra 
+dangerous.
+
+services running on your machine can't properly access files and 
+directories anymore.
 
 
 
- he was working on Linux and at that time he 
-was not very experienced with it.
- 
- but he had an issue with the project file 
-permissions and he thought that he could safely resolve it by himself, but what 
-happened was the opposite.
-
-So the command that he entered into the terminal was following:
-
-    sudo chown -R www-data.www-data /
-
-Yes, you can laugh if you want!
-
-For those who don't know what this command does, it changes every file 
-and directory ownership to www-data. The command in this case were executed as 
-superuser, which makes it extra dangerous. So the outcome after executing it, 
-is that your machine is basically broken, because services running on your 
-machine can't properly access files and directories anymore.
 
 So the first thing what he did after he realized that his system was unusable, 
 he notified me. At first I tried to recover as much as possible by hand so he 
