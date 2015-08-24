@@ -768,20 +768,20 @@ He thought he could safely resolve them by himself.
 
 But unfortunately he didn't.
 
-When he realized that his system wasn't working properly anymore after trying 
-to fix the file permissions, he notified Jürgen.
+When he realized that his system wasn't working properly anymore after 
+attempting to fix the file permissions, he notified Jürgen.
 
 After some investigation what exactly had happened to his system, we found out 
 that the following command you can see on the slide, he had entered to his 
 terminal had made his system unusable.
 
-If you don't know what this command does, it changes every file and directory 
-ownership on your system to www-data.
+For those who don't know what this command does, it changes every file and 
+directory ownership on your system to www-data.
 
 The command in this case were executed as superuser, which makes it extra 
 dangerous.
 
-services running on your machine can't properly access files and 
+Services running on your host are not able to properly access files and 
 directories anymore.
 
 
