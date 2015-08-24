@@ -799,7 +799,7 @@ But unfortunately the effort we put into trying to recover the system was not
 enough.
 
 So the only choice we had, was to reinstall the operating system and install
-and configure all the tools that you need to be able develop Drupal based 
+and configure all the tools that you need, to be able develop Drupal based 
 projects.
 
 
