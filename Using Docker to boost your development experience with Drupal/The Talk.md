@@ -745,8 +745,8 @@ up a bit more complex project by their own, they immediately get stuck. Because
 the area of expertise you need to have to work on your task doesn't belong 
 directly to a front-end developer's domain.
 
-As you can see there are many issues using this kind of a set up in that 
-work environment. 
+As you can see there are many issues using this kind of a set up and processes 
+in that work environment. 
 
 ---
 
