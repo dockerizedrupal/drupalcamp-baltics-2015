@@ -793,15 +793,15 @@ recover as much as possible by hand so he could at least continue his work for
 the day.
 
 Reinstalling an operating system and configuring all the tools and services 
-that a developer might need would have taken us more time than we had been 
-given.
+that a developer might need would have taken us more time than we initially had 
+been given.
 
 But unfortunately the effort we put into trying to recover the system was not 
 enough.
 
-So the only choice we had, was to reinstall the operating system and install
-and configure all the tools that you need, to be able develop Drupal based 
-projects.
+So the only choice we had, was to reinstall the operating system, install and 
+configure all the tools that a developer needs in order to be able to develop 
+Drupal based projects.
 
 We are also using phpfarm on our systems to be able to use multiple PHP 
 versions in parallel on a single host.
@@ -812,7 +812,7 @@ especially if the documentation that should assist you, is not up to date or if
 you are using a different Linux distribution or version that the documentation 
 was written for.
 
-So the time we 
+So the time that two people had lost in a single day was pretty huge. 
 
 
 
