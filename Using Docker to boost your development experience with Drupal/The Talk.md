@@ -827,23 +827,16 @@ SWITCH TO SLIDE #20
 ---
 
 Learning from this experience how things should not be done, we started 
-thinking about how to solve this.
+thinking about how to solve this problem. How to make our development 
+environments more efficient.
 
 We learned that Jürgen had already played with Docker in his free time for some 
 time now.
 
-By listening to him, we came to the conclusion that trying to use Docker to 
-solve this problem actually could work.
+By hearing him out, we came to the conclusion that trying to use Docker to 
+make our development environments more efficient could actually work.
 
 
-
-So when the weekend arrived I started to think about the issue more closely and how 
-could we resolve it or make it a little bit more efficient, because the current 
-manual process for that was too costly. Nobody pays for that kind of work or mistakes.
-
-So fortunately I had already used Docker myself but not for solving that kind
-of a problem and the more I thought about it the more Docker made sense to me 
-that it's the right tool to make this process more efficient.
 
 The initial plan I had, was to simulate exactly the same workflow that we have been 
 using already with the standard LAMP setup. So I created basic Docker images for Apache, 
