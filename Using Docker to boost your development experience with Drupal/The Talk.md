@@ -769,7 +769,7 @@ He thought he could safely resolve them by himself, because he already had done
 a similar action a couple of times in the past for a different project.
 
 But unfortunately at this time everything didn't go as well as he would have 
-expected.
+planned.
 
 When he realized that his system wasn't working properly anymore after 
 attempting to fix the file permissions, he notified Jürgen.
