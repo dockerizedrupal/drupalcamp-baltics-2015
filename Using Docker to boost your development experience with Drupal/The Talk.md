@@ -826,13 +826,14 @@ SWITCH TO SLIDE #20
 
 ---
 
-By learning from this experience how things should not be done, we managed to 
-find a proper solution to that problem.
+Learning from this experience how things should not be done, we started 
+thinking about how to solve this.
 
-If it still comes as a surprise to someone, then the solution was Docker.
+We learned that Jürgen had already played with Docker in his free time for some 
+time now.
 
-Fortunately Jürgen already had used Docker in his free time for some time now
-so it was relatively easy
+By listening to him, we came to the conclusion that trying to use Docker to 
+solve this problem actually could work.
 
 
 
