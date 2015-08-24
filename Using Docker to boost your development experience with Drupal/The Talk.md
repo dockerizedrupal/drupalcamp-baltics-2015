@@ -804,6 +804,10 @@ projects.
 
 
 
+
+
+
+
 Because the incident happened in the middle of the week, we had only one choice 
 to resolve it considering the knowledge that we had at that time. In short, we 
 backed up all the necessary files, reinstalled the OS and installed all the 
