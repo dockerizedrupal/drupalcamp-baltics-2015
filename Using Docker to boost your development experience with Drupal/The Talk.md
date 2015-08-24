@@ -765,8 +765,9 @@ Nothing unusual there.
 At one moment, the file permissions for a project he was working on were 
 incorrect.
 
-He thought he could safely resolve them by himself, because he already had done 
-a similar action a couple of times in the past for a different project.
+He thought he could safely resolve them by himself, because he already had 
+performed a similar action a couple of times in the past for different 
+projects.
 
 But unfortunately at this time everything didn't go as well as he would have 
 planned.
@@ -780,13 +781,13 @@ that the following command you can see on the slide, he had entered to his
 terminal had made his system unusable.
 
 For those who don't know what this command does, it changed every file and 
-directory ownership on your his to www-data.
+directory ownership on his to www-data.
 
 The command in this case were executed as superuser, which makes it extra 
 dangerous.
 
 Services running on his host were not able to properly access files and 
-directories anymore which makes them unstable and unusable.
+directories anymore.
 
 Because this happened in the middle of the work day, we at first tried to 
 recover as much as possible by hand so he could at least continue his work for 
@@ -800,8 +801,8 @@ But unfortunately the effort we put into trying to recover his system was not
 enough.
 
 So the only choice we had, was to reinstall the operating system, install and 
-configure all the tools that he needed in order to be able to develop Drupal 
-based projects.
+configure all the tools that he needed in order to be able to continue with his 
+work.
 
 We are also using phpfarm on our systems to be able to use multiple PHP 
 versions in parallel on a single host.
@@ -825,7 +826,13 @@ SWITCH TO SLIDE #20
 
 ---
 
+By learning from this experience how things should not be done, we managed to 
+find a proper solution to that problem.
 
+If it still comes as a surprise to someone, then the solution was Docker.
+
+Fortunately Jürgen already had used Docker in his free time for some time now
+so it was relatively easy
 
 
 
