@@ -772,7 +772,7 @@ When he realized that his system wasn't working properly anymore after trying
 to fix the file permissions, he notified Jürgen.
 
 After some investigation what exactly had happened to his system, we found out 
-that the following command you can see on the slide he had entered to a 
+that the following command you can see on the slide, he had entered to his 
 terminal had made his system unusable.
 
 
