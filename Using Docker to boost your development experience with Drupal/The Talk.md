@@ -826,7 +826,7 @@ SWITCH TO SLIDE #20
 
 ---
 
-Learning from this experience how things should not be done, we started 
+Learning from this real experience how things should not be done, we started 
 thinking about how to solve this problem. How to make our development 
 environments more efficient.
 
@@ -836,6 +836,14 @@ time now.
 By hearing him out, we came to the conclusion that trying to use Docker to 
 make our development environments more efficient could actually work.
 
+So we came up with a plan to divide the process of deploying Docker over time 
+to our development environments into three phases.
+
+---
+
+SWITCH TO SLIDE #21
+
+---
 
 
 The initial plan I had, was to simulate exactly the same workflow that we have been 
