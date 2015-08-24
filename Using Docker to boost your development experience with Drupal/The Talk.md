@@ -727,7 +727,8 @@ be.
 When we also take into account that some of the issues you need to resolve have
 a very easy fix that would take you only about ten to fifteen minutes to 
 implement, then the total time you have to invest to resolve a single bug might 
-be more than three times higher than the initial estimate.
+be more than three times higher than the initial estimate due to not having 
+a proper system and process in place.
 
 Even more time you would need to waste if the fifteen minute bug requires you 
 to set up and configure for example LDAP server to fix it, which is not that 
