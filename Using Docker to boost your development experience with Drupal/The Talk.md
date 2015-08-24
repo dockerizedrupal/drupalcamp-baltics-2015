@@ -764,9 +764,11 @@ Nothing unusual there.
 At one moment, the file permissions for a project he was working on were 
 incorrect.
 
-He thought he could safely resolve them by himself.
+He thought he could safely resolve them by himself, because he already had done 
+a similar action a couple of times in the past for a different project.
 
-But unfortunately he didn't.
+But unfortunately at this time everything didn't go as well as he would have 
+expected.
 
 When he realized that his system wasn't working properly anymore after 
 attempting to fix the file permissions, he notified Jürgen.
@@ -784,12 +786,11 @@ dangerous.
 Services running on your host are not able to properly access files and 
 directories anymore.
 
+Because this happened in the middle of the day, we at first tried to recover as 
+much as possible by hand so he could at least continue his work for the day.
 
 
-
-So the first thing what he did after he realized that his system was unusable, 
-he notified me. At first I tried to recover as much as possible by hand so he 
-could at least continue his work for the day, because reinstalling an operating 
+because reinstalling an operating 
 system and configuring services would have taken us more time than we had been 
 given.
 
