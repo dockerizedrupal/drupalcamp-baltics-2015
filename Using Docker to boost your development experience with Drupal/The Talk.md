@@ -797,6 +797,12 @@ given.
 But unfortunately the effort we put into trying to recover the system was not 
 enough.
 
+So the only choice we had, was to reinstall the operating system and install
+and configure all the tools that you need to be able develop Drupal based 
+projects.
+
+
+
 Because the incident happened in the middle of the week, we had only one choice 
 to resolve it considering the knowledge that we had at that time. In short, we 
 backed up all the necessary files, reinstalled the OS and installed all the 
