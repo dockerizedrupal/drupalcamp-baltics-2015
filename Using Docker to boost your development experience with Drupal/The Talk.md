@@ -980,6 +980,8 @@ solomon hykes
 
 dynamic runtime -  dockerfile vs puppet etc
 
+thank you at the end and start
+
 ## Questions and answers
 
 Make sure to write down any unanswered questions and get back to the questioner as soon as you have the answer. Don't forget to ask them contact details!
