@@ -449,7 +449,11 @@ capabilities.
 Containers are created from Docker images. 
 
 By giving right capabilities to a container you can even make your physical 
-devices available to your application running inside the container. 
+devices available to your application running inside the container.
+
+In same cases for example you may need to debug a service that is running 
+inside the container, then Docker is able to give you a shell to a running 
+container.
 
 A container can have a separate network interface or share a network interface 
 with host's interface or with other containers. You can also control how much 
@@ -826,7 +830,7 @@ SWITCH TO SLIDE #20
 
 ---
 
-Learning from this real experience how things should not be done, we started 
+Learning from this real experience how things shouldn't be done, we started 
 thinking about how to solve this problem. How to make our development 
 environments more efficient.
 
@@ -845,34 +849,43 @@ SWITCH TO SLIDE #21
 
 ---
 
+In phase one, without first introducing large changes to our development 
+workflow, we concentrated on eliminating the problem we had when something 
+would happen to your development machine and it couldn't be recovered easily.
 
-The initial plan I had, was to simulate exactly the same workflow that we have been 
-using already with the standard LAMP setup. So I created basic Docker images for Apache, 
-MySQL and PHP etc and because at that time there was no tool known to me that could 
-manage those services running in a separate containers as a single service, I 
-created a simple shell script for that as well, which basically allowed user to 
-start, stop and retsart the services on his own without knowing Docker at all.
+The first thing we did, we removed all the services like Apache, MySQL, PHP 
+etc., that were running on a developer machine natively and we moved them into 
+separate containers.
 
-// SILDE images graph
+We also had to write an in-house tool that would allow a developer to 
+transparently manage these containers similarly like you would manage services 
+running on your machine with upstart, because we just didn't know any existing 
+tool at that time, that could have done the same job.
 
-Fast forward to a couple of weeks I had a setup that I was personally happy with. Either Drupal version 6 and 7 projects
-were working without any major issues on that environment.
+The key thing here to understand is that every Drupal project on your machine 
+shared the same Apache, MySQL and PHP container instance just like in native 
+solution.
 
-So I migrated my development environment completely to Docker.
+Because you still had to know Docker too much and we wanted to avoid it at 
+first, we still had some work to do.
 
-But because the plan was to ultimately replace standard LAMP setups for other
-developers as well, I still had some work to do, because the current setup
-required you to know Docker too much.
+The most critical issue to solve was Drush.
 
-So yeah, I started working on resolving these issues.
+How to use Drush in a relatively comfortable way with containers.
 
-The first and the most critical issue was Drush. How to use Drush in a 
-relatively comfortable way with containers. Let me give you an example.
+Let me give you an example.
 
-Without doing anything the workflow would look following, when a dveloper wants to 
-use Drush he/she has to enter the PHP container, move to the right directory where 
-Drupal is mounted and execute Drush commands there. But this workflow isn't 
-that intuitive, because using Drush should be easy and problem-free.
+When a developer wants to use Drush in a containerized environment, he has to 
+go inside the PHP container, because Drush was installed along side with PHP 
+service to same image.
+
+Then he had to move to the right directory where Drupal files were mounted and 
+execute Drush command there.
+
+This workflow isn't that intuitive, because using Drush should be quick and 
+easy.
+
+
 
 To solve that I have created a shell script, which is a proxy for Drush and you install it 
 directly onto your host. This proxy script basically proxies all your Drush commands
@@ -882,6 +895,8 @@ if they aren't, it will ask you if you want to start them.
 The script has been proven to be working pretty well. Most of the time a developer 
 that is using it don't even know that he is using Docker and Drush 
 is actually executed inside the PHP container.
+
+
 
 The second issue that had to be solved was networking, because every service 
 that we used was living in a separate container and they don't share the network 
