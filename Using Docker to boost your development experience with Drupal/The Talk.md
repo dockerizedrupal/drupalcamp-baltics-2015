@@ -465,9 +465,9 @@ Containers are very lightweight. You could run hundreds, even thousands of
 containers on a single host, that's how lightweight they are when compared to 
 virtual machines.
 
-Starting a container takes most of the time only a couple seconds. Usually the 
-application or service running inside the container takes more time to start 
-than the container itself.
+Starting a container takes most of the time only a couple seconds or less. 
+Usually the application or service running inside the container takes more time 
+to start than the container itself.
 
 ---
 
@@ -753,14 +753,29 @@ SWITCH TO SLIDE #19
 
 ---
 
-If I'm very honest with you, then the real reason why we ended up using Docker 
-in our development environment was actually by accident. So you may think now what 
-exactly then we tried to fix in our work processes. So to get the better idea, 
-let me start with by telling you a little story.
+If I'm honest with you, then the real reason why we ended up using Docker 
+in our development environment was actually by accident. To get the better idea 
+what I mean by that, let me start by telling you a relatively short story.
 
 Last year in October one of our junior developers was working on a project. 
-Nothing unusual there, but because he was working on a Linux, at that time he 
-was not very experienced with it, but he had an issue with the project file 
+
+Nothing unusual there.
+ 
+At one moment, the file permissions for a project he was working on were 
+incorrect.
+
+He thought he could safely resolve them by himself.
+
+But unfortunately didn't.
+
+When he realized that his system wasn't working properly anymore after trying 
+to fix the file permissions, he notified Jürgen.
+ 
+
+ he was working on Linux and at that time he 
+was not very experienced with it.
+ 
+ but he had an issue with the project file 
 permissions and he thought that he could safely resolve it by himself, but what 
 happened was the opposite.
 
