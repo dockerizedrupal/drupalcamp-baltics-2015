@@ -784,17 +784,17 @@ The command in this case were executed as superuser, which makes it extra
 dangerous.
 
 Services running on your host are not able to properly access files and 
-directories anymore.
+directories anymore which makes them unstable and unusable.
 
-Because this happened in the middle of the day, we at first tried to recover as 
-much as possible by hand so he could at least continue his work for the day.
+Because this happened in the middle of the work day, we at first tried to 
+recover as much as possible by hand so he could at least continue his work for 
+the day.
 
-
-because reinstalling an operating 
-system and configuring services would have taken us more time than we had been 
+Reinstalling an operating system and configuring all the tools and services 
+that a developer might need would have taken us more time than we had been 
 given.
 
-But unfortunately the effort I put into trying to recover the system was not 
+But unfortunately the effort we put into trying to recover the system was not 
 enough.
 
 Because the incident happened in the middle of the week, we had only one choice 
