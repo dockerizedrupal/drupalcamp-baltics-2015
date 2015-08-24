@@ -742,7 +742,7 @@ knowledge and the know-how needed to set up the project on his machine.
 Our experience has shown that most who are affected directly by using this 
 development environment are front-end developers, because if they start to set 
 up a bit more complex project by their own, they immediately get stuck. Because 
-the area of expertise you need to have to finish your task doesn't belong 
+the area of expertise you need to have to work on your task doesn't belong 
 directly to a front-end developer's domain.
 
 As you can see there are many issues using this kind of a set up in that 
