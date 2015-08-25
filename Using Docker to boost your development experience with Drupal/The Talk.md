@@ -886,17 +886,39 @@ execute Drush commands there.
 This workflow isn't that intuitive, because using Drush should really be quick 
 and easy.
 
+---
 
+SWITCH TO SLIDE #22
 
-To solve that I have created a shell script, which is a proxy for Drush and you install it 
-directly onto your host. This proxy script basically proxies all your Drush commands
-to inside the container and also detects if the containers are running and 
-if they aren't, it will ask you if you want to start them.
+---
 
-The script has been proven to be working pretty well. Most of the time a developer 
-that is using it don't even know that he is using Docker and Drush 
-is actually executed inside the PHP container.
+To solve that we have created a simple tool called Crush, it's written in Bash. 
 
+However in the future we would like to rewrite it in some other language, 
+because we would like to use Crush natively also on Windows.
+
+Crush is a very simple script.
+
+You can install it directly onto your host and use exactly like you would use 
+native Drush implementation.
+
+By executing a Crush command, it first tries to detect if your PHP container 
+is running and if it isn't, it will ask you if you want to start it.
+
+Then it tries to identify if the directory you where executing your command is 
+inside the Drupal directory tree and if so it does some magic and executes the 
+right Drush command inside the container.
+
+Crush supports Drupal 6, 7 and 8.
+
+From a developer point of view, most of the time he doesn't even notice that 
+Docker is the underlying technology that drives his project.
+
+By installing Drush into PHP image, it gave us also an ability to change Drush 
+version on runtime based on the PHP or Drupal version if there would be a need 
+for that at some point. You may know or not, but you can only expect Drush 5 
+and lower for example to work only on PHP 5.2, you can't run new Drush on PHP 
+5.2. We needed to have that 
 
 
 The second issue that had to be solved was networking, because every service 
