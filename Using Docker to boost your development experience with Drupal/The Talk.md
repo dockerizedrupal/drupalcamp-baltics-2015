@@ -930,8 +930,9 @@ The second issue that we had to solve was networking. How to make it enough
 transparent for the ordinary Drupal developer that he could still develop his 
 projects without knowing how Docker networking works.
 
-As you may know by default when you link multiple containers together they
-don't share the network interface with each other.
+As you may know by default when you link multiple Docker containers together 
+they don't share the network interface with each other. It means that every 
+containerized service in your stack lives in a different network.
 
 We installed this tool called socat to PHP image as well, which allows you to 
 relay network traffic between two independent channels. So basically what I 
