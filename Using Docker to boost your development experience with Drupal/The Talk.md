@@ -674,9 +674,9 @@ PLAY DEMO VIDEO #01
 So there you go, in this little demo we built a Docker image and started
 a container.
 
-Inside the container Apache process were started on port 80.
+Inside the container, Apache process were started on port 80.
 
-We also saw that making HTTP request to a loopback address through the web 
+We also saw, that making HTTP request to a loopback address through the web 
 browser, we got the actual response form the web server running inside the 
 container with the right payload.
 
@@ -785,7 +785,7 @@ that the following command you can see on the slide, he had entered to his
 terminal had made his system unusable.
 
 For those who don't know what this command does, it changed every file and 
-directory ownership on his to www-data.
+directory ownership on his machine to www-data.
 
 The command in this case were executed as superuser, which makes it extra 
 dangerous.
@@ -824,12 +824,6 @@ If we would had a proper process in place that would have allowed us to build
 and configure everything automatically the impact to the cost would have been 
 much smaller.
 
----
-
-SWITCH TO SLIDE #20
-
----
-
 Learning from this real experience how things shouldn't be done, we started 
 thinking about how to solve this problem. How to make our development 
 environments more efficient.
@@ -845,7 +839,7 @@ to our development environments into three phases.
 
 ---
 
-SWITCH TO SLIDE #21
+SWITCH TO SLIDE #20
 
 ---
 
@@ -853,9 +847,9 @@ In phase one, without first introducing large changes to our development
 workflow, we only concentrated on eliminating the problem we had when something 
 would happen to your development machine and it couldn't be recovered easily.
 
-The first thing we did, we removed all the services like Apache, MySQL, PHP 
-etc., that were running on a developer machine natively and we moved them into 
-separate Docker containers.
+The first thing we did, we moved all the services like Apache, MySQL, PHP 
+etc., that were running on a developer machine natively into separate Docker 
+containers.
 
 We also had to write an in-house tool that would allow a developer to 
 transparently manage these containers similarly like you would manage services 
@@ -863,7 +857,7 @@ running on your machine with the init system, because we didn't know any
 existing tool at the time, that could have done the same job.
 
 The key thing here to remember is that every Drupal project shared the same 
-Apache, MySQL and PHP container instance just like in native solution.
+Apache, MySQL and PHP container instance.
 
 Because a developer still had to know Docker in too much detail and the goal 
 was to minimize it as much as possible, we still had some work to do to achieve 
@@ -877,32 +871,33 @@ Let me give you an understanding of it what I mean by that.
 
 When a developer wants to use Drush in a containerized environment, he has 
 first to go inside the PHP container, because Drush was installed along side 
-with PHP service into the same image.
+with PHP service.
 
 Then he had to move to the right directory where Drupal files were mounted and 
 execute Drush commands there.
 
-This workflow isn't that intuitive, because using Drush should really be fast 
-and intuitive.
+This workflow wasn't that intuitive, because using Drush should really be fast 
+and easy.
 
 ---
 
-SWITCH TO SLIDE #22
+SWITCH TO SLIDE #21
 
 ---
 
-To solve that we have created a simple tool called Crush, it's written in Bash. 
+To solve that, we have created a simple tool called Crush, it's written in 
+Bash. 
 
 However in the future we would like to rewrite it in some other more portable 
-language, because the support for Bash on Windows isn't that great.
+language, because the support for Bash on Windows isn't that great 
+unfortunately.
 
-Crush is a very simple script.
+You can install Crush directly onto your host and use it exactly like you 
+would use native Drush implementation.
 
-You can install it directly onto your host and use exactly like you would use 
-native Drush implementation.
-
-By executing a Crush command, it first tries to detect if your PHP container 
-is running and if it isn't, it will ask you if you want to start it.
+Under the hood by executing a Crush command, it first tries to detect if your 
+PHP container is running, if it isn't, it will ask you if you want to start 
+it.
 
 Then it tries to identify if the directory you where executing your command is 
 inside the Drupal directory tree and if so it does some magic and executes the 
@@ -922,24 +917,50 @@ Drush version 5 or lower.
 
 ---
 
-SWITCH TO SLIDE #23
+SWITCH TO SLIDE #22
 
 ---
 
-The second issue that we had to solve was networking. How to make it enough 
-transparent for the ordinary Drupal developer that he could still develop his 
-projects without knowing how Docker networking works.
+The second issue that we had to make better was networking. How to make it 
+enough transparent for the ordinary Drupal developer that he could still 
+develop his projects without knowing how exactly Docker networking works.
 
 As you may know by default when you link multiple Docker containers together 
 they don't share the network interface with each other. It means that every 
-containerized service in your stack lives in a different network.
+containerized service in your stack lives in a separate network.
 
-We installed this tool called socat to PHP image as well, which allows you to 
-relay network traffic between two independent channels. So basically what I 
-did was that the external services that PHP had to had access to I relayd from 
-PHP container local network to other containers, so the developer could use 
-externals services seamlessly as if they were living on the same machine 
-(127.0.0.1, localhost etc).
+Which we think, is a good property to have in a long run.
+
+Because if two or more random services wants to use the same port, but they 
+each have a separate network, we don't have to be worrying about port 
+conflicts.
+
+So it allows your project to scale more easily in a development environment.
+
+Because the first phase was not about introducing Docker to our team, but 
+instead have a better way to set up a development environment, we had to come 
+up with a solution that could hide this from a developer by default, but still 
+not restrict it too much that he couldn't use Docker networking features at 
+all.
+
+We found this tool called socat and built it into our PHP Docker image.
+
+It allows you quite easily redirect network traffic between two independent 
+channels.
+
+So in our case if the developer wants to communicate from PHP with an external 
+service like MySQL that lives in a separate container and belongs to a 
+different network, he still can use loopback address to communicate with that 
+service. So from a developer point of view everything regarding networking 
+feels like all the services are still living in the same network.
+
+You should know that socat is not perfect in all cases, because it runs in user
+space and not in kernel space it can introduce a noticeable performance hit to 
+your project. So in case if your Drupal project is using lots of modules that 
+are relying heavily on database, like Views, Panel, Organic groups etc, may run 
+significantly slower.
+
+
 
 
 Once these two major issues were resolved I started to migrate Docker based development 
