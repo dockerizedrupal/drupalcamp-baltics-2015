@@ -995,32 +995,35 @@ SWITCH TO SLIDE #23
 
 But we didn't stop there and here is where the phase two comes in.
 
-Instead of sharing Apache, MySQL and PHP containers
+We found a tool called Fig which allows you to specify the configuration of a 
+multi-container application in a single YAML file.
 
-So now that we had a usable development setup that replaced the native LAMP 
-setup, we had lowered the provisioning from more than half a day to about 45 minutes. 
-this includes installing the OS as well.
+Today Fig is deprecated and is replaced with an official tool called Docker 
+Compose.
 
-After a couple of months went by saw other improvements in terms of developing Drupal 
-projects besides getting your development environment up and running as fast as possible.
+Instead of sharing Apache, MySQL and PHP container instances between all
+projects on a developer machine, Docker Compose allowed us to use project 
+specific containers. 
 
-For example, if one of the developers had to use for example a
-Memcache in his project, we created a simple Docker image for that and deployed it
-to every other developer that were using Docker (at that time there were three os us). This basically gave a developer
-that never ever had used or configured Memcached before the possibility to use
-it without knowing how to configure it. Which is a very powerful thing to have, 
-beacuse no matter what skill level you are, you are able to put your effort more 
-into the development part than configuring your environment to make this project work.
+This is very useful architectural change primarily for one thing.
 
-In time we had created Redis, PHPmyadmin, Adminer etc images and everyone that 
-were using Docker could use them, they
-all worked consistently the same way on every developers machine, which made 
-debugging problems with Drupal or your environment much easier. Because if you 
-fix an issue on developers machine you can deploy it easly to others as well.
+If your Drupal project differs from the rest of your projects in regard which 
+services it needs in order to be able to run, which in practice it usually 
+differs a lot, then in a shared environment it's very hard to maintain the 
+difference between your services that are running your projects.
 
-So we were using this setup a couple of months more during which we had achieved a very stable environment to work on.
-And after some time we discovered this tool called Fig which is now known as Docker Compose and this 
-let us solve another issue very easily.
+For example your project might need a Redis support from PHP, if you are 
+sharing a PHP container with all your projects, then all your projects will 
+also have a support for Redis, but what if another project needs an older 
+version of Redis or whatever other service or tool in order to work. 
+
+So managing a shared system where in practice you absolutely need to have a 
+system in place to use project specific containers, becomes extremely hard.
+
+Removing the shared system all together and using an architecture where you 
+only have project specific containers running on your machine, with Docker 
+Compose is very easy to achieve.
+
 
 So the main problem with the current setup, where you have a single Apache, 
 MySQL and PHP containers shared by all your Drupal projects is for 
