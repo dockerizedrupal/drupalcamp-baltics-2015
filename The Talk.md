@@ -1029,13 +1029,22 @@ So we have developed a tool called vhost that itself runs inside a container.
 
 The purpose of this tool is to listen for events that are emitted by the Docker 
 Engine and based on that it displays all your running containers on a single 
-web page. So in a sense you can call it the home page for your development 
+web page. So in a sense you can call it the front page of your development 
 machine that you can access with your web browser on port 80 or 443. 
 
 Under the hood inside the container runs Nginx that dynamically generates its 
 configuration from the events that are emitted by the Docker Engine. So if a 
 container dies it will be removed from the Nginx configuration and if a new 
 container is launched a new entry will be added to the configuration.
+
+So by using this tool all your multi-container Drupal projects running your 
+machine are accessible through DNS. 
+
+Currently vhost doesn't provide DNS service itself. At fenomen we are relying
+on an external service, that does DNS for our development machines. But one of
+our goals is to find a way how to do it properly on local machine, so we don't 
+have to rely on a third party service to use dynamic DNS.
+
 
 
 
