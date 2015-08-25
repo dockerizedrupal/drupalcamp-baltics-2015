@@ -957,16 +957,22 @@ feels like all the services are still living in the same network.
 You should know that socat is not perfect in all cases, because it runs in user
 space and not in kernel space it can introduce a noticeable performance hit to 
 your project. So in case if your Drupal project is using lots of modules that 
-are relying heavily on database, like Views, Panel, Organic groups etc, may run 
-significantly slower.
+are relying heavily on database, like Views, Panel, Organic groups etc, it may 
+run significantly slower.
+
+Once these two major issues were resolved we started to deploy Docker based 
+development environment to couple of developers machines that were willing to 
+try it out and test.
+
+---
+
+SWITCH TO SLIDE #23
+
+---
 
 
 
-
-Once these two major issues were resolved I started to migrate Docker based development 
-environments to other two developers that were willing to try it after I had 
-given them a brief explanation how this can benefit them in the short term and 
-in the long term. Fortunately they were agreed to try it.
+And here is where the phase two come in
 
 So now that we had a usable development setup that replaced the native LAMP 
 setup, we had lowered the provisioning from more than half a day to about 45 minutes. 
