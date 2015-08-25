@@ -835,7 +835,7 @@ By hearing him out, we came to the conclusion that trying to use Docker to
 make our development environments more efficient could actually work.
 
 So we came up with a plan to divide the process of deploying Docker over time 
-to our development environments into three phases.
+to our development environments into two phases.
 
 ---
 
@@ -1025,14 +1025,8 @@ only have project specific containers running on your machine, with Docker
 Compose is very easy to achieve.
 
 
-So the main problem with the current setup, where you have a single Apache, 
-MySQL and PHP containers shared by all your Drupal projects is for 
-example if your Drupal project requires some service or extension that is very 
-specific to the project, then you need to 
-have some kind of a system in place where you can use project specific Docker 
-images. This is because not everything should go into general images.
 
-And Docker Compose allowed us to solve exactly that problem.
+
 
 So the next logical step was to create a general purpose docker-compose.yml 
 file for Drupal 6, 7 and 8 which covers 90% of Drupal project requirements.
