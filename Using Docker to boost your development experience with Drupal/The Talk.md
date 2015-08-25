@@ -913,6 +913,13 @@ Crush supports Drupal 6, 7 and 8.
 From a developer point of view, most of the time he doesn't even notice that 
 Docker is the underlying technology that drives his project when using Crush.
 
+Since Crush in some sense is a version agnostic wrapper around Drush then you 
+can use any version of Drush inside the container.
+
+For example you may have to still support an old Drupal 6 project for whatever 
+reason that can only run on PHP 5.2 then the only choice you have is to use 
+Drush version 5 or lower.
+
 ---
 
 SWITCH TO SLIDE #23
@@ -920,29 +927,18 @@ SWITCH TO SLIDE #23
 ---
 
 The second issue that we had to solve was networking. How to make it enough 
-transparent for the ordinary developer that he could still develop
+transparent for the ordinary Drupal developer that he could still develop his 
+projects without knowing how Docker networking works.
 
+As you may know by default when you link multiple containers together they
+don't share the network interface with each other.
 
-
-Every service that we used was living in a separate container and they don't share the network 
-interface with each other. So if a developer wanted to connect for example to 
-MySQL database from his PHP script in this case Drupal, he had to know how Docker 
-networking works, but my goal in the first stage was not to introduce Docker to our team but to 
-solve the problem with provisioning development environments efficiently. So I 
-used this tool called socat in the PHP image, which allows you to relay network 
-traffic between two independent channels. So basically what I did was that the 
-external services that PHP had to had access to I relayd from PHP container local 
-network to other containers, so the developer could use externals services seamlessly 
-as if they were living on the same machine (127.0.0.1, localhost etc).
-
-
-
-
-By installing Drush into PHP image, it gave us also an ability to change Drush 
-version on runtime based on the PHP or Drupal version if there would be a need 
-for that at some point. You may know or not, but you can only expect Drush 5 
-and lower for example to work only on PHP 5.2, you can't run new Drush on PHP 
-5.2. We needed to have that 
+We installed this tool called socat to PHP image as well, which allows you to 
+relay network traffic between two independent channels. So basically what I 
+did was that the external services that PHP had to had access to I relayd from 
+PHP container local network to other containers, so the developer could use 
+externals services seamlessly as if they were living on the same machine 
+(127.0.0.1, localhost etc).
 
 
 Once these two major issues were resolved I started to migrate Docker based development 
