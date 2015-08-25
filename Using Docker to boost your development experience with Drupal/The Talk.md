@@ -870,21 +870,21 @@ Because a developer still had to know Docker in too much detail and the goal
 was to minimize it as much as possible, we still had some work to do to achieve 
 that.
 
-The most critical issue to solve was Drush.
+The most critical part to get right was Drush.
 
 How to use Drush in a relatively comfortable way with containers.
 
-Let me give you an example.
+Let me give you an understanding of it what I mean by that.
 
 When a developer wants to use Drush in a containerized environment, he has to 
 go inside the PHP container, because Drush was installed along side with PHP 
-service to same image.
+service into the same image.
 
 Then he had to move to the right directory where Drupal files were mounted and 
-execute Drush command there.
+execute Drush commands there.
 
-This workflow isn't that intuitive, because using Drush should be quick and 
-easy.
+This workflow isn't that intuitive, because using Drush should really be quick 
+and easy.
 
 
 
