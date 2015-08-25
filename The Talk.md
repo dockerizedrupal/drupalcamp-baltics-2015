@@ -1055,6 +1055,10 @@ Another essential tool we have developed to have a good experience working with
 Drupal using Docker is called Drupal Compose.
 
 
+
+
+
+
 So the next logical step was to create a general purpose docker-compose.yml 
 file for Drupal 6, 7 and 8 which covers 90% of Drupal project requirements.
 
