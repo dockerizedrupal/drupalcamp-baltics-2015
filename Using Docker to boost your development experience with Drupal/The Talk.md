@@ -860,14 +860,15 @@ separate containers.
 We also had to write an in-house tool that would allow a developer to 
 transparently manage these containers similarly like you would manage services 
 running on your machine with upstart, because we just didn't know any existing 
-tool at that time, that could have done the same job.
+tool at the time, that could have done the same job.
 
 The key thing here to understand is that every Drupal project on your machine 
 shared the same Apache, MySQL and PHP container instance just like in native 
 solution.
 
-Because you still had to know Docker too much and we wanted to avoid it at 
-first, we still had some work to do.
+Because a developer still had to know Docker in too much detail and the goal 
+was to minimize it as much as possible, we still had some work to do to achieve 
+that.
 
 The most critical issue to solve was Drush.
 
