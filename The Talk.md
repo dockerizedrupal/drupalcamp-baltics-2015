@@ -59,22 +59,9 @@ The first part introduces Docker, what exactly is it and how it works. On
 second part we will be discussing how we at Fenomen ended up using Docker and 
 what problems it helped us to solve when developing Drupal based projects.
 
-Raise your hand if you have already used Docker in your development 
-environment.
-
-Lower your hand if you have used Docker in your development environment but 
-not yet in production.
-
-You all may now lower your hands.
-
-So for some of you this presentation may be a bit boring because you probably 
-already know most of the stuff we are going to address in this talk, since 
-using Docker in production in my opinion requires most of the same knowledge 
-as you would need to know when using it in a development environment anyways.
-
-Despite that there is a high chance that you don't know everything, so you may 
-still learn something new from this talk, because the landscape is still 
-changing quite rapidly.
+This presentation is primarily meant for beginners in general, but we hope that 
+some of you who think that they already know Docker, still might learn 
+something new from this talk.
 
 ---
 
