@@ -913,8 +913,8 @@ Crush supports Drupal 6, 7 and 8.
 From a developer point of view, most of the time he doesn't even notice that 
 Docker is the underlying technology that drives his project when using Crush.
 
-Since Crush in some sense is a version agnostic wrapper around Drush then you 
-can use any version of Drush inside the container.
+Since you can say that Crush in some sense is a version agnostic wrapper around 
+Drush then you can use any version of Drush inside the container.
 
 For example you may have to still support an old Drupal 6 project for whatever 
 reason that can only run on PHP 5.2 then the only choice you have is to use 
