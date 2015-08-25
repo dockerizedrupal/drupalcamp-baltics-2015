@@ -999,10 +999,11 @@ services it needs in order to be able to run, which in practice it usually
 differs a lot, then in a shared environment it's very hard to maintain the 
 difference between your services that are running your projects.
 
-For example your project might need a Redis support from PHP, if you are 
+For example, your project might need a Redis support from PHP, if you are 
 sharing a PHP container with all your projects, then all your projects will 
-also have a support for Redis, but what if another project needs an older 
-version of Redis or whatever other service or tool in order to work. 
+also have a support for that version of Redis, but what if another project 
+needs an older version of Redis or whatever other service or tool in order to 
+work. 
 
 So managing a shared system where in practice you absolutely need to have a 
 system in place to use project specific containers, becomes extremely hard.
@@ -1011,7 +1012,30 @@ Removing the shared system all together and using an architecture where you
 only have project specific containers running on your machine, with Docker 
 Compose is very easy to achieve.
 
+But to make that system efficient you need to have some services and tools in 
+place to support it.
 
+Since you could have hundreds of containers running simultaneously on your 
+development environment you need a way how to directly access them without 
+wasting much time searching for them.
+
+---
+
+SWITCH TO SLIDE #24
+
+---
+
+So we have developed a tool called vhost that itself runs inside a container. 
+
+The purpose of this tool is to listen for events that are emitted by the Docker 
+Engine and based on that it displays all your running containers on a single 
+web page. So in a sense you can call it the home page for your development 
+machine that you can access with your web browser on port 80 or 443. 
+
+Under the hood inside the container runs Nginx that dynamically generates its 
+configuration from the events are emitted by the Docker Engine. So if a 
+container dies it will be also removed from the Nginx configuration and if a 
+new container is launched a new entry will be added to the configuration.
 
 
 
