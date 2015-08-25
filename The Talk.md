@@ -1033,9 +1033,9 @@ web page. So in a sense you can call it the home page for your development
 machine that you can access with your web browser on port 80 or 443. 
 
 Under the hood inside the container runs Nginx that dynamically generates its 
-configuration from the events are emitted by the Docker Engine. So if a 
-container dies it will be also removed from the Nginx configuration and if a 
-new container is launched a new entry will be added to the configuration.
+configuration from the events that are emitted by the Docker Engine. So if a 
+container dies it will be removed from the Nginx configuration and if a new 
+container is launched a new entry will be added to the configuration.
 
 
 
