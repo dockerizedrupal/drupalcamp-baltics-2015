@@ -869,8 +869,8 @@ How to use Drush in a relatively comfortable way with containers.
 
 Let me give you an understanding of it what I mean by that.
 
-When a developer wants to use Drush in a containerized environment, he has 
-first to go inside the PHP container, because Drush was installed along side 
+When a developer wants to use Drush in a containerized environment, he first 
+has to go inside the PHP container, because Drush was installed along side 
 with PHP service.
 
 Then he had to move to the right directory where Drupal files were mounted and 
@@ -993,9 +993,9 @@ SWITCH TO SLIDE #23
 
 ---
 
+But we didn't stop there and here is where the phase two comes in.
 
-
-And here is where the phase two come in
+Instead of sharing Apache, MySQL and PHP containers
 
 So now that we had a usable development setup that replaced the native LAMP 
 setup, we had lowered the provisioning from more than half a day to about 45 minutes. 
