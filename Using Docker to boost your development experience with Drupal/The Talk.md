@@ -693,8 +693,8 @@ SWITCH TO SLIDE #17
 With this little demo we have finished the first part of our presentation.
 
 We will now going to talk about why and how we at Fenomen switched our 
-development environments from standard LAMP setup to Docker to develop Drupal 
-projects.
+development environments from native LAMP setup to Docker to develop Drupal 
+based projects.
 
 Maybe you are right now experiencing the same problems as we did in our 
 development workflow before discovering Docker and our experience using and 
@@ -717,10 +717,10 @@ large.
 
 Imagine having to work on more than 5 different projects on a single day. And 
 more than half of those aren't even developed by you, so the time you would 
-need to put into getting each project up and running on a standard LAMP setup 
+need to put into getting each project up and running on a native LAMP setup 
 can be quite large.
 
-By standard LAMP setup I mean you have a standard Linux environment and every 
+By native LAMP setup I mean you have a standard Linux environment and every 
 tool or service you would need to use in your development workflow is installed 
 directly to your host.
 
@@ -735,8 +735,8 @@ be more than three times higher than the initial estimate due to not having
 a proper system and process in place.
 
 Even more time you would need to waste if the fifteen minute bug requires you 
-to set up and configure for example LDAP server to fix it, which is not that 
-easy do to for everyone.
+to set up and configure for example Apache Solr server to fix it, which is not 
+that easy do to for everyone.
 
 So a bug that would be normally resolvable by any Drupal developer because the 
 nature of the bug itself doesn't require a high level of skill, might 
@@ -744,10 +744,10 @@ still be too difficult for a junior developer to fix, because he may lack the
 knowledge and the know-how needed to set up the project on his machine.
 
 Our experience has shown that most who are affected directly by using this 
-development environment are front-end developers, because if they start to set 
-up a bit more complex project by their own, they immediately get stuck. Because 
-the area of expertise you need to have to work on your task doesn't belong 
-directly to a front-end developer's domain.
+set up are front-end developers, because if they start to set up a bit more 
+complex project by their own, they immediately get stuck. Because the area of 
+expertise you need to have to work on your task doesn't belong directly to a 
+front-end developer's domain.
 
 As you can see there are many issues using this kind of a set up and processes 
 in that work environment. 
@@ -850,21 +850,20 @@ SWITCH TO SLIDE #21
 ---
 
 In phase one, without first introducing large changes to our development 
-workflow, we concentrated on eliminating the problem we had when something 
+workflow, we only concentrated on eliminating the problem we had when something 
 would happen to your development machine and it couldn't be recovered easily.
 
 The first thing we did, we removed all the services like Apache, MySQL, PHP 
 etc., that were running on a developer machine natively and we moved them into 
-separate containers.
+separate Docker containers.
 
 We also had to write an in-house tool that would allow a developer to 
 transparently manage these containers similarly like you would manage services 
-running on your machine with upstart, because we just didn't know any existing 
-tool at the time, that could have done the same job.
+running on your machine with the init system, because we didn't know any 
+existing tool at the time, that could have done the same job.
 
-The key thing here to understand is that every Drupal project on your machine 
-shared the same Apache, MySQL and PHP container instance just like in native 
-solution.
+The key thing here to remember is that every Drupal project shared the same 
+Apache, MySQL and PHP container instance just like in native solution.
 
 Because a developer still had to know Docker in too much detail and the goal 
 was to minimize it as much as possible, we still had some work to do to achieve 
@@ -876,15 +875,15 @@ How to use Drush in a relatively comfortable way with containers.
 
 Let me give you an understanding of it what I mean by that.
 
-When a developer wants to use Drush in a containerized environment, he has to 
-go inside the PHP container, because Drush was installed along side with PHP 
-service into the same image.
+When a developer wants to use Drush in a containerized environment, he has 
+first to go inside the PHP container, because Drush was installed along side 
+with PHP service into the same image.
 
 Then he had to move to the right directory where Drupal files were mounted and 
 execute Drush commands there.
 
-This workflow isn't that intuitive, because using Drush should really be quick 
-and easy.
+This workflow isn't that intuitive, because using Drush should really be fast 
+and intuitive.
 
 ---
 
@@ -894,8 +893,8 @@ SWITCH TO SLIDE #22
 
 To solve that we have created a simple tool called Crush, it's written in Bash. 
 
-However in the future we would like to rewrite it in some other language, 
-because we would like to use Crush natively also on Windows.
+However in the future we would like to rewrite it in some other more portable 
+language, because the support for Bash on Windows isn't that great.
 
 Crush is a very simple script.
 
@@ -912,17 +911,20 @@ right Drush command inside the container.
 Crush supports Drupal 6, 7 and 8.
 
 From a developer point of view, most of the time he doesn't even notice that 
-Docker is the underlying technology that drives his project.
+Docker is the underlying technology that drives his project when using Crush.
 
-By installing Drush into PHP image, it gave us also an ability to change Drush 
-version on runtime based on the PHP or Drupal version if there would be a need 
-for that at some point. You may know or not, but you can only expect Drush 5 
-and lower for example to work only on PHP 5.2, you can't run new Drush on PHP 
-5.2. We needed to have that 
+---
+
+SWITCH TO SLIDE #23
+
+---
+
+The second issue that we had to solve was networking. How to make it enough 
+transparent for the ordinary developer that he could still develop
 
 
-The second issue that had to be solved was networking, because every service 
-that we used was living in a separate container and they don't share the network 
+
+Every service that we used was living in a separate container and they don't share the network 
 interface with each other. So if a developer wanted to connect for example to 
 MySQL database from his PHP script in this case Drupal, he had to know how Docker 
 networking works, but my goal in the first stage was not to introduce Docker to our team but to 
@@ -933,12 +935,22 @@ external services that PHP had to had access to I relayd from PHP container loca
 network to other containers, so the developer could use externals services seamlessly 
 as if they were living on the same machine (127.0.0.1, localhost etc).
 
+
+
+
+By installing Drush into PHP image, it gave us also an ability to change Drush 
+version on runtime based on the PHP or Drupal version if there would be a need 
+for that at some point. You may know or not, but you can only expect Drush 5 
+and lower for example to work only on PHP 5.2, you can't run new Drush on PHP 
+5.2. We needed to have that 
+
+
 Once these two major issues were resolved I started to migrate Docker based development 
 environments to other two developers that were willing to try it after I had 
 given them a brief explanation how this can benefit them in the short term and 
 in the long term. Fortunately they were agreed to try it.
 
-So now that we had a usable development setup that replaced the standard LAMP 
+So now that we had a usable development setup that replaced the native LAMP 
 setup, we had lowered the provisioning from more than half a day to about 45 minutes. 
 this includes installing the OS as well.
 
@@ -979,7 +991,7 @@ Every dockerized Drupal project should have this file, it's the initial develope
 responsibility to make sure that this file exists on every project. 
 
 To make this requirement easier to manage, I've created a simple shell script 
-that generates this general purpose docekr-compose.yml file automatically and 
+that generates this general purpose docker-compose.yml file automatically and 
 the name for this script is Drupal Compose.
 
 And if the standard docker-compose.yml file is not sufficient enough then it's 
