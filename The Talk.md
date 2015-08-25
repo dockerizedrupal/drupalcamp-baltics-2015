@@ -1086,19 +1086,10 @@ but by using Docker to solve that we made some great imrpovements in other field
 
 ## Backlog
 
-Why have we decided to use Docker in our work environment?
-
-What problems Docker solves and what problems Docker introduces (multiple developers)
-
-A developer 90% of the time doesn't even realize that he/she is working with Docker while developing in Drupal.
-
-The famous matrix of hell.
-
 You should always include third party libraries etc to your Docker project
 
 Presentation link at the start of the presentation
 
-As of this summer Docker announced that they will be donating parts of its plumbing to The Open Container Project which is hosted by The Linux Foundation and is supported by the industry leaders around the world. The mission of The Open Container Project is to create open industry standards around container formats and runtime. The war is now officially over, which means you can invest in Docker.
 
 Conclusion - don't take this mission by your own, it will be very hard, try to 
 involve your organization into as well so they can support you from the high level, 
@@ -1106,18 +1097,7 @@ but in the end it's worth it because if everyone is doing they work properly
 then your work is also easter due that. Tools like Docker allow everyone to do 
 they work better.
 
-native vs docker setup time on production
-
-simple lamp (simple days) vs complicated stack (multiple services)
-
 old habits - native sass vs docker sass, how to overcome
-
-destruction promotes growth
-
-docker fits perfectly into our current infrastructure, since 95% of our developers 
-are using Linux for development.
-
-solomon hykes
 
 dynamic runtime -  dockerfile vs puppet etc
 
