@@ -956,13 +956,36 @@ feels like all the services are still living in the same network.
 
 You should know that socat is not perfect in all cases, because it runs in user
 space and not in kernel space it can introduce a noticeable performance hit to 
-your project. So in case if your Drupal project is using lots of modules that 
-are relying heavily on database, like Views, Panel, Organic groups etc, it may 
-run significantly slower.
+your project.
+
+So in case if your Drupal project is using lots of modules that are relying 
+heavily on database, like Views, Panel, Organic groups etc, it may run 
+significantly slower.
+
+In that case you may want to fallback to using direct IP-address to communicate 
+with other containers.
 
 Once these two major issues were resolved we started to deploy Docker based 
 development environment to couple of developers machines that were willing to 
 try it out and test.
+
+The feedback we had collected from them was very useful and after fixing some 
+minor issues we already saw awesome results from using Docker in our work 
+environment.
+
+For example if one of the developers found a useful service or tool that could 
+improve his daily work, we made an image out of it and by doing that we 
+immediately could share it with other developers that were using Docker and it 
+worked every where the same way.
+
+Another example is where we had a real opportunity to test it out if we 
+actually had improved the time how fast we could set up a development 
+environment when a new developer joined with our team.
+
+Instead of preparing the machine for a development a day before his arrival we 
+did it at the same day within 45 minutes which also included installing the 
+operating system and giving him a small lecture about the environment. Which is 
+a tremendous improvement from our previous approach to solve that problem.
 
 ---
 
