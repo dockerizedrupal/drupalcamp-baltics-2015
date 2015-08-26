@@ -378,8 +378,6 @@ patch a vulnerability for a third party service.
 And lets say several months goes by and the change will not be done by you, but 
 by another developer that didn't build this image himself. 
 
-This is a very real scenario that could happen to any of you.
-
 He probably don't have any clue how the image was made and what exactly is 
 packed into that image, because there is no history nowhere to be found that 
 would tell him the exact steps that were executed to build this image.
