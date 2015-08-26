@@ -1042,8 +1042,8 @@ machine are accessible through DNS.
 
 Currently vhost doesn't provide DNS service itself. At fenomen we are relying
 on an external service, that does DNS for our development machines. But one of
-our goals is to find a way how to do it properly on local machine, so we don't 
-have to rely on a third party service to use dynamic DNS.
+our goals is to find a way how to do it properly on a local machine, so we 
+don't have to rely on a third party service to use dynamic DNS.
 
 ---
 
@@ -1085,6 +1085,8 @@ immediately, and you don't have to know the details how some services work for t
 but by using Docker to solve that we made some great imrpovements in other fields as well.
 
 ## Backlog
+
+docker registry phase 2
 
 You should always include third party libraries etc to your Docker project
 
