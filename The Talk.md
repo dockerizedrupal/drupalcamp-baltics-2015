@@ -306,7 +306,7 @@ machines?
 
 The primary disadvantage of container-based virtualization in practice in my 
 opinion is that you can not run applications in containers that are compiled 
-for a different operating system as your host. For example you can not run 
+for a different operating system as your host. For example you can't run 
 Windows based executables directly in a container if your host operating system 
 is Linux. There is no such limitations for virtual machines.
 
