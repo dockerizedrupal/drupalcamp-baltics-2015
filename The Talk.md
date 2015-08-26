@@ -339,7 +339,7 @@ Depending on your application and its dependencies the Docker image can be
 either very small, something around few megabytes, or very large, from a couple 
 of gigabytes to infinity in theory.
 
-Docker image can be pushed into a centralized registry where other parties can 
+Docker images can be pushed into a centralized registry where other parties can 
 easily pull it to their machine.
 
 There are several companies that are providing public and private registries on 
