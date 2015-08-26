@@ -1064,7 +1064,7 @@ you can make your changes directly to the YAML file.
 
 Most of our Docker images configurations can be changed on runtime, in practice
 this means that if a developer for example needs to allocate more memory than 
-than default is set to for his Drupal project he can do this directly in the 
+the default is set to for his Drupal project he can do this directly in the 
 Docker Compose YAML file, so he doesn't need to make another PHP image just to 
 change memory limit.
 
