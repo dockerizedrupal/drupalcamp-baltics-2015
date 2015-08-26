@@ -1040,10 +1040,12 @@ container is launched a new entry will be added to the configuration.
 So by using this tool all your multi-container Drupal projects running your 
 machine are accessible through DNS. 
 
-Currently vhost doesn't provide DNS service itself. At fenomen we are relying
-on an external service, that does DNS for our development machines. But one of
-our goals is to find a way how to do it properly on a local machine, so we 
-don't have to rely on a third party service to use dynamic DNS.
+Currently vhost doesn't provide DNS service itself.
+
+At fenomen we are relying on an external service, that does DNS for our 
+development machines. But one of our goals is to find a way how to do it 
+properly on a local machine, so we don't have to rely on an external service to 
+do DNS.
 
 ---
 
