@@ -8,10 +8,12 @@ SWITCH TO SLIDE #01
 
 Hello guys!
 
-My name is Jürgen and I'm from Estonia. I'm a full time Drupal developer at 
-Fenomen web agency. I have about three and a half years of experience with 
-Drupal professionally, but unfortunately at the same time I don't have any real 
-experience sharing my knowledge and opinions publicly to others.
+My name is Jürgen.
+
+I'm a full time Drupal developer at Fenomen web agency. I have about three and 
+a half years of experience with Drupal professionally, but unfortunately at the 
+same time I don't have any real experience sharing my knowledge and opinions 
+publicly with others.
 
 However, I like to believe that the fear to fail in front of an audience 
 shouldn't be the dictating factor not to do it, because if the goal is to 
@@ -21,15 +23,10 @@ than receive.
 So I feel that it's my responsibility to make my first real contribution to 
 Drupal community today by giving this small talk with my good colleague Mait.
 
-Because the subject is quite large and the amount of time that have been given 
-to us to perform this presentation is finite and a good developer is supposed 
-to never go overtime, we have left no room for any improvisation.
-
-Also bear in mind that most of the statements made in this presentation are 
-made from a developer point of view. So if we talk about pros and cons of some 
-topic then we mostly address only those properties that matter most to a 
-Drupal developer like myself. Mainly because we simply don't have time to 
-analyze everything from the outside perspective.
+Because we have a quite a large amount of topics to cover and the amount of 
+time that have been given to us to perform this presentation is finite and a 
+good developer is supposed to never go overtime, we have left no room for any 
+improvisation.
 
 Demos that we have prepared for you to show are in video format, because too 
 often we have witnessed the rage of the demogods, whether the network is 
