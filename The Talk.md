@@ -890,7 +890,7 @@ all.
 
 We found this tool called socat and built it into our PHP Docker image.
 
-It allows quite easily redirect network traffic between two independent 
+It allows quite easily to redirect network traffic between two independent 
 channels.
 
 So in our case if the developer wants to communicate from PHP with an external 
