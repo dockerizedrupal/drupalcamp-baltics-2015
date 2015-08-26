@@ -796,11 +796,6 @@ The first thing we did, we moved all the services like Apache, MySQL, PHP
 etc., that were running on a developer machine natively into separate Docker 
 containers.
 
-We also had to write an in-house tool that would allow a developer to 
-transparently manage these containers similarly like you would manage services 
-running on your machine with the init system, because we didn't know any 
-existing tool at the time, that could have done the same job.
-
 The key thing here to remember is that every Drupal project shared the same 
 Apache, MySQL and PHP container instance.
 
