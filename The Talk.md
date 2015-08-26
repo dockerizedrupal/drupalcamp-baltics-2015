@@ -1042,7 +1042,7 @@ machine are accessible through DNS.
 
 Currently vhost doesn't provide DNS service itself.
 
-At fenomen we are relying on an external service, that does DNS for our 
+At Fenomen we are relying on an external service, that does DNS for our 
 development machines. But one of our goals is to find a way how to do it 
 properly on a local machine, so we don't have to rely on an external service to 
 do DNS.
@@ -1056,7 +1056,13 @@ SWITCH TO SLIDE #25
 Another essential tool we have developed to have a good experience working with 
 Drupal using Docker is called Drupal Compose.
 
+The goal of this tool is to allow you to easily generate general purpose Docker 
+Compose YAML file for Drupal 6, 7 and 8 automatically. So you can start 
+developing your normal Drupal projects that doesn't require any specific 
+configuration immediately and in case you may need some custom configuration 
+you can make your changes directly to that YAML file.
 
+So that a developer
 
 
 
