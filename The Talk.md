@@ -1062,23 +1062,26 @@ Another essential tool we have developed to have a good experience working with
 Drupal using Docker is called Drupal Compose.
 
 The goal of this tool is to allow you to easily generate general purpose Docker 
-Compose YAML file for your Drupal 6, 7 and 8 project automatically. So you can 
-start developing your normal Drupal projects that doesn't require any specific 
-configuration immediately and in case you may need some custom configuration 
-you can make your changes directly to that YAML file.
+Compose YAML files for your Drupal 6, 7 and 8 projects automatically. So you 
+can start developing your normal Drupal projects immediately that doesn't 
+require any specific configuration and in case you may need some custom 
+configuration you can make your changes directly to that YAML file.
 
 Most of our Docker images configurations can be changed on runtime when you 
 launch a container. In practice this means that if a developer for example 
 needs to allocate more memory for his Drupal project he can do this directly in 
-the Docker Compose YAML file, so he doesn't need to make another PHP image just 
-to change memory limit. After changing the configuration he can just restart 
-the container with Docker Compose.
+the Docker Compose YAML file, so he doesn't need to create another project 
+specific PHP image just to change memory limit. After changing the 
+configuration he can just restart the container with Docker Compose and 
+continue with his work.
 
 ---
 
 SWITCH TO SLIDE #27
 
 ---
+
+The final component that we had to deploy to finalize phase tow 
 
 All our Docker images that are specific to projects are stored in our private 
 Docker registry. General purpose images that do the most of the work are stored 
@@ -1089,7 +1092,10 @@ in Docker Hub and the source code for those are available on GitHub.
 So now that we have a system and a process in place which allows us to define 
 project specific environment configurations for our projects, then again no 
 matter what is your skill level, you can start working on every Drupal project 
-immediately, and you don't have to know the details how some services work for this project.
+immediately, and you don't have to know the details how some services work for 
+this project.
+
+
 
 ***cordova sass/less reference
 
