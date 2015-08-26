@@ -272,9 +272,9 @@ SWITCH TO SLIDE #09
 ---
 
 From a developer point of view, the two primary advantages of container-based 
-virtualization over whole-system virtualization is the efficiency, how much 
-resources your application needs from your hardware to be able to run and the 
-speed, how quickly you can start and rebuild your application.
+virtualization over whole-system virtualization is the efficiency, how many 
+applications you can run in parallel on a single machine and the speed, how 
+quickly you can start and rebuild your application.
 
 A typical virtual machine is usually a couple of gigabytes in size, it takes  
 minutes to start and many more minutes to rebuild it from scratch. The 
@@ -285,7 +285,7 @@ The amount of virtual machines you can run on an average laptop is relatively
 low. I would say if you try to run more that ten virtual machines on your 
 average laptop then you may already start experiencing performance degradation.
 
-For a developer these figures are not that appealing and because of that they 
+For a developer these numbers are not that appealing and because of that they 
 usually run their development tools directly on their host because it's faster, 
 there is no doubt about that.
 
