@@ -1027,17 +1027,22 @@ SWITCH TO SLIDE #24
 
 So we have developed a tool called vhost that itself runs inside a container. 
 
-The purpose of this tool is to listen for events that are emitted by the Docker 
-Engine and based on that it displays all your running containers on a single 
-web page. So in a sense you can call it the front page of your development 
-environment that you can access with your web browser on port 80 or 443. 
+The purpose of this tool is to constantly monitor your development environment 
+and generate a list from all your running containers which are displayed on a 
+single web page that you can access with your web browser on port 80 or 443. 
 
 Under the hood inside the container runs Nginx that dynamically generates its 
 configuration from the events that are emitted by the Docker Engine. So if a 
 container dies it will be removed from the Nginx configuration and if a new 
 container is launched a new entry will be added to the configuration.
 
-So by using this tool all your multi-container Drupal projects running your 
+---
+
+SWITCH TO SLIDE #25
+
+---
+
+So by using this tool all your multi-container Drupal projects running on your 
 machine are accessible through DNS. 
 
 Currently vhost doesn't provide DNS service itself.
@@ -1049,7 +1054,7 @@ do DNS.
 
 ---
 
-SWITCH TO SLIDE #25
+SWITCH TO SLIDE #26
 
 ---
 
@@ -1063,15 +1068,15 @@ configuration immediately and in case you may need some custom configuration
 you can make your changes directly to that YAML file.
 
 Most of our Docker images configurations can be changed on runtime when you 
-start a container. In practice this means that if a developer for example needs 
-to allocate more memory for his Drupal project he can do this directly in the 
-Docker Compose YAML file, so he doesn't need to make another PHP image just to 
-change memory limit. After changing the configuration he can just restart 
+launch a container. In practice this means that if a developer for example 
+needs to allocate more memory for his Drupal project he can do this directly in 
+the Docker Compose YAML file, so he doesn't need to make another PHP image just 
+to change memory limit. After changing the configuration he can just restart 
 the container with Docker Compose.
 
 ---
 
-SWITCH TO SLIDE #25
+SWITCH TO SLIDE #27
 
 ---
 
