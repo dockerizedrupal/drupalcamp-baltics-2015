@@ -301,7 +301,7 @@ have on their system.
 These are the exact issues that you can solve by using containers instead of 
 virtual machines for development.
 
-Then you may ask now, why isn't everybody using containers instead of virtual 
+Now you may ask, why isn't everyone using containers instead of virtual 
 machines?
 
 The primary disadvantage of operating-system-level virtualization in my opinion 
