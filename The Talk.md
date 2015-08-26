@@ -593,7 +593,7 @@ most common instruction in the Dockerfile. RUN instruction executes a command
 and commits the change to file system back into your image.
 
 If you have not yet noticed then you can see that on line eleven we execute
-apt-get install with the -y flag, so the build process wouldn't be interrupted,
+apt-get install with the -y flag, so the build process wouldn't be interrupted.
 
 Line seventeen informs Docker Engine that the Apache is running inside the
 container and is listening on port 80. This is useful if your services running 
