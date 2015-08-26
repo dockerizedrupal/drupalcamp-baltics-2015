@@ -1057,10 +1057,17 @@ Another essential tool we have developed to have a good experience working with
 Drupal using Docker is called Drupal Compose.
 
 The goal of this tool is to allow you to easily generate general purpose Docker 
-Compose YAML file for Drupal 6, 7 and 8 automatically. So you can start 
-developing your normal Drupal projects that doesn't require any specific 
+Compose YAML file for your Drupal 6, 7 and 8 project automatically. So you can 
+start developing your normal Drupal projects that doesn't require any specific 
 configuration immediately and in case you may need some custom configuration 
-you can make your changes directly to that YAML file.
+you can make your changes directly to the YAML file.
+
+Most of our Docker images configurations can be changed on runtime, in practice
+this means that if a developer for example needs to allocate more memory than 
+than default is set to for his Drupal project he can do this directly in the 
+Docker Compose YAML file, so he doesn't need to make another PHP image just to 
+change memory limit.
+
 
 So that a developer
 
