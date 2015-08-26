@@ -376,7 +376,7 @@ For example you may need to update a library that your application is using or
 patch a vulnerability for a third party service.
 
 And lets say several months goes by and the change will not be done by you, but 
-by another developer that didn't build this image in the first place. 
+by another developer that didn't build this image himself. 
 
 This is a very real scenario that could happen to any of you.
 
