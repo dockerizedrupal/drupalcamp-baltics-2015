@@ -983,7 +983,7 @@ Since you could have hundreds of containers running simultaneously on your
 development environment you need a way how to directly access them without 
 wasting much time searching for them.
 
-So we have developed a tool called vhost that itself runs inside a container. 
+The first tool we developed was vhost that itself runs inside a container. 
 
 The purpose of this tool is to constantly monitor your development environment 
 and generate a list from all your running containers which are displayed on a 
