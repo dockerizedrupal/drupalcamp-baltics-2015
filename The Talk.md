@@ -445,8 +445,8 @@ gives you tools to get the necessary metrics for your application, which you
 can use to monitor you application performance.
 
 Containers are very lightweight. You could run hundreds, even thousands of 
-containers on a single host, that's how lightweight they are when compared to 
-virtual machines.
+containers on a single host. You definitely can't do that with virtual machines 
+and still be able to work on that machine.
 
 Starting a container takes most of the time only a couple seconds or less. 
 Usually the application or service running inside the container takes more time 
