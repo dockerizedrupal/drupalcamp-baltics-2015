@@ -494,9 +494,6 @@ But just so you know, in the future you actually could send a running container
 from one machine to another by being able to create a full snapshot from a 
 container, but this feature is still in an experimental phase.
 
-If today you already can create a snapshot only from the container files then 
-in the future the snapshot also will include a memory dump.
-
 ---
 
 SWITCH TO SLIDE #14
