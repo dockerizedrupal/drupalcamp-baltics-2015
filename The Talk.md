@@ -304,11 +304,11 @@ virtual machines for development.
 Now you may ask, why isn't everyone using containers instead of virtual 
 machines?
 
-The primary disadvantage of operating-system-level virtualization in my opinion 
-in practice is that you can not run applications in containers that are 
-compiled for a different operating system as your host. For example you can not 
-run Windows based executables directly in a container if your host operating 
-system is Linux. There is no such limitations for virtual machines.
+The primary disadvantage of container-based virtualization in my opinion in 
+practice is that you can not run applications in containers that are compiled 
+for a different operating system as your host. For example you can not run 
+Windows based executables directly in a container if your host operating system 
+is Linux. There is no such limitations for virtual machines.
 
 But since most of the third party services that are usually used in along side 
 with Drupal are able to run on Linux anyways, so using containers mostly 
