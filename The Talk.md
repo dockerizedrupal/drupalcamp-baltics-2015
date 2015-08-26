@@ -973,15 +973,15 @@ Compose is very easy to achieve.
 But to make that system efficient you need to have some services and tools in 
 place to support it.
 
-Since you could have hundreds of containers running simultaneously on your 
-development environment you need a way how to directly access them without 
-wasting much time searching for them.
-
 ---
 
 SWITCH TO SLIDE #24
 
 ---
+
+Since you could have hundreds of containers running simultaneously on your 
+development environment you need a way how to directly access them without 
+wasting much time searching for them.
 
 So we have developed a tool called vhost that itself runs inside a container. 
 
