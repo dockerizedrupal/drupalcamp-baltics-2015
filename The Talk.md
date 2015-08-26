@@ -1069,7 +1069,11 @@ Docker Compose YAML file, so he doesn't need to make another PHP image just to
 change memory limit. After the changing the configuration he can just restart 
 the containers.
 
+---
 
+SWITCH TO SLIDE #25
+
+---
 
 
 
