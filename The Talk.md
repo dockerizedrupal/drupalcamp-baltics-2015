@@ -579,42 +579,11 @@ will be built upon. In this example it will be the official Debian image, which
 contains the files and directories which Debian itself is made out of.
 
 If a base image doesn't exist on your host at the time of building the image, 
-it will be automatically pulled from the Docker Hub.
-
-As you may know everything is a file in Linux, so if you think about that 
-concept more closely then maybe it's much easier for you to understand how 
-Docker images can work.
-
-I know, it helped me to better understand it.
+it will be automatically pulled from the Docker Hub or from a private registry.
 
 You can use every other Docker image as your base image. This gives us the 
 flexibility to reuse already built images and increase the efficiency of the 
 image building process.
-
-Lets say we have two different Drupal projects that are going to use Apache to 
-serve files over the web.
-
-And use this exact example as the basis for our new Dockerfiles for each 
-project.
-
-One of these projects also has to support HTTPS.
-
-So there are several ways how we could approach this problem and solve it.
-
-We just use this exact example for our project that doesn't need HTTPS support 
-and create a Docker image from it.
-
-And for the other project we make a separate copy from this Dockerfile and 
-modify it by adding some commands that enables TLS for Apache.
-
-But by doing so, Apache will be installed each time we build an image for our 
-projects.
-
-So the more efficient way to do it, is to use this unmodified example as our 
-base image for the new image that requires HTTPS support.
-
-In that way the build process is relatively short for the other project, 
-because Apache is installed only during when we build the base image.
 
 The fifth line is just there to tell who is the maintainer of the image. This 
 metadata will be directly stored on the image and can be queried any time.
