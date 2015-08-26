@@ -586,7 +586,7 @@ flexibility to reuse already built images and increase the efficiency of the
 image building process.
 
 The fifth line is just there to tell who is the maintainer of the image. This 
-metadata will be directly stored on the image and can be queried any time.
+metadata will be directly stored on the image and can be queried at any time.
 
 On line eight, eleven and fourteen, we see the RUN instruction, which is the 
 most common instruction in the Dockerfile. RUN instruction executes a command 
