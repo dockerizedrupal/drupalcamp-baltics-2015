@@ -907,8 +907,8 @@ So in case if your Drupal project is using lots of modules that are relying
 heavily on database, like Views, Panels, Organic groups etc, it may run 
 significantly slower.
 
-In that case you may want to fallback to using direct IP-address to communicate 
-with other containers.
+In that case you may want to fallback to using direct IP-addresses to 
+communicate with other containers.
 
 Once these two major issues were resolved we started to deploy Docker based 
 development environment to couple of developers machines that were willing to 
