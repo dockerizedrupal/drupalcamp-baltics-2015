@@ -904,7 +904,7 @@ space and not in kernel space it can introduce a noticeable performance hit to
 your project.
 
 So in case if your Drupal project is using lots of modules that are relying 
-heavily on database, like Views, Panel, Organic groups etc, it may run 
+heavily on database, like Views, Panels, Organic groups etc, it may run 
 significantly slower.
 
 In that case you may want to fallback to using direct IP-address to communicate 
