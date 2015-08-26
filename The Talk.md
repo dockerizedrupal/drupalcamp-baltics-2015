@@ -667,7 +667,7 @@ We also saw, that making HTTP request to a loopback address through the web
 browser, we got the actual response form the web server running inside the 
 container with the right payload.
 
-An action that only took about a minute to perform in practices took nearly 
+An action that only took about a minute to perform in practice took nearly 
 half an hour to explain. So this should give you some idea how powerful it is 
 to have a Docker in your development environment toolbox.
 
