@@ -1070,26 +1070,6 @@ change memory limit. After the changing the configuration he can just restart
 the containers.
 
 
-So that a developer
-
-
-
-
-So the next logical step was to create a general purpose docker-compose.yml 
-file for Drupal 6, 7 and 8 which covers 90% of Drupal project requirements.
-
-Every dockerized Drupal project should have this file, it's the initial developer 
-responsibility to make sure that this file exists on every project. 
-
-To make this requirement easier to manage, I've created a simple shell script 
-that generates this general purpose docker-compose.yml file automatically and 
-the name for this script is Drupal Compose.
-
-And if the standard docker-compose.yml file is not sufficient enough then it's 
-every developer responsibility to make a change to it if he has done some changes 
-to environment (creating new Docker images, or setting other parameters for the 
-general images etc).
-
 So now that we have a system and a process in place which allows us to define 
 project specific environment configurations for our projects, then again no 
 matter what is your skill level, you can start working on every Drupal project 
