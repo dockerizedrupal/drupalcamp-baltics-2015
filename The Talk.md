@@ -314,12 +314,6 @@ But since most of the third party services that are usually used in along side
 with Drupal are able to run on Linux anyways, so using containers mostly 
 wouldn't be a problem for a Drupal developer.
 
-So like every piece of technology in this world is trying to solve a particular 
-problem, operating-system-level virtualization also has its place and purpose 
-to exist. Unfortunately it's very uncommon to have a technology that solves 
-many different problems at once without making any compromises to other parts 
-of the system. The same rule applies to containerization technology as well.
-
 ---
 
 SWITCH TO SLIDE #10
