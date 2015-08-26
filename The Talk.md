@@ -986,12 +986,6 @@ configuration from the events that are emitted by the Docker Engine. So if a
 container dies it will be removed from the Nginx configuration and if a new 
 container is launched a new entry will be added to the configuration.
 
----
-
-SWITCH TO SLIDE #25
-
----
-
 So by using this tool all your multi-container Drupal projects running on your 
 machine are accessible through DNS. 
 
@@ -1004,7 +998,7 @@ do DNS.
 
 ---
 
-SWITCH TO SLIDE #26
+SWITCH TO SLIDE #25
 
 ---
 
@@ -1027,7 +1021,7 @@ continue with his work.
 
 ---
 
-SWITCH TO SLIDE #27
+SWITCH TO SLIDE #26
 
 ---
 
