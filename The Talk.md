@@ -518,7 +518,7 @@ You might be surprised how simple it actually is to work with a Dockerfile.
 If you are familiar with Linux command line interface then you basically 
 already know how to write a Dockerfile.
 
-The only key difference between executing a command directly in a terminal and 
+The only key difference between executing a command directly in a terminal or 
 in a Dockerfile, is that, a command in a Dockerfile doesn't expect you to 
 interact with it during the image building process.
 
