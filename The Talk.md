@@ -866,9 +866,9 @@ SWITCH TO SLIDE #22
 
 ---
 
-The second issue that we had to make better was networking. How to make it 
-enough transparent for the ordinary Drupal developer that he could still 
-develop his projects without knowing how exactly Docker networking works.
+The second issue that we had to resolve was networking. How to make it enough 
+transparent for the ordinary Drupal developer that he could still develop his 
+projects without knowing how exactly Docker networking works.
 
 As you may know by default when you link multiple Docker containers together 
 they don't share the network interface with each other. It means that every 
