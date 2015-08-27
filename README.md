@@ -402,9 +402,6 @@ capabilities.
 
 Containers are created from Docker images. 
 
-By giving right capabilities to a container you can even make your physical 
-devices available to your application running inside the container.
-
 In some cases for example you may need to debug a service that is running 
 inside the container, then Docker is able to give you a shell to a running 
 container.
@@ -461,13 +458,11 @@ different arguments to modify your application or container behaviour on
 runtime.
 
 You can share a Docker image with other developers as easily as you can share
-a class that have been written to a text file, but you can't share Docker 
-containers with conventional tools because they are the running instances of 
-that image just like objects.
+a class that have been written to a text file.
 
-But just so you know, in the future you actually could send a running container 
-from one machine to another by being able to create a full snapshot from a 
-container, but this feature is still in an experimental phase.
+Just so you know, in the future you could also share a running container with 
+others by being able to create a full snapshot from a it, but this feature is 
+still in an experimental phase.
 
 ---
 
@@ -482,13 +477,10 @@ website.
 However, to get some better idea how Docker works we still need to give you 
 some basic understanding of it.
 
-If you have been listening then you already know that Dockerfile in a way is a 
-blueprint for your Docker image.
+Dockerfile in a way is a blueprint for your Docker image.
 
 It's a simple text file that contains a series of instructions on how to build 
 an image.
-
-You might be surprised how simple it actually is to work with a Dockerfile.
 
 If you are familiar with Linux command line interface then you basically 
 already know how to write a Dockerfile.
@@ -500,7 +492,7 @@ interact with it during the image building process.
 So you have to construct your command that expects an input form a user during 
 runtime in a way that all the input that your command needs are directly piped 
 to that command in advance or using command line flags to make choices if a 
-particular command supports that.
+particular command supports it.
 
 ---
 
@@ -519,9 +511,6 @@ automated and doesn't expect any interaction from a user.
 
 By adding -y flag to your apt-get install command, a package will be installed 
 without first asking your confirmation.
-
-So if your command line fu is not that great, then by writing Dockerfiles you 
-will definitely improve that skill by a lot.
 
 ---
 
@@ -547,7 +536,8 @@ instruction.
 Every other line in Dockerfile expect the comments are following the same 
 pattern.
 
-So let's look into more detail about each instruction in this example.
+So let's look into more detail about some instructions that are more important 
+in this example.
 
 The second line tells Docker Engine what is the base image that your new image 
 will be built upon. In this example it will be the official Debian image, which 
