@@ -926,7 +926,8 @@ SWITCH TO SLIDE #28
 
 ---
 
-play demo
+Let's see how everything we have talked about in the second part of this 
+presentation works in practice.
 
 ---
 
@@ -934,7 +935,15 @@ PLAY DEMO VIDEO #02
 
 ---
 
+In this video we saw how the developer downloaded the Drupal source code to his
+machine, created a standard Docker Compose YAML file for his project and
+started the containers with Crush.
 
+By using vhost he was able to access Drupal and PhpMyAdmin easily via the web 
+browser.
+
+The last command was there just to verify if Drush was able to communicate with 
+Drupal.
 
 ---
 
@@ -942,30 +951,17 @@ SWITCH TO SLIDE #29
 
 ---
 
-Thing that maybe was most surbsing to us when deploying docker
-
-Using Docker in our development environment have definitely improved our
-
-Most surprising effect for us when deploying docker to our development environments was the fact that how easy it actually was to get started with Docker. 
-
-Having used Docker now more than half a year we haven't had any issues that we couldn't use Docker 
-
-Conclusion
 
 
-We are happy with the 
+---
 
-We have now used Docker in our development environments about
+SWITCH TO SLIDE #33
 
-Deploying Docker to our development environments 
+---
 
-Ok, this was the last demo. You saw 
-
-So now that we have a system and a process in place which allows us to define 
-project specific environment configurations for our projects, then again no 
-matter what is your skill level, you can start working on every Drupal project 
-immediately, and you don't have to know the details how some services work for 
-this project.
+Everything we have talked about in this presentation, including this exact 
+presentation can be found at docerizedrupal.com, feel free to use this material 
+and please contribute if this interests you enough.
 
 ---
 
@@ -973,41 +969,7 @@ SWITCH TO SLIDE #31
 
 ---
 
----
-
-SWITCH TO SLIDE #30
-
----
-
-***cordova sass/less reference
-
-***So we started solving one issue that could have been sovled without Docker as well, 
-but by using Docker to solve that we made some great imrpovements in other fields as well.
-
-## Backlog
-
-docker registry phase 2
-
-You should always include third party libraries etc to your Docker project
-
-Presentation link at the start of the presentation
-
-
-Conclusion - don't take this mission by your own, it will be very hard, try to 
-involve your organization into as well so they can support you from the high level, 
-but in the end it's worth it because if everyone is doing they work properly 
-then your work is also easter due that. Tools like Docker allow everyone to do 
-they work better.
-
-old habits - native sass vs docker sass, how to overcome
-
-dynamic runtime -  dockerfile vs puppet etc
-
-thank you at the end and start
-
-## Questions and answers
-
-Make sure to write down any unanswered questions and get back to the questioner as soon as you have the answer. Don't forget to ask them contact details!
+Thank you
 
 ## License
 
