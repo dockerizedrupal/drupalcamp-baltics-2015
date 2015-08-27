@@ -729,11 +729,7 @@ SWITCH TO SLIDE #22
 
 ---
 
-To solve that, we have created a simple tool called Crush, which is written in 
-Bash. 
-
-However in the future we would like to rewrite it in some other more portable 
-language, because the support for Bash on Windows isn't that great.
+To solve that, we have created a simple tool called Crush. 
 
 You can install Crush directly onto your host and use it exactly like you 
 would use native Drush implementation.
@@ -746,8 +742,6 @@ Then it tries to identify if the directory you where executing your command is
 inside the Drupal directory tree and if so it does some magic and executes the 
 right Drush command inside the container.
 
-Crush supports Drupal 6, 7 and 8.
-
 From a developer point of view, most of the time he doesn't even notice that 
 Docker is the underlying technology that drives his project when using Crush.
 
@@ -755,7 +749,7 @@ Since you can say that Crush in some sense is a version agnostic wrapper around
 Drush then you can use any version of Drush inside the container.
 
 For example, you have to still support an old Drupal 6 project which for some 
-reasons can only run on PHP 5.2 then the only choice you have is to use Drush 
+reason can only run on PHP 5.2 then the only choice you have is to use Drush 
 version 5 or lower.
 
 ---
