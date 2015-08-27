@@ -559,7 +559,7 @@ You can build a Docker image from it, that installs Apache on top of Debian
 file system and it replaces the contents of the default index.html file with 
 the sentence "Hello, DrupalCamp Baltics 2015!".
 
-As you can see the format of the Dockerfile is very simple.
+As you can see the format of a Dockerfile is very simple.
 
 On the first line you have a simple comment that is there to give you some 
 insight about the Dockerfile.
@@ -604,6 +604,12 @@ Apache will be started in the foreground if you launch the container. As long
 as the resulting process lives, the container will also stay running. If the 
 process is killed inside the container, the container will also stop.
 
+---
+
+SWITCH TO SLIDE #17
+
+---
+
 Now that we have covered most of the basics there is to Docker that are
 important, so you would be able follow the rest of the presentation, we are 
 going to show you a small demo where you can see the Docker image building 
@@ -630,7 +636,7 @@ to have a Docker in your development environment toolbox.
 
 ---
 
-SWITCH TO SLIDE #17
+SWITCH TO SLIDE #18
 
 ---
 
@@ -647,7 +653,7 @@ them.
 
 ---
 
-SWITCH TO SLIDE #18
+SWITCH TO SLIDE #19
 
 ---
 
@@ -698,7 +704,7 @@ in that work environment.
 
 ---
 
-SWITCH TO SLIDE #19
+SWITCH TO SLIDE #20
 
 ---
 
@@ -777,7 +783,7 @@ to our development environments into two phases.
 
 ---
 
-SWITCH TO SLIDE #20
+SWITCH TO SLIDE #21
 
 ---
 
@@ -806,7 +812,7 @@ execute Drush commands there.
 
 ---
 
-SWITCH TO SLIDE #21
+SWITCH TO SLIDE #22
 
 ---
 
@@ -841,7 +847,7 @@ Drush version 5 or lower.
 
 ---
 
-SWITCH TO SLIDE #22
+SWITCH TO SLIDE #23
 
 ---
 
@@ -916,7 +922,7 @@ a tremendous improvement from our previous approach to solve that problem.
 
 ---
 
-SWITCH TO SLIDE #23
+SWITCH TO SLIDE #24
 
 ---
 
@@ -957,7 +963,7 @@ place to support it.
 
 ---
 
-SWITCH TO SLIDE #24
+SWITCH TO SLIDE #25
 
 ---
 
@@ -988,7 +994,7 @@ do DNS.
 
 ---
 
-SWITCH TO SLIDE #25
+SWITCH TO SLIDE #26
 
 ---
 
@@ -1011,7 +1017,7 @@ continue with his work.
 
 ---
 
-SWITCH TO SLIDE #26
+SWITCH TO SLIDE #27
 
 ---
 
@@ -1021,13 +1027,39 @@ All our Docker images that are specific to projects are stored in our private
 Docker registry. General purpose images that do the most of the work are stored 
 in Docker Hub and the source code for those are available on GitHub.
 
+---
+
+SWITCH TO SLIDE #28
+
+---
+
+play demo
+
+---
+
+PLAY DEMO VIDEO #02
+
+---
+
+---
+
+SWITCH TO SLIDE #29
+
+---
+
+Ok, this was the last demo. You saw 
+
 So now that we have a system and a process in place which allows us to define 
 project specific environment configurations for our projects, then again no 
 matter what is your skill level, you can start working on every Drupal project 
 immediately, and you don't have to know the details how some services work for 
 this project.
 
+---
 
+SWITCH TO SLIDE #30
+
+---
 
 ***cordova sass/less reference
 
