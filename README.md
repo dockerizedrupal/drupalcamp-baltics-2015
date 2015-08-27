@@ -961,7 +961,8 @@ SWITCH TO SLIDE #33
 
 Everything we have talked about in this presentation, including this exact 
 presentation can be found at docerizedrupal.com, feel free to use this material 
-and please contribute if this interests you enough.
+and please contribute if this interests you enough, so we can make it even 
+better.
 
 ---
 
