@@ -610,7 +610,7 @@ SWITCH TO SLIDE #17
 
 ---
 
-Now that we have covered most of the basics there is to Docker that are
+Now that we have covered most of the basics there is to Docker that are 
 important, so you would be able follow the rest of the presentation, we are 
 going to show you a small demo where you can see the Docker image building 
 process in action.
@@ -657,8 +657,8 @@ SWITCH TO SLIDE #19
 
 ---
 
-Before using Docker to on our development environments the setup we had was not very 
-efficient and scalable when working in a team environment.
+Before deploying Docker to our development environments the setup we had was 
+not very efficient and scalable when working in a team environment.
 
 Our team is relatively small and the amount of projects each our developer has 
 to work on or maintain at any given time is quite 
@@ -718,14 +718,14 @@ Nothing unusual there.
 He found out that the file permissions for a project he was working on were 
 incorrect.
 
-And he thought that he could safely resolve them by himself, because he already had 
-performed a similar action a couple of times in the past for different 
+And he thought that he could safely resolve them by himself, because he already 
+had performed a similar action a couple of times in the past for different 
 projects.
 
 But unfortunately at this time everything didn't go as well as he planned.
 
-When he realized that his system wasn't working properly anymore he notified a fellow colleague for a 
-help.
+When he realized that his system wasn't working properly anymore he notified a 
+fellow colleague for a help.
 
 After some investigation what exactly had happened to his system, we found out 
 that the command he entered was following. (point at slide).
@@ -739,9 +739,8 @@ dangerous.
 Services running on his host were not able to properly access files and 
 directories anymore.
 
-In order to spend as small amount time as possible we tried at first to 
-recover as much as possible by hand so he could at least continue his work for 
-the day.
+In order to spend as little time as possible we tried at first to recover as 
+much as possible by hand so he could at least continue his work for the day.
 
 But unfortunately the effort we put into trying to recover his system was not 
 enough.
@@ -800,8 +799,8 @@ Because a developer still had to know Docker in too much detail and the goal
 was to minimize it as much as possible, we still had some work to do to achieve 
 that.
 
-The most critical part to get right was Drush and how to use it in a relatively comfortable 
-way with containers.
+The most critical part to get right was Drush and how to use it in a relatively 
+comfortable way with containers.
 
 Drush is installed along side with PHP service and 
 when developer wants to use Drush in a containerized environment, he first 
@@ -839,9 +838,9 @@ Docker is the underlying technology that drives his project when using Crush.
 Since you can say that Crush in some sense is a version agnostic wrapper around 
 Drush then you can use any version of Drush inside the container.
 
-For example, you have to still support an old Drupal 6 project which for some reasons 
-can only run on PHP 5.2 then the only choice you have is to use 
-Drush version 5 or lower.
+For example, you have to still support an old Drupal 6 project which for some 
+reasons can only run on PHP 5.2 then the only choice you have is to use Drush 
+version 5 or lower.
 
 ---
 
@@ -859,9 +858,9 @@ containerized service in your stack lives in a separate network.
 
 Which we think, is a good property to have in a long run.
 
-It solves problem when two or more random services wants to use the same port, but they 
-each have a separate network then we don't have to be worrying about port 
-conflicts.
+It solves problem when two or more random services wants to use the same port, 
+but they each have a separate network then we don't have to be worrying about 
+port conflicts.
 
 So it allows your project to scale more easily in a development environment.
 
@@ -901,8 +900,8 @@ The feedback we had collected from them was very useful and after fixing some
 minor issues we already saw improvements from using Docker in our work 
 environment.
 
-For example if one of the developers found a useful service or a tool that could 
-improve his daily work, he made an image out of it and by doing so we 
+For example if one of the developers found a useful service or a tool that 
+could improve his daily work, he made an image out of it and by doing so we 
 immediately could share it with other developers that were using Docker and it 
 worked everywhere exactly the way.
 
@@ -934,10 +933,10 @@ specific containers.
 
 This is very useful architectural change primarily for one thing.
 
-When your drupal project is different from the rest of the projects and it needs
-different or customized services to be able to run. With a shared environment 
-it's pretty complicated to maintain the differences between your services 
-that are running your projects.
+When your drupal project is different from the rest of the projects and it 
+needs different or customized services to be able to run. With a shared 
+environment it's pretty complicated to maintain the differences between your 
+services that are running your projects.
 
 For example, your project might need a Redis support from PHP, if you are 
 sharing a PHP container with all your projects, then all your projects will 
@@ -1035,11 +1034,30 @@ PLAY DEMO VIDEO #02
 
 ---
 
+
+
 ---
 
 SWITCH TO SLIDE #29
 
 ---
+
+Thing that maybe was most surbsing to us when deploying docker
+
+Using Docker in our development environment have definitely improved our
+
+Most surprising effect for us when deploying docker to our development environments was the fact that how easy it actually was to get started with Docker. 
+
+Having used Docker now more than half a year we haven't had any issues that we couldn't use Docker 
+
+Conclusion
+
+
+We are happy with the 
+
+We have now used Docker in our development environments about
+
+Deploying Docker to our development environments 
 
 Ok, this was the last demo. You saw 
 
@@ -1048,6 +1066,12 @@ project specific environment configurations for our projects, then again no
 matter what is your skill level, you can start working on every Drupal project 
 immediately, and you don't have to know the details how some services work for 
 this project.
+
+---
+
+SWITCH TO SLIDE #31
+
+---
 
 ---
 
