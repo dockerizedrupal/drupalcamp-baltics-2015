@@ -21,7 +21,7 @@ I'll start by saying that our English is not that fluent as you would expect
 from an ordinary guy that gives presentations at conferences.
 
 Because we have a quite a large amount of topics to cover and the amount of
-time that have been given to us to perform this presentation is fixed, we have
+time that have been given to us to perform this presentation is finite, we have
 left no room for any improvisation and would gladly use this little assistant 
 called Kindle as our guide today.
 
