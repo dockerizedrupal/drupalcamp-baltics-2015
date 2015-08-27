@@ -12,36 +12,24 @@ Hello guys!
 
 My name is Jürgen.
 
-I'm a full time Drupal developer at Fenomen web agency. I have about three and 
-a half years of experience with Drupal professionally, but unfortunately at the 
-same time I don't have any real experience sharing my knowledge and opinions 
-publicly with others.
+My name is Mait.
 
-However, I like to believe that the fear to fail in front of an audience 
-shouldn't be the dictating factor not to do it, because if the goal is to 
-improve their own and other people's work, then it's more sustainable to give 
-than receive.
+We are two ordinary Drupal developers that have never given a speech before.
 
-So I feel that it's my responsibility to make my first real contribution to 
-Drupal community today by giving this small talk with my good colleague Mait.
+I'll start by saying that our English is not that fluent as you would expect 
+from an ordinary guy that gives presentations at conferences.
 
-Because we have a quite a large amount of topics to cover and the amount of 
-time that have been given to us to perform this presentation is finite and a 
-good developer is supposed to never go overtime, we have left no room for any 
-improvisation.
+Because we have a quite a large amount of topics to cover and the amount of
+time that have been given to us to perform this presentation is fixed, we have
+left no room for any improvisation and would gladly use this little assistant 
+called Kindle as our guide today.
 
-Demos that we have prepared for you to show are in video format, because too 
-often we have witnessed the rage of the demogods, whether the network is 
-unreliable or a piece of software just decides not to function.
+So we hope that you don't mind because the topic in our opinion is quite 
+interesting.
 
-Hi, my Name is Mait and I work for Fenomen web agency as well. I have been 
-working with Drupal a little bit more than a year professionally. Also, this is 
-my first DrupalCamp, so I'm very delighted that I have given the opportunity to 
-be here in front of you, fellow Drupal enthusiasts.
-
-So now that we have your attention and you briefly know who we are and what to 
-expect from this presentation, lets talk about Drupal and Docker. How can these 
-two technologies work together and why you should care.
+Now that we have your attention and you know what to expect from this 
+presentation, lets talk about Drupal and Docker. How can these two technologies 
+work together and why you should care.
 
 ---
 
