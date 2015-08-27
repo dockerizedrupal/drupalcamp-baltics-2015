@@ -943,7 +943,7 @@ By using vhost he was able to access Drupal and PhpMyAdmin easily via the web
 browser.
 
 The last command was there just to verify if Drush was able to communicate with 
-Drupal.
+Drupal as well.
 
 ---
 
@@ -951,7 +951,7 @@ SWITCH TO SLIDE #29
 
 ---
 
-
+Docker has heplped
 
 ---
 
@@ -959,10 +959,10 @@ SWITCH TO SLIDE #33
 
 ---
 
-Everything we have talked about in this presentation, including this exact 
-presentation can be found at docerizedrupal.com, feel free to use this material 
-and please contribute if this interests you enough, so we can make it even 
-better.
+Everything we have talked about in this presentation, including this exact
+presentation can be found at docerizedrupal.com, feel free to use this material
+freely and please contribute if this topic also interest you, so we can make it
+even better.
 
 ---
 
