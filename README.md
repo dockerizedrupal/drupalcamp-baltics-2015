@@ -98,22 +98,18 @@ host.
 The most portable and flexible way to use Docker on non Linux hosts is to use 
 whole-system virtualization technology. 
 
-My personal favourite is VirtualBox that allows you to create and manage
+Our personal favourite is VirtualBox that allows you to create and manage
 virtual machines in my opinion very beginner friendly way.
 
 It can run on many different operating systems and supports large number of 
 guest operating systems including Linux.
 
-The primary downside using plain VirtualBox or any other hypervisor like that
-is that you have to do most of the initial configuration yourself manually.
-
-Provisioning a guest operating system may also be a bit overwhelming for some 
-people.
+The primary downside using plain VirtualBox or any other hypervisor is that you 
+have to do most of the initial configuration yourself manually.
 
 Normally developers are not interested in wasting their time configuring their 
 environment, but instead they just want to get their development environment up 
-and running as fast as possible so they could start working on the project 
-effortlessly.
+and running as fast as possible so they could start working on their project.
 
 So just using VirtualBox to run Docker may not work for everybody.
 
@@ -149,9 +145,6 @@ SWITCH TO SLIDE #06
 
 The official and recommended way to get started with Docker is to use very 
 recently announced tool called Docker Toolbox.
-
-It is so new that I personally have not yet had time to battle test it in 
-everyday work. It was announced about three weeks ago.
 
 If any of you are familiar with Boot2Docker, then you should know that Docker 
 Toolbox is here to replace it and it is suggested that you migrate as soon as 
@@ -211,8 +204,6 @@ SWITCH TO SLIDE #08
 So what makes Linux so special that Docker Engine can run natively only on that 
 operating system at this time?
 
-Well, there are a couple of reasons for that.
-
 Some of you may know that Docker is a containerization technology. In other 
 words it means that your Dockerized applications also known as containers are 
 running in isolation from other processes on the same machine.
@@ -223,13 +214,12 @@ hypervisor is in the role that isolates your guest operating system from the
 rest of the system.
 
 However, not all mainstream operating systems today are supporting 
-container-based virtualization also called operating-system-level 
-virtualization.
+container-based virtualization.
 
-By that I mean Mac and Windows.
+We look at you Mac and Windows.
 
-So my theory is that since Linux is considered a mainstream operating system in 
-the technology world and the Linux kernel does support container-based 
+So our theory is that since Linux is considered a mainstream operating system 
+in the technology world and the Linux kernel does support container-based 
 virtualization, then the only logical conclusion is that there were no other 
 feasible options available to choose from.
 
@@ -261,7 +251,7 @@ SWITCH TO SLIDE #09
 
 From a developer point of view, the two primary advantages of container-based 
 virtualization over whole-system virtualization is the efficiency, how many 
-applications you can run in parallel on a single machine and the speed, how 
+applications you can run in parallel on a single machine, and the speed, how 
 quickly you can start and rebuild your application.
 
 A typical virtual machine is usually a couple of gigabytes in size, it takes  
@@ -289,18 +279,15 @@ have on their system.
 These are the exact issues that you can solve by using containers instead of 
 virtual machines for development.
 
-Now you may ask, why isn't everyone using containers instead of virtual 
-machines?
+The primary disadvantage of container-based virtualization in practice is that 
+you can not run applications in containers that are compiled for a different 
+operating system as your host. For example you can't run Windows based 
+executables directly in a container if your host operating system is Linux. 
+There is no such limitations for virtual machines.
 
-The primary disadvantage of container-based virtualization in practice in my 
-opinion is that you can not run applications in containers that are compiled 
-for a different operating system as your host. For example you can't run 
-Windows based executables directly in a container if your host operating system 
-is Linux. There is no such limitations for virtual machines.
-
-But since most of the third party services that are usually used in along side 
-with Drupal are able to run on Linux anyways, so using containers mostly 
-wouldn't be a problem for a Drupal developer.
+Using containers mostly wouldn't be a problem for a Drupal developer, because 
+most of the third party services that are usually used in along side with 
+Drupal are able to run on Linux anyways.
 
 ---
 
