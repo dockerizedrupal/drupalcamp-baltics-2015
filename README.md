@@ -282,7 +282,7 @@ larger than running it on your host natively.
 
 The amount of virtual machines you can run on an average laptop is relatively 
 low. I would say if you try to run more that ten virtual machines on your 
-average laptop then you may already start experiencing performance degradation.
+laptop then you may already start experiencing performance degradation.
 
 For a developer these numbers are not that appealing and because of that they 
 usually run their development tools directly on their host because it's faster, 
@@ -429,7 +429,7 @@ Containers are created from Docker images.
 By giving right capabilities to a container you can even make your physical 
 devices available to your application running inside the container.
 
-In same cases for example you may need to debug a service that is running 
+In some cases for example you may need to debug a service that is running 
 inside the container, then Docker is able to give you a shell to a running 
 container.
 
@@ -610,10 +610,9 @@ SWITCH TO SLIDE #17
 
 ---
 
-Now that we have covered most of the basics there is to Docker that are 
-important, so you would be able follow the rest of the presentation, we are 
-going to show you a small demo where you can see the Docker image building 
-process in action.
+Now that we have covered most of the basics there is to Docker, so you would be
+able follow the rest of the presentation, we are going to show you a small demo 
+where you can see the Docker image building process in action.
 
 ---
 
@@ -626,9 +625,8 @@ a container.
 
 Inside the container, Apache process were started on port 80.
 
-We also saw, that making HTTP request to a loopback address through the web 
-browser, we got the actual response form the web server running inside the 
-container with the right payload.
+We also saw, that making a HTTP request to the loopback address through the web 
+browser, we got the actual response form the web server with the right payload.
 
 An action that only took about a minute to perform in practice took nearly 
 half an hour to explain. So this should give you some idea how powerful it is 
