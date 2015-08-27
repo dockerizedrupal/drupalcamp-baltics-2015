@@ -47,9 +47,9 @@ The first part introduces Docker, what exactly is it and how it works. On
 second part we will be discussing how we at Fenomen ended up using Docker and 
 what problems it helped us to solve when developing Drupal based projects.
 
-This presentation is primarily meant for beginners in general, but we hope that 
-some of you who think that they already know Docker, still might learn 
-something new from this talk.
+This presentation is primarily meant for beginners in general, but we are 
+hoping that some of you who think that they already know Docker, still might 
+learn something new from this talk.
 
 ---
 
