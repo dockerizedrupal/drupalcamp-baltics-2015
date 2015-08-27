@@ -678,8 +678,8 @@ implement, then the total time you have to invest to resolve a single bug might
 be more than three times higher than the initial estimate due to not having 
 a proper system and process in place.
 
-Even more time you would need to waste if the fifteen minute bug requires you 
-to set up and configure for example Apache Solr server to fix it, which is not 
+You would need to waste even more time  if the fifteen minute bug requires you 
+to set up and configure Apache Solr server to fix it, which is not 
 that easy do to for everyone.
 
 So a bug that would be normally resolvable by any Drupal developer because the 
@@ -710,23 +710,20 @@ Last year in October one of our junior developers was working on a project.
 
 Nothing unusual there.
  
-At one moment, the file permissions for a project he was working on were 
+He found out that the file permissions for a project he was working on were 
 incorrect.
 
-He thought he could safely resolve them by himself, because he already had 
+And he thought that he could safely resolve them by himself, because he already had 
 performed a similar action a couple of times in the past for different 
 projects.
 
-But unfortunately at this time everything didn't go as well as he would have 
-planned.
+But unfortunately at this time everything didn't go as well as he planned.
 
-When he realized that his system wasn't working properly anymore after 
-attempting to fix the file permissions, he notified a fellow colleague for a 
+When he realized that his system wasn't working properly anymore he notified a fellow colleague for a 
 help.
 
 After some investigation what exactly had happened to his system, we found out 
-that the following command you can see on the slide, he had entered to his 
-terminal had made his system unusable.
+that the he entered was following. (point at slide).
 
 For those who don't know what this command does, it changed every file and 
 directory ownership on his machine to www-data.
@@ -740,10 +737,6 @@ directories anymore.
 Because this happened in the middle of the work day, we at first tried to 
 recover as much as possible by hand so he could at least continue his work for 
 the day.
-
-Reinstalling an operating system and configuring all the tools and services 
-that a developer might need would have taken us more time than we initially had 
-been given.
 
 But unfortunately the effort we put into trying to recover his system was not 
 enough.
@@ -762,15 +755,16 @@ you are using a different Linux distribution or version that the documentation
 was written for.
 
 So the time that a company had lost from two developers that weren't able to 
-write code for the rest of the day, was pretty huge as you would imagine.
+write code for the rest of the day, was pretty huge.
 
 If we would had a proper process in place that would have allowed us to build 
-and configure everything automatically the impact to the cost would have been 
+and configure everything automatically the waste of time would have been 
 much smaller.
 
 Learning from this real experience how things shouldn't be done, we started 
 thinking about how to solve this problem. How to make our development 
 environments more efficient.
+
 
 We learned that Jürgen had already played with Docker in his free time for some 
 time now.
@@ -788,7 +782,7 @@ SWITCH TO SLIDE #20
 ---
 
 In phase one, without first introducing large changes to our development 
-workflow, we only concentrated on eliminating the problem we had when something 
+workflow, we concentrated only on eliminating the problem we had when something 
 would happen to your development machine and it couldn't be recovered easily.
 
 The first thing we did, we moved all the services like Apache, MySQL, PHP 
@@ -802,21 +796,13 @@ Because a developer still had to know Docker in too much detail and the goal
 was to minimize it as much as possible, we still had some work to do to achieve 
 that.
 
-The most critical part to get right was Drush.
+The most critical part to get right was Drush and how to use it in a relatively comfortable 
+way with containers.
 
-How to use Drush in a relatively comfortable way with containers.
-
-Let me give you an understanding of it what I mean by that.
-
-When a developer wants to use Drush in a containerized environment, he first 
-has to go inside the PHP container, because Drush was installed along side 
-with PHP service.
-
-Then he had to move to the right directory where Drupal files were mounted and 
+Drush is installed along side with PHP service and 
+when developer wants to use Drush in a containerized environment, he first 
+has to go inside the PHP container, go to the drupal file path directory and
 execute Drush commands there.
-
-This workflow wasn't that intuitive, because using Drush should really be fast 
-and easy.
 
 ---
 
@@ -824,12 +810,11 @@ SWITCH TO SLIDE #21
 
 ---
 
-To solve that, we have created a simple tool called Crush, it's written in 
+To solve that, we have created a simple tool called Crush, which is written in 
 Bash. 
 
 However in the future we would like to rewrite it in some other more portable 
-language, because the support for Bash on Windows isn't that great 
-unfortunately.
+language, because the support for Bash on Windows isn't that great.
 
 You can install Crush directly onto your host and use it exactly like you 
 would use native Drush implementation.
@@ -850,8 +835,8 @@ Docker is the underlying technology that drives his project when using Crush.
 Since you can say that Crush in some sense is a version agnostic wrapper around 
 Drush then you can use any version of Drush inside the container.
 
-For example you may have to still support an old Drupal 6 project for whatever 
-reason that can only run on PHP 5.2 then the only choice you have is to use 
+For example, you have to still support an old Drupal 6 project which for some reasons 
+can only run on PHP 5.2 then the only choice you have is to use 
 Drush version 5 or lower.
 
 ---
@@ -870,8 +855,8 @@ containerized service in your stack lives in a separate network.
 
 Which we think, is a good property to have in a long run.
 
-Because if two or more random services wants to use the same port, but they 
-each have a separate network, we don't have to be worrying about port 
+It solves problem when two or more random services wants to use the same port, but they 
+each have a separate network then we don't have to be worrying about port 
 conflicts.
 
 So it allows your project to scale more easily in a development environment.
@@ -912,14 +897,17 @@ The feedback we had collected from them was very useful and after fixing some
 minor issues we already saw awesome results from using Docker in our work 
 environment.
 
-For example if one of the developers found a useful service or tool that could 
-improve his daily work, we made an image out of it and by doing that we 
+For example if one of the developers found a useful service or a tool that could 
+improve his daily work, he made an image out of it and by doing so we 
 immediately could share it with other developers that were using Docker and it 
-worked every where the same way.
+worked everywhere exactly the way.
 
 Another example is where we had a real opportunity to test it out if we 
 actually had improved the time how fast we could set up a development 
 environment when a new developer joined with our team.
+
+Another example where we had a real opportunity to test it out was 
+when a new developer joined with our team.
 
 Instead of preparing the machine for a development a day before his arrival we 
 did it at the same day within 45 minutes which also included installing the 
@@ -946,10 +934,10 @@ specific containers.
 
 This is very useful architectural change primarily for one thing.
 
-If your Drupal project differs from the rest of your projects in regard which 
-services it needs in order to be able to run, which in practice it usually 
-differs a lot, then in a shared environment it's very hard to maintain the 
-difference between your services that are running your projects.
+When your drupal project is different from the rest of the projects and it needs
+different or customized services to be able to run. With a shared environment 
+it's pretty complicated to maintain the difference between your services 
+that are running your projects.
 
 For example, your project might need a Redis support from PHP, if you are 
 sharing a PHP container with all your projects, then all your projects will 
@@ -1007,10 +995,10 @@ SWITCH TO SLIDE #25
 Another essential tool we have developed to have a good experience working with 
 Drupal using Docker is called Drupal Compose.
 
-The goal of this tool is to allow you to easily generate general purpose Docker 
+The goal of this tool is to allow you to easily generate Docker 
 Compose YAML files for your Drupal 6, 7 and 8 projects automatically. So you 
 can start developing your normal Drupal projects immediately that doesn't 
-require any specific configuration and in case you may need some custom 
+require any specific configuration. In case you may need some custom 
 configuration you can make your changes directly to that YAML file.
 
 Most of our Docker images configurations can be changed on runtime when you 
@@ -1019,7 +1007,7 @@ needs to allocate more memory for his Drupal project he can do this directly in
 the Docker Compose YAML file, so he doesn't need to create another project 
 specific PHP image just to change memory limit. After changing the 
 configuration he can just restart the container with Docker Compose and 
-continue with his work.
+continue with his work. 
 
 ---
 
@@ -1032,8 +1020,6 @@ The final component that we had to deploy to finalize phase tow
 All our Docker images that are specific to projects are stored in our private 
 Docker registry. General purpose images that do the most of the work are stored 
 in Docker Hub and the source code for those are available on GitHub.
-
-
 
 So now that we have a system and a process in place which allows us to define 
 project specific environment configurations for our projects, then again no 
