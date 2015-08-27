@@ -844,8 +844,8 @@ also have a support for that version of Redis, but what if another project
 needs an older version of Redis or whatever other service or tool in order to 
 work. 
 
-So managing a shared system where you absolutely need to have
-to use project specific containers, becomes extremely hard.
+So managing a shared system where you absolutely have to use project specific 
+containers, becomes extremely hard.
 
 Removing the shared system all together and using an architecture where you 
 only have project specific containers running on your machine, with Docker 
@@ -897,16 +897,13 @@ Drupal using Docker is called Drupal Compose.
 The goal of this tool is to allow you to easily generate Docker 
 Compose YAML files for your Drupal 6, 7 and 8 projects automatically. So you 
 can start developing your normal Drupal projects immediately that doesn't 
-require any specific configuration. In case you may need some custom 
-configuration you can make your changes directly to that YAML file.
+require any specific configuration.
 
 Most of our Docker images configurations can be changed on runtime when you 
 launch a container. In practice this means that if a developer for example 
 needs to allocate more memory for his Drupal project he can do this directly in 
 the Docker Compose YAML file, so he doesn't need to create another project 
-specific PHP image just to change memory limit. After changing the 
-configuration he can just restart the container with Docker Compose and 
-continue with his work. 
+specific PHP image just to change memory limit.
 
 ---
 
@@ -914,11 +911,14 @@ SWITCH TO SLIDE #27
 
 ---
 
-The final component that we had to deploy to finalize phase tow 
+The final component that we included in our setup was a private Docker 
+registry.
 
-All our Docker images that are specific to projects are stored in our private 
-Docker registry. General purpose images that do the most of the work are stored 
-in Docker Hub and the source code for those are available on GitHub.
+All our Docker images that are specific to projects are stored there.
+
+We can save a lot of time by building an image only once on single machine and 
+pushing it to the registry. If every other developer just wants to use that 
+image, they just pull it.
 
 ---
 
