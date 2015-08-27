@@ -951,7 +951,9 @@ SWITCH TO SLIDE #29
 
 ---
 
-Docker has heplped
+By using Docker our efficiency in terms of time and productivity has gone up 
+greatly. Our developers are enjoying the development workflow that Docker can 
+provide to them.
 
 ---
 
