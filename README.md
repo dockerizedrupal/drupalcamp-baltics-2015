@@ -651,12 +651,11 @@ SWITCH TO SLIDE #18
 
 ---
 
-Before deploying Docker to our development environments the setup we had in 
-simply put, was not very efficient and scalable when working in a team 
-environment.
+Before using Docker to on our development environments the setup we had was not very 
+efficient and scalable when working in a team environment.
 
 Our team is relatively small and the amount of projects each our developer has 
-to work on or maintain at any given time relative to our team size is quite 
+to work on or maintain at any given time is quite 
 large.
 
 Imagine having to work on more than 5 different projects on a single day. And 
@@ -678,7 +677,7 @@ implement, then the total time you have to invest to resolve a single bug might
 be more than three times higher than the initial estimate due to not having 
 a proper system and process in place.
 
-You would need to waste even more time  if the fifteen minute bug requires you 
+You would need to waste even more time if the fifteen minute bug requires you 
 to set up and configure Apache Solr server to fix it, which is not 
 that easy do to for everyone.
 
@@ -704,7 +703,7 @@ SWITCH TO SLIDE #19
 
 If I'm honest with you, then the real reason why we ended up using Docker 
 in our development environment was actually by accident. To get a better idea 
-what I mean by that, let me start by telling you a short story.
+what I mean by that, I'm gonna tell a little story.
 
 Last year in October one of our junior developers was working on a project. 
 
@@ -723,7 +722,7 @@ When he realized that his system wasn't working properly anymore he notified a f
 help.
 
 After some investigation what exactly had happened to his system, we found out 
-that the he entered was following. (point at slide).
+that the command he entered was following. (point at slide).
 
 For those who don't know what this command does, it changed every file and 
 directory ownership on his machine to www-data.
@@ -734,7 +733,7 @@ dangerous.
 Services running on his host were not able to properly access files and 
 directories anymore.
 
-Because this happened in the middle of the work day, we at first tried to 
+In order to spend as small amount time as possible we tried at first to 
 recover as much as possible by hand so he could at least continue his work for 
 the day.
 
@@ -758,13 +757,12 @@ So the time that a company had lost from two developers that weren't able to
 write code for the rest of the day, was pretty huge.
 
 If we would had a proper process in place that would have allowed us to build 
-and configure everything automatically the waste of time would have been 
+and configure everything automatically the impact to the cost would have been 
 much smaller.
 
 Learning from this real experience how things shouldn't be done, we started 
 thinking about how to solve this problem. How to make our development 
 environments more efficient.
-
 
 We learned that Jürgen had already played with Docker in his free time for some 
 time now.
@@ -894,17 +892,13 @@ development environment to couple of developers machines that were willing to
 try it out and test.
 
 The feedback we had collected from them was very useful and after fixing some 
-minor issues we already saw awesome results from using Docker in our work 
+minor issues we already saw improvements from using Docker in our work 
 environment.
 
 For example if one of the developers found a useful service or a tool that could 
 improve his daily work, he made an image out of it and by doing so we 
 immediately could share it with other developers that were using Docker and it 
 worked everywhere exactly the way.
-
-Another example is where we had a real opportunity to test it out if we 
-actually had improved the time how fast we could set up a development 
-environment when a new developer joined with our team.
 
 Another example where we had a real opportunity to test it out was 
 when a new developer joined with our team.
@@ -936,7 +930,7 @@ This is very useful architectural change primarily for one thing.
 
 When your drupal project is different from the rest of the projects and it needs
 different or customized services to be able to run. With a shared environment 
-it's pretty complicated to maintain the difference between your services 
+it's pretty complicated to maintain the differences between your services 
 that are running your projects.
 
 For example, your project might need a Redis support from PHP, if you are 
@@ -945,8 +939,8 @@ also have a support for that version of Redis, but what if another project
 needs an older version of Redis or whatever other service or tool in order to 
 work. 
 
-So managing a shared system where in practice you absolutely need to have a 
-system in place to use project specific containers, becomes extremely hard.
+So managing a shared system where you absolutely need to have
+to use project specific containers, becomes extremely hard.
 
 Removing the shared system all together and using an architecture where you 
 only have project specific containers running on your machine, with Docker 
