@@ -916,9 +916,9 @@ registry.
 
 All our Docker images that are specific to projects are stored there.
 
-We can save a lot of time by building an image only once on single machine and 
-pushing it to the registry. If every other developer just wants to use that 
-image, they just pull it.
+We can save a lot of time by building an image only once and pushing it to the 
+registry. If every other developer just wants to use that image, they just pull 
+it from the registry.
 
 ---
 
