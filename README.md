@@ -962,7 +962,7 @@ SWITCH TO SLIDE #33
 Everything we have talked about in this presentation, including this exact
 presentation can be found at docerizedrupal.com, feel free to use this material
 freely and please contribute if this topic also interest you, so we can make it
-even better.
+together even better.
 
 ---
 
