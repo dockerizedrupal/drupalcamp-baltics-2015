@@ -14,7 +14,8 @@ My name is Jürgen.
 
 My name is Mait.
 
-We are two ordinary Drupal developers that have never given a speech before.
+We are two ordinary Drupal developers from compnay called Fenomen that have 
+never given a speech before.
 
 I'll start by saying that our English is not that fluent as you would expect 
 from an ordinary guy that gives presentations at conferences.
