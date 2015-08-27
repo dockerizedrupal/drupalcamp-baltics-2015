@@ -550,20 +550,12 @@ You can use every other Docker image as your base image. This gives us the
 flexibility to reuse already built images and increase the efficiency of the 
 image building process.
 
-The fifth line is just there to tell who is the maintainer of the image. This 
-metadata will be directly stored on the image and can be queried at any time.
-
 On line eight, eleven and fourteen, we see the RUN instruction, which is the 
 most common instruction in the Dockerfile. RUN instruction executes a command 
 and commits the change to file system back into your image.
 
 If you have not yet noticed then you can see that on line eleven we execute
 apt-get install with the -y flag, so the build process wouldn't be interrupted.
-
-Line seventeen informs Docker Engine that the Apache is running inside the
-container and is listening on port 80. This is useful if your services running 
-in multiple containers need to talk to each other and by exposing a fixed port, 
-they can easily discover each other.
 
 The last instruction is the entrypoint for your container. In this example 
 Apache will be started in the foreground if you launch the container. As long 
@@ -625,33 +617,17 @@ Before deploying Docker to our development environments the setup we had was
 not very efficient and scalable when working in a team environment.
 
 Our team is relatively small and the amount of projects each our developer has 
-to work on or maintain at any given time is quite 
-large.
+to work on or maintain at any given time is quite large.
 
 Imagine having to work on more than 5 different projects on a single day. And 
 more than half of those aren't even developed by you, so the time you would 
 need to put into getting each project up and running on a native LAMP setup 
 can be quite large.
 
-By native LAMP setup I mean you have a standard Linux environment and every 
-tool or service you would need to use in your development workflow is installed 
-directly to your host.
+Some projects may also be a couple of years old and getting the right tools to
+work on a newer operating system may also be difficult.
 
-Some projects may also be a couple of years old and getting the right tools to 
-work on a newer operating system may also be more complicated than it should 
-be.
-
-When we also take into account that some of the issues you need to resolve have
-a very easy fix that would take you only about ten to fifteen minutes to 
-implement, then the total time you have to invest to resolve a single bug might 
-be more than three times higher than the initial estimate due to not having 
-a proper system and process in place.
-
-You would need to waste even more time if the fifteen minute bug requires you 
-to set up and configure Apache Solr server to fix it, which is not 
-that easy do to for everyone.
-
-So a bug that would be normally resolvable by any Drupal developer because the 
+A bug that would be normally resolvable by any Drupal developer because the 
 nature of the bug itself doesn't require a high level of skill, might 
 still be too difficult for a junior developer to fix, because he may lack the 
 knowledge and the know-how needed to set up the project on his machine.
@@ -676,8 +652,6 @@ in our development environment was actually by accident. To get a better idea
 what I mean by that, I'm gonna tell a little story.
 
 Last year in October one of our junior developers was working on a project. 
-
-Nothing unusual there.
  
 He found out that the file permissions for a project he was working on were 
 incorrect.
@@ -692,38 +666,22 @@ When he realized that his system wasn't working properly anymore he notified a
 fellow colleague for a help.
 
 After some investigation what exactly had happened to his system, we found out 
-that the command he entered was following. (point at slide).
+that the command he entered was following - POINT AT SLIDE.
 
-For those who don't know what this command does, it changed every file and 
-directory ownership on his machine to www-data.
-
-The command in this case were executed as superuser, which makes it extra 
-dangerous.
-
-Services running on his host were not able to properly access files and 
+Processes running on his host were not able to properly access files and 
 directories anymore.
 
-In order to spend as little time as possible we tried at first to recover as 
-much as possible by hand so he could at least continue his work for the day.
+At first we tried to recover as much as possible by hand so he could at least 
+continue with his work for the day.
 
-But unfortunately the effort we put into trying to recover his system was not 
-enough.
+But, the damage was already done.
 
 So the only choice we had, was to reinstall the operating system, install and 
 configure all the tools that he needed in order to be able to continue with his 
 work.
 
-We are also using phpfarm on our systems to be able to use multiple PHP 
-versions in parallel on a single host.
-
-The issue with phpfarm is that you have to compile PHP and its extensions from 
-a source code. Compiling a large project like PHP is quite a tedious task, 
-especially if the documentation that should assist you, is not up to date or if 
-you are using a different Linux distribution or version that the documentation 
-was written for.
-
-So the time that a company had lost from two developers that weren't able to 
-write code for the rest of the day, was pretty huge.
+The time that a company had lost from two developers that weren't able to write 
+code for the rest of the day, was pretty huge.
 
 If we would had a proper process in place that would have allowed us to build 
 and configure everything automatically the impact to the cost would have been 
@@ -756,20 +714,14 @@ The first thing we did, we moved all the services like Apache, MySQL, PHP
 etc., that were running on a developer machine natively into separate Docker 
 containers.
 
-The key thing here to remember is that every Drupal project shared the same 
-Apache, MySQL and PHP container instance.
+Every Drupal project shared the same Apache, MySQL and PHP container instance.
 
-Because a developer still had to know Docker in too much detail and the goal 
-was to minimize it as much as possible, we still had some work to do to achieve 
-that.
+The other critical part to get right was Drush.
 
-The most critical part to get right was Drush and how to use it in a relatively 
-comfortable way with containers.
-
-Drush is installed along side with PHP service and 
-when developer wants to use Drush in a containerized environment, he first 
-has to go inside the PHP container, go to the drupal file path directory and
-execute Drush commands there.
+How can we use it in a relatively comfortable way with containers, because it's 
+installed along side with PHP service into the same image, then if a developer 
+wants to use Drush in a containerized environment, he first has to go inside 
+the PHP container, find the drupal directory and execute Drush commands there.
 
 ---
 
