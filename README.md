@@ -772,18 +772,12 @@ It solves problem when two or more random services wants to use the same port,
 but they each have a separate network then we don't have to be worrying about 
 port conflicts.
 
-So it allows your project to scale more easily in a development environment.
-
-Because the first phase was not about introducing Docker to our team, but 
-instead have a better way to set up a development environment, we had to come 
-up with a solution that could hide this from a developer by default, but still 
-not restrict it too much that he couldn't use Docker networking features at 
-all.
+Your project can scale more easily in that way.
 
 We found this tool called socat and built it into our PHP Docker image.
 
-It allows quite easily to redirect network traffic between two independent 
-channels.
+It allowed us quite easily redirect traffic from one network interface to 
+another,
 
 So in our case if the developer wants to communicate from PHP with an external 
 service like MySQL that lives in a separate container and belongs to a 
@@ -799,12 +793,8 @@ So in case if your Drupal project is using lots of modules that are relying
 heavily on database, like Views, Panels, Organic groups etc, it may run 
 significantly slower.
 
-In that case you may want to fallback to using direct IP-addresses to 
-communicate with other containers.
-
-Once these two major issues were resolved we started to deploy Docker based 
-development environment to couple of developers machines that were willing to 
-try it out and test.
+Once these two major issues were resolved we started deploying Docker solution 
+to our developers machines that were willing to try it out and test.
 
 The feedback we had collected from them was very useful and after fixing some 
 minor issues we already saw improvements from using Docker in our work 
@@ -815,8 +805,8 @@ could improve his daily work, he made an image out of it and by doing so we
 immediately could share it with other developers that were using Docker and it 
 worked everywhere exactly the way.
 
-Another example where we had a real opportunity to test it out was 
-when a new developer joined with our team.
+Another example where we had a real opportunity to test it out was when a new 
+developer joined with our team.
 
 Instead of preparing the machine for a development a day before his arrival we 
 did it at the same day within 45 minutes which also included installing the 
