@@ -264,8 +264,7 @@ low. I would say if you try to run more that ten virtual machines on your
 laptop then you may already start experiencing performance degradation.
 
 For a developer these numbers are not that appealing and because of that they 
-usually run their development tools directly on their host because it's faster, 
-there is no doubt about that.
+usually run their development tools directly on their host because it's faster.
 
 However, by doing so, they lose some of the flexibility over their development 
 environment. The whole point of isolation that virtual machines or containers 
