@@ -655,9 +655,7 @@ Last year in October one of our junior developers was working on a project.
 He found out that the file permissions for a project he was working on were 
 incorrect.
 
-And he thought that he could safely resolve them by himself, because he already 
-had performed a similar action a couple of times in the past for different 
-projects.
+And he thought that he could safely resolve them by himself.
 
 But unfortunately at this time everything didn't go as well as he planned.
 
