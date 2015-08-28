@@ -460,7 +460,7 @@ You can share a Docker image with other developers as easily as you can share
 a class that have been written to a text file.
 
 Just so you know, in the future you could also share a running container with 
-others by being able to create a full snapshot from a it, but this feature is 
+others by being able to create a full snapshot from it, but this feature is 
 still in an experimental phase.
 
 ---
