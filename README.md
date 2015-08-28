@@ -716,9 +716,9 @@ Every Drupal project shared the same Apache, MySQL and PHP container instance.
 The other critical part to get right was Drush.
 
 How can we use it in a relatively comfortable way with containers, because it's 
-installed along side with PHP service into the same image, then if a developer 
+installed along side with PHP service into the same image. If a developer 
 wants to use Drush in a containerized environment, he first has to go inside 
-the PHP container, find the drupal directory and execute Drush commands there.
+the PHP container, find the Drupal directory and execute Drush commands there.
 
 ---
 
@@ -773,8 +773,8 @@ Your project can scale more easily in that way.
 
 We found this tool called socat and built it into our PHP Docker image.
 
-It allowed us quite easily redirect traffic from one network interface to 
-another,
+It allowed us quite easily to redirect traffic from one network interface to 
+another.
 
 So in our case if the developer wants to communicate from PHP with an external 
 service like MySQL that lives in a separate container and belongs to a 
@@ -798,7 +798,7 @@ minor issues we already saw improvements from using Docker in our work
 environment.
 
 For example if one of the developers found a useful service or a tool that 
-could improve his daily work, he made an image out of it and by doing so we 
+could improve his daily work, he made an image out of it and by doing so he 
 immediately could share it with other developers that were using Docker and it 
 worked everywhere exactly the way.
 
@@ -900,7 +900,7 @@ Most of our Docker images configurations can be changed on runtime when you
 launch a container. In practice this means that if a developer for example 
 needs to allocate more memory for his Drupal project he can do this directly in 
 the Docker Compose YAML file, so he doesn't need to create another project 
-specific PHP image just to change memory limit.
+specific PHP image just to change a memory limit.
 
 ---
 
@@ -960,7 +960,7 @@ SWITCH TO SLIDE #33
 
 Everything we have talked about in this presentation, including this exact
 presentation can be found at docerizedrupal.com, feel free to use this material
-freely and please contribute if this topic also interest you, so we can make it
+freely and please contribute if this topic also interests you, so we can make it
 together even better.
 
 ---
