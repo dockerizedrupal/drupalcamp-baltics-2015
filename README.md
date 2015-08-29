@@ -4,7 +4,7 @@
 
 ---
 
-![SWITCH TO SLIDE #01](/slides/SWITCH TO SLIDE #01.png?raw=true "SWITCH TO SLIDE #01")
+![SWITCH TO SLIDE #01](../slides/SWITCH TO SLIDE #01.png?raw=true "SWITCH TO SLIDE #01")
 
 ---
 
