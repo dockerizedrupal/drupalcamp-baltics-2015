@@ -4,7 +4,7 @@
 
 ---
 
-![SWITCH TO SLIDE #01](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH TO SLIDE #01.png "SWITCH TO SLIDE #01")
+![SWITCH TO SLIDE #01](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2301.png "SWITCH TO SLIDE #01")
 
 ---
 
