@@ -34,7 +34,7 @@ work together and why you should care.
 
 ---
 
-SWITCH TO SLIDE #02
+![SWITCH TO SLIDE #02](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2302.png "SWITCH TO SLIDE #02")
 
 ---
 
@@ -53,7 +53,7 @@ learn something new from this talk.
 
 ---
 
-SWITCH TO SLIDE #03
+![SWITCH TO SLIDE #03](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2303.png "SWITCH TO SLIDE #03")
 
 ---
 
@@ -85,7 +85,7 @@ using Docker.
 
 ---
 
-SWITCH TO SLIDE #04
+![SWITCH TO SLIDE #04](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2304.png "SWITCH TO SLIDE #04")
 
 ---
 
@@ -115,7 +115,7 @@ So just using VirtualBox to run Docker may not work for everybody.
 
 ---
 
-SWITCH TO SLIDE #05
+![SWITCH TO SLIDE #05](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2305.png "SWITCH TO SLIDE #05")
 
 ---
 
@@ -139,7 +139,7 @@ If you are already using Vagrant, then this option is probably best for you.
 
 ---
 
-SWITCH TO SLIDE #06
+![SWITCH TO SLIDE #06](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2306.png "SWITCH TO SLIDE #06")
 
 ---
 
@@ -167,7 +167,7 @@ Docker ecosystem on that platform is superb.
 
 ---
 
-SWITCH TO SLIDE #07
+![SWITCH TO SLIDE #07](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2307.png "SWITCH TO SLIDE #07")
 
 ---
 
@@ -197,7 +197,7 @@ natively.
 
 ---
 
-SWITCH TO SLIDE #08
+![SWITCH TO SLIDE #08](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2308.png "SWITCH TO SLIDE #08")
 
 ---
 
@@ -245,7 +245,7 @@ Preview 3. So expect to be able to use Docker on Windows in the future as well.
 
 ---
 
-SWITCH TO SLIDE #09
+![SWITCH TO SLIDE #09](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2309.png "SWITCH TO SLIDE #09")
 
 ---
 
@@ -290,7 +290,7 @@ Drupal are able to run on Linux anyways.
 
 ---
 
-SWITCH TO SLIDE #10
+![SWITCH TO SLIDE #10](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2310.png "SWITCH TO SLIDE #10")
 
 ---
 
@@ -335,7 +335,7 @@ mediums.
 
 ---
 
-SWITCH TO SLIDE #11
+![SWITCH TO SLIDE #11](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2311.png "SWITCH TO SLIDE #11")
 
 ---
 
@@ -376,7 +376,7 @@ honestly we personally have not had a reason to use it in practice.
 
 ---
 
-SWITCH TO SLIDE #12
+![SWITCH TO SLIDE #12](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2312.png "SWITCH TO SLIDE #12")
 
 ---
 
@@ -425,7 +425,7 @@ to start than the container itself.
 
 ---
 
-SWITCH TO SLIDE #13
+![SWITCH TO SLIDE #13](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2313.png "SWITCH TO SLIDE #13")
 
 ---
 
@@ -465,7 +465,7 @@ still in an experimental phase.
 
 ---
 
-SWITCH TO SLIDE #14
+![SWITCH TO SLIDE #14](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2314.png "SWITCH TO SLIDE #14")
 
 ---
 
@@ -495,7 +495,7 @@ particular command supports it.
 
 ---
 
-SWITCH TO SLIDE #15
+![SWITCH TO SLIDE #15](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2315.png "SWITCH TO SLIDE #15")
 
 ---
 
@@ -513,7 +513,7 @@ without first asking your confirmation.
 
 ---
 
-SWITCH TO SLIDE #16
+![SWITCH TO SLIDE #16](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2316.png "SWITCH TO SLIDE #16")
 
 ---
 
@@ -563,7 +563,7 @@ process is killed inside the container, the container will also stop.
 
 ---
 
-SWITCH TO SLIDE #17
+![SWITCH TO SLIDE #17](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2317.png "SWITCH TO SLIDE #17")
 
 ---
 
@@ -573,7 +573,7 @@ where you can see the Docker image building process in action.
 
 ---
 
-PLAY DEMO VIDEO #01
+[![PLAY DEMO VIDEO #01](http://img.youtube.com/vi/qDfK93Nktl0/0.jpg)](http://www.youtube.com/watch?v=qDfK93Nktl0 "PLAY DEMO VIDEO #01")
 
 ---
 
@@ -591,7 +591,7 @@ to have a Docker in your development environment toolbox.
 
 ---
 
-SWITCH TO SLIDE #18
+![SWITCH TO SLIDE #18](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2318.png "SWITCH TO SLIDE #18")
 
 ---
 
@@ -608,7 +608,7 @@ them.
 
 ---
 
-SWITCH TO SLIDE #19
+![SWITCH TO SLIDE #19](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2319.png "SWITCH TO SLIDE #19")
 
 ---
 
@@ -642,7 +642,7 @@ in that work environment.
 
 ---
 
-SWITCH TO SLIDE #20
+![SWITCH TO SLIDE #20](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2320.png "SWITCH TO SLIDE #20")
 
 ---
 
@@ -699,7 +699,7 @@ to our development environments into two phases.
 
 ---
 
-SWITCH TO SLIDE #21
+![SWITCH TO SLIDE #21](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2321.png "SWITCH TO SLIDE #21")
 
 ---
 
@@ -722,7 +722,7 @@ the PHP container, find the Drupal directory and execute Drush commands there.
 
 ---
 
-SWITCH TO SLIDE #22
+![SWITCH TO SLIDE #22](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2322.png "SWITCH TO SLIDE #22")
 
 ---
 
@@ -751,7 +751,7 @@ version 5 or lower.
 
 ---
 
-SWITCH TO SLIDE #23
+![SWITCH TO SLIDE #23](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2323.png "SWITCH TO SLIDE #23")
 
 ---
 
@@ -812,7 +812,7 @@ a tremendous improvement from our previous approach to solve that problem.
 
 ---
 
-SWITCH TO SLIDE #24
+![SWITCH TO SLIDE #24](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2324.png "SWITCH TO SLIDE #24")
 
 ---
 
@@ -853,7 +853,7 @@ place to support it.
 
 ---
 
-SWITCH TO SLIDE #25
+![SWITCH TO SLIDE #25](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2325.png "SWITCH TO SLIDE #25")
 
 ---
 
@@ -884,7 +884,7 @@ do DNS.
 
 ---
 
-SWITCH TO SLIDE #26
+![SWITCH TO SLIDE #26](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2326.png "SWITCH TO SLIDE #26")
 
 ---
 
@@ -904,7 +904,7 @@ specific PHP image just to change a memory limit.
 
 ---
 
-SWITCH TO SLIDE #27
+![SWITCH TO SLIDE #27](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2327.png "SWITCH TO SLIDE #27")
 
 ---
 
@@ -919,7 +919,7 @@ it from the registry.
 
 ---
 
-SWITCH TO SLIDE #28
+![SWITCH TO SLIDE #28](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2328.png "SWITCH TO SLIDE #28")
 
 ---
 
@@ -928,7 +928,7 @@ presentation works in practice.
 
 ---
 
-PLAY DEMO VIDEO #02
+[![PLAY DEMO VIDEO #02](http://img.youtube.com/vi/w2iSJipcMMo/0.jpg)](http://www.youtube.com/watch?v=w2iSJipcMMo "PLAY DEMO VIDEO #02")
 
 ---
 
@@ -944,7 +944,7 @@ Drupal as well.
 
 ---
 
-SWITCH TO SLIDE #29
+![SWITCH TO SLIDE #29](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2329.png "SWITCH TO SLIDE #29")
 
 ---
 
@@ -954,18 +954,18 @@ provide to them.
 
 ---
 
-SWITCH TO SLIDE #33
+![SWITCH TO SLIDE #30](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2330.png "SWITCH TO SLIDE #30")
 
 ---
 
 Everything we have talked about in this presentation, including this exact
 presentation can be found at docerizedrupal.com, feel free to use this material
-freely and please contribute if this topic also interests you, so we can make it
-together even better.
+freely and please contribute if this topic also interests you, so we can make 
+it together even better.
 
 ---
 
-SWITCH TO SLIDE #31
+![SWITCH TO SLIDE #31](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2331.png "SWITCH TO SLIDE #31")
 
 ---
 
