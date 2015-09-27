@@ -2,6 +2,12 @@
 
 # Using Docker to boost your development experience with Drupal
 
+## The presentation in video format
+
+[![Using Docker to boost your development experience with Drupal - Jürgen Viljaste, Mait Roosvalt](http://img.youtube.com/vi/3HABnTxgTEM/0.jpg)](https://www.youtube.com/watch?v=3HABnTxgTEM "Using Docker to boost your development experience with Drupal - Jürgen Viljaste, Mait Roosvalt")
+
+## The presentation in text format
+
 ---
 
 ![SWITCH TO SLIDE #01](https://raw.githubusercontent.com/dockerizedrupal/drupalcamp-baltics-2015/master/slides/SWITCH%20TO%20SLIDE%20%2301.png "SWITCH TO SLIDE #01")
